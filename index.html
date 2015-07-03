@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta http-equiv="cleartype" content="on">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title> </title>
+
+
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/swipe.css">
+<link rel="stylesheet" href="js/slidebars.css">
+
+
+
+</head>
+
+<body>
+ 
+
+<div class="demo-wrapper" id="sb-site">
+	<div class="sb-toggle-left">menu</div> 
+	<div id="slider" class="swipe">
+		<div class="swipe-wrap">
+			<div class="panel blue">
+				<img src="img/cellumination.jpg" width="600" height="350">
+				one
+				<img src="img/color-zone.jpg" width="600" height="350">
+				<img src="img/color-zone.jpg" width="600" height="350">
+				<img src="img/color-zone.jpg" width="600" height="350">
+				<img src="img/color-zone.jpg" width="600" height="350">
+				<img src="img/color-zone.jpg" width="600" height="350">
+				<img src="img/color-zone.jpg" width="600" height="350">
+				<img src="img/color-zone.jpg" width="600" height="350">
+				<img src="img/color-zone.jpg" width="600" height="350">
+				<img src="img/color-zone.jpg" width="600" height="350">
+			</div>
+			<div class="panel green">
+				<img src="img/color-zone.jpg" width="600" height="350">
+			</div>
+			<div class="panel yellow">
+				<img src="img/diagonal-path.jpg" width="600" height="350">
+			</div>
+			<div class="panel red">
+				<img src="img/fractal-reflection.jpg" width="600" height="350">
+			</div>
+ 
+		</div>
+		<span class="nav prev">Prev</span>
+		<span class="nav next">Next</span>
+	</div>
+</div>
+
+<div id="sidebar" class="sb-sidebar-full">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sunt aspernatur rerum nemo eligendi fugit sint voluptatibus dolorem rem obcaecati sed harum distinctio labore tenetur, earum, nulla est nam a.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque adipisci veritatis officiis iusto labore ratione delectus officia, quam consequuntur quas vel, illum debitis placeat aliquam dolorum doloremque, possimus, laborum deleniti?</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sunt aspernatur rerum nemo eligendi fugit sint voluptatibus dolorem rem obcaecati sed harum distinctio labore tenetur, earum, nulla est nam a.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque adipisci veritatis officiis iusto labore ratione delectus officia, quam consequuntur quas vel, illum debitis placeat aliquam dolorum doloremque, possimus, laborum deleniti?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sunt aspernatur rerum nemo eligendi fugit sint voluptatibus dolorem rem obcaecati sed harum distinctio labore tenetur, earum, nulla est nam a.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque adipisci veritatis officiis iusto labore ratione delectus officia, quam consequuntur quas vel, illum debitis placeat aliquam dolorum doloremque, possimus, laborum deleniti?</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sunt aspernatur rerum nemo eligendi fugit sint voluptatibus dolorem rem obcaecati sed harum distinctio labore tenetur, earum, nulla est nam a.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque adipisci veritatis officiis iusto labore ratione delectus officia, quam consequuntur quas vel, illum debitis placeat aliquam dolorum doloremque, possimus, laborum deleniti?</p>
+</div>
+
+
+ 
+<script src="js/jquery.js"></script>
+<script src="js/swipe.js"></script>
+<script src="js/slidebars.js"></script>
+ 
+ 
+<script>
+ 
+
+</script>
+
+<script>
+$(document).ready(function() {
+	Slider = $('#slider').Swipe({
+		continuous: false
+	}).data('Swipe');
+
+	$('.next').on('click', Slider.next);
+	$('.prev').on('click', Slider.prev);
+
+
+	//Add in breakpoints to hide/show menu and activate slidebarsloc
+ 	$( window ).resize(function() {
+ 		var width = $( window ).width();
+ 		if(width < 800){
+
+ 		}
+ 		else{
+ 			$( "#sidebar" ).removeClass('sb-sidebar-full').addClass('sb-slidebar sb-left ');
+	  	$.slidebars();
+ 		}
+
+	  
+	});
+ 
+
+});
+</script>
+</body>
+</html>

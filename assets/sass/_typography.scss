@@ -1,0 +1,45 @@
+//base
+html,body{ width: 100%;
+  height: 100%;
+  overflow: hidden;}
+
+html{font-size: 1em; }  
+body{color: $black; font-family:$georgia;}
+
+
+span.underline{text-decoration: underline;}
+
+
+//headings
+h1{font:48px/50px $georgia ; color: $black; text-transform:uppercase;}
+h2{font:32px/36px $georgia ; color: $black; }
+h3{font:24px/30px $cabin ; color: $gold;  text-transform:uppercase;}
+h4{font:14px/17px $cabin ; color: $black; text-transform:uppercase;}
+h5{font:10px/17px $cabin ; color: $gold;  text-transform:uppercase;}
+ 
+em{font-style:italic;}
+
+//paragraphs
+p{font:14px/20px $georgia; padding-bottom: 20px; color: $black; }
+p.fl::first-letter{
+    text-transform: uppercase; font-size:36px;  
+  }
+
+//blockquotes
+blockquote{margin: 0px 0px 20px 50px; font: 18px/26px $georgia; font-style: italic;}
+
+ 
+//captions
+ 
+
+//anchors
+a{color:$gold;text-decoration:none;}
+  a:hover{cursor: pointer; opacity: 0.8}
+
+//lists
+ul{list-style:disc inside;margin:0 0 .6em;}
+  ul li{margin:2px 0;}
+ol{list-style:decimal inside;margin:0 0 .6em;}
+  ol li{margin:2px 0;}
+
+

@@ -1,0 +1,145 @@
+
+/* Table of Content
+==================================================
+	#Imports
+	#Variables
+	#Reset
+	#Basic Styles
+	#Images
+	#Buttons
+	#Tabs
+	#Forms
+	#Misc */
+
+
+/* COMPASS & IMPORTS
+================================================= */
+@import "compass/css3";
+@import url("http://fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic");
+@import url("assets/font-awesome-4.2.0/css/font-awesome.min.css");
+
+
+/* VARIABLES
+================================================= */
+$georgia: Georgia, Times, 'Times New Roman', serif;
+$cabin: 'Cabin', sans-serif;
+
+//colors
+$black: #020202;
+$gold: #d29c0e;
+$gray: #c2c2c2;
+$darkgray: #3a3a3a;
+$white: #FFF;
+$teal: #4b7a82;
+$stategray:#474644;
+$statedark:#2b2a29;
+ 
+ /* #CSS Animation Mixins
+================================================== */
+@mixin animate($time){
+	-webkit-transition: all $time;
+    -moz-transition: all $time;
+    -ms-transition: all $time;
+    -o-transition: all $time;
+    transition: all $time; 
+    //-webkit-transform: translateZ(0);
+}
+ 
+/* #Breakpoint Mixins
+================================================== */
+
+@mixin breakpoint($point) {
+  @if $point == widescreen {
+    @media only screen and (min-width: 1400px){ @content; }
+  }
+  @if $point == smallscreen {
+    @media only screen and (min-width: 768px) and (max-width: 1399px){ @content; }
+  }
+  //@else if $point == tablet  {
+    //@media only screen and (max-width: 767px){ @content; }
+  //}
+  @else if $point == nomap {
+    @media only screen and (max-width: 767px), (min-device-width : 768px) and (max-device-width : 1024px) { @content; }
+  }
+  //@else if $point == phone {
+    //@media only screen and (min-width: 480px)   { @content; }
+  //}
+  @else if $point == small{
+    //@media only screen and (max-width: 320px)  { @content; }
+    @media only screen and (max-width: 800px){ @content; }
+  }
+
+   @else if $point == tablet{
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){ @content; }
+  }
+ 
+}
+//fonts
+ 
+
+
+/* #Basic Styles
+================================================== */
+body {
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+ }
+a{text-decoration:none;}
+strong{font-weight:bold;}
+em{text-style:italic;}
+
+.hide{display:none; }
+.show{display:block;}
+.hideme{@include opacity(0); @include breakpoint(small) {@include opacity(1);}}
+
+
+/* #Buttons
+================================================== */
+button{}
+
+
+/* #Forms
+================================================== */
+input[type="text"]{}
+input[type="password"]{}
+input[type="search"]{}
+input[type="email"]{}
+input[type="number"]{}
+input[type="submit"]{}
+
+
+/* #Images
+================================================== */
+img{max-width:100%;height:auto;}
+
+a img:hover{@include opacity(0.7); cursor: pointer;}
+
+
+/*  Image Styles
+   ========================================================================== */
+.alignnone {margin: 5px 20px 20px 0;}
+.aligncenter,div.aligncenter {display: block;margin: 5px auto 5px auto;}
+.alignright {float:right;margin: 5px 0 20px 20px;}
+.alignleft {float: left;margin: 5px 20px 20px 0;}
+.aligncenter {display: block;margin: 5px auto 5px auto;}
+a img.alignright {float: right;margin: 5px 0 20px 20px;}
+a img.alignnone {margin: 5px 20px 20px 0;}
+a img.alignleft {float: left;margin: 5px 20px 20px 0;}
+a img.aligncenter {display: block;margin-left: auto;margin-right: auto}
+.wp-caption {background: #fff;border: 1px solid #f0f0f0;max-width: 96%;padding: 5px 3px 10px;text-align: center;}
+.wp-caption.alignnone {margin: 5px 20px 20px 0;}
+.wp-caption.alignleft {margin: 5px 20px 20px 0;}
+.wp-caption.alignright {margin: 5px 0 20px 20px;}
+.wp-caption img {border: 0 none;height: auto;margin: 0;max-width: 98.5%;padding: 0;width: auto;}
+.wp-caption p.wp-caption-text {font-size: 11px;line-height: 17px;margin: 0;padding: 0 4px 5px;}
+
+
+/* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
