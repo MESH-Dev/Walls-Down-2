@@ -1,7 +1,7 @@
 
 body {
   //overflow-x: hidden;
-   @include animate(.3s);
+   @include animate(.3s); 
 }
 
 
@@ -342,10 +342,4 @@ html.ie8 .panel{display: none;}
 
 /* --------- PANEL IMPORTS --------------*/
  
-@import "grady";
-@import "nicu";
-@import "timeline";
-@import "map";
-@import "states";
-@import "letters";
  

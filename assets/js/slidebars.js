@@ -167,6 +167,7 @@
 				if ( amount === '0px' ) {
 					removeAnimation();
 				} else {
+					 
 					selector.css( 'transform', 'translate( ' + amount + ' )' ); // Apply the animation.
 				}
 

@@ -161,7 +161,7 @@ function Swipe(container, options) {
 
     var slide = slides[index];
     var style = slide && slide.style;
-
+   
     if (!style) return;
 
     style.webkitTransitionDuration = 
