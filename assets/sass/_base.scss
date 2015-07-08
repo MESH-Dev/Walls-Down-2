@@ -44,6 +44,7 @@ $statedark:#2b2a29;
     transition: all $time; 
     //-webkit-transform: translateZ(0);
 }
+
  
 /* #Breakpoint Mixins
 ================================================== */
@@ -84,7 +85,8 @@ body {
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
  }
-a{text-decoration:none;}
+a{text-decoration:none; outline:0}
+a:active, a:focus{border: 0; outline:0;}
 strong{font-weight:bold;}
 em{text-style:italic;}
 

@@ -1,11 +1,19 @@
-@import "normalize";
+@import "libs/normalize";
 @import "base";
 @import "typography";
-//@import "grid";
 @import "layout";
-@import "featherlight";
-@import "swipe";
-@import "slidebars";
+
+/* --------- PANEL IMPORTS --------------*/
+@import "panels/fifty-years";
+@import "panels/first-step";
+@import "panels/home";
+@import "panels/house-call";
+@import "panels/letters";
+
+/* --------- LIB IMPORTS --------------*/
+@import "libs/featherlight";
+@import "libs/swipe";
+@import "libs/slidebars";
 
  
 

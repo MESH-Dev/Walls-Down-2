@@ -1,11 +1,105 @@
   /*------------------PANEL SCROLLING-----------------*/
- //var scrollElement = 'html, body';
- // var $scrollElement;
- //
- $(function() {
+ 
+$(document).ready(function() {
+ 
+  //Initialize Slider
+  Slider = $('#slider').Swipe({
+    continuous: false,
+    transitionEnd: function(index, elem) { //set new hash after transistion
+      var this_hash = $(elem).attr('id');
+       window.location.hash = this_hash;
+    }
+  }).data('Swipe');
+
+  $('.next').on('click', Slider.next);
+  $('.prev').on('click', Slider.prev);
+ 
+  //Initialize Sidebar Menu based on screensize. Maybe change based on device?
+  var width = $( window ).width();
+    if(width < 768){
+      $.slidebars({
+        scrollLock: false,
+        siteClose: true
+      });
+    }
+    else{
+       $.slidebars({
+        scrollLock: false,
+        siteClose: false
+      });
+      $.slidebars.open('left');
+    }
  
 
+  /*Add in breakpoints to hide/show menu and activate slidebarsloc
+  $( window ).resize(function() {
+    var width = $( window ).width();
+    if(width < 800){
+      $.slidebars({
+        scrollLock: false,
+        siteClose: true
+      });
+    }
+  });*/
+ 
+  //Check initial hash and slide to panel
+  var hash = window.location.hash ? window.location.hash : '#home';
+  if (hash.indexOf("#/") >= 0) hash ="#fifty-years";
+  console.log(hash);
+  var idx = $('a[href='+hash+']').attr('id');
+  Slider.slide(idx);
+
+  //MAIN MENU CLICKS - SCROLL
+  $('a.slide-nav').click(function(e) {
+    e.preventDefault();
+    var idx = $(this).attr('id');
+    Slider.slide(idx);
+  });
+ 
+ 
+  
+
+
+
+
+  /*
+  /*------------------ MENU ACTIVE/Hover TOGGLE from hash-----------------
+  $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
+
+  window.addEventListener("hashchange", function () {
+      var hash = window.location.hash ? window.location.hash : '#home';
+      if (hash.indexOf("#/") >= 0) hash ="#fifty-years";
+      var idx = $('a[href='+hash+']').attr('id');
+ 
+      
+
+      $("nav.menu a div").removeClass('menu-active');
+      $(".secondary-menu li").removeClass('menu-active');
+      $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
+      $('.secondary-menu li a[href="'+ hash +'"]').parent("li").addClass('menu-active');
+ 
+ 
+   }, false);
+ 
+  */
+
+
+
+
  });
+
+
+
+
+
+
+
+
+
+
+
+
+// --------------------------------------------------------------------------------------------
 
 //
  //   window.onpopstate = function(event)
@@ -263,7 +357,7 @@ $(function() {
 });
 
  
-/*------------------ MENU-----------------*/
+/*------------------ MENU-----------------
 $(function() {
  
     var $togglePushLeft = $(".toggle-push-left" );
@@ -296,7 +390,7 @@ $(function() {
     });
 
 
-    /* push menu left */
+    /* push menu left  
     $(".toggle-push-left").click(
       function(){
         if($('body').hasClass('pml-open')){
@@ -310,7 +404,7 @@ $(function() {
 
     
  
-    /* hide active menu if close menu button is clicked */
+    /* hide active menu if close menu button is clicked  
     $(".close-menu").click(function(){
         $('body').removeClass(activeNav);
         $('body').removeClass(".credits-open");
@@ -318,7 +412,7 @@ $(function() {
     });
  
     //CREDITS MENU --------------
-    /* push menu left */
+    /* push menu left 
     $("#credit-link").click(function(e){
         $('body').addClass("credits-open");
         activeCredits = "credits-open";
@@ -326,34 +420,17 @@ $(function() {
         e.preventDefault();
     });
 
-    /* hide active menu if close menu button is clicked */
+    /* hide active menu if close menu button is clicked  
     $(".close-credits-menu").click(function(){
         $('body').removeClass(activeCredits);
         $(".secondary-menu li").removeClass('credit-active');
         activeCredits = "";
  
     });
-});
+});*/
 
 /*------------------ MENU ACTIVE/Hover TOGGLE from hash-----------------
-$(function() {
-
-  var hash = window.location.hash ? window.location.hash : '#home';
-  if (hash.indexOf("#/") >= 0) hash ="#map";
-  $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
-
-
-  window.addEventListener("hashchange", function () {
-      var hash = window.location.hash ? window.location.hash : '#home';
-      if (hash.indexOf("#/") >= 0) hash ="#map";
-      $("nav.menu a div").removeClass('menu-active');
-      $(".secondary-menu li").removeClass('menu-active');
-      $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
-      $('.secondary-menu li a[href="'+ hash +'"]').parent("li").addClass('menu-active');
-      $('#brahms').trigger('pause');
-      $('body').removeClass("credits-open");
-   }, false);
-});
+ 
 
 */
 

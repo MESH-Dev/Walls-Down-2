@@ -8,7 +8,7 @@
  */
 @import url("http://fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic");
 @import url("assets/font-awesome-4.2.0/css/font-awesome.min.css");
-/* line 22, assets/sass/_normalize.scss */
+/* line 22, assets/sass/libs/_normalize.scss */
 article,
 aside,
 details,
@@ -27,7 +27,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 32, assets/sass/_normalize.scss */
+/* line 32, assets/sass/libs/_normalize.scss */
 audio,
 canvas,
 video {
@@ -38,7 +38,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 41, assets/sass/_normalize.scss */
+/* line 41, assets/sass/libs/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -47,7 +47,7 @@ audio:not([controls]) {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 50, assets/sass/_normalize.scss */
+/* line 50, assets/sass/libs/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -60,7 +60,7 @@ audio:not([controls]) {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 64, assets/sass/_normalize.scss */
+/* line 64, assets/sass/libs/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -73,7 +73,7 @@ html {
 /**
  * Remove default margin.
  */
-/* line 74, assets/sass/_normalize.scss */
+/* line 74, assets/sass/libs/_normalize.scss */
 body {
   margin: 0;
 }
@@ -84,7 +84,7 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 86, assets/sass/_normalize.scss */
+/* line 86, assets/sass/libs/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -92,7 +92,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 95, assets/sass/_normalize.scss */
+/* line 95, assets/sass/libs/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -105,7 +105,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 108, assets/sass/_normalize.scss */
+/* line 108, assets/sass/libs/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -114,7 +114,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 117, assets/sass/_normalize.scss */
+/* line 117, assets/sass/libs/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -122,7 +122,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 126, assets/sass/_normalize.scss */
+/* line 126, assets/sass/libs/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -131,7 +131,7 @@ strong {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 134, assets/sass/_normalize.scss */
+/* line 134, assets/sass/libs/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -139,7 +139,7 @@ dfn {
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 142, assets/sass/_normalize.scss */
+/* line 142, assets/sass/libs/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -149,7 +149,7 @@ hr {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 152, assets/sass/_normalize.scss */
+/* line 152, assets/sass/libs/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -158,7 +158,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 164, assets/sass/_normalize.scss */
+/* line 164, assets/sass/libs/_normalize.scss */
 code,
 kbd,
 pre,
@@ -170,7 +170,7 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 173, assets/sass/_normalize.scss */
+/* line 173, assets/sass/libs/_normalize.scss */
 pre {
   white-space: pre-wrap;
 }
@@ -178,7 +178,7 @@ pre {
 /**
  * Set consistent quote types.
  */
-/* line 181, assets/sass/_normalize.scss */
+/* line 181, assets/sass/libs/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -186,7 +186,7 @@ q {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 189, assets/sass/_normalize.scss */
+/* line 189, assets/sass/libs/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -194,7 +194,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 198, assets/sass/_normalize.scss */
+/* line 198, assets/sass/libs/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -203,12 +203,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 205, assets/sass/_normalize.scss */
+/* line 205, assets/sass/libs/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 209, assets/sass/_normalize.scss */
+/* line 209, assets/sass/libs/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -219,7 +219,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 221, assets/sass/_normalize.scss */
+/* line 221, assets/sass/libs/_normalize.scss */
 img {
   border: 0;
 }
@@ -227,7 +227,7 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 229, assets/sass/_normalize.scss */
+/* line 229, assets/sass/libs/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -238,7 +238,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 241, assets/sass/_normalize.scss */
+/* line 241, assets/sass/libs/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -249,7 +249,7 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 253, assets/sass/_normalize.scss */
+/* line 253, assets/sass/libs/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -260,7 +260,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 264, assets/sass/_normalize.scss */
+/* line 264, assets/sass/libs/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -273,7 +273,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 278, assets/sass/_normalize.scss */
+/* line 278, assets/sass/libs/_normalize.scss */
 button,
 input,
 select,
@@ -290,7 +290,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 290, assets/sass/_normalize.scss */
+/* line 290, assets/sass/libs/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -302,7 +302,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 302, assets/sass/_normalize.scss */
+/* line 302, assets/sass/libs/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -315,7 +315,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 317, assets/sass/_normalize.scss */
+/* line 317, assets/sass/libs/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -329,7 +329,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 327, assets/sass/_normalize.scss */
+/* line 327, assets/sass/libs/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -339,7 +339,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-/* line 337, assets/sass/_normalize.scss */
+/* line 337, assets/sass/libs/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -353,7 +353,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 348, assets/sass/_normalize.scss */
+/* line 348, assets/sass/libs/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -367,7 +367,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 361, assets/sass/_normalize.scss */
+/* line 361, assets/sass/libs/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -376,7 +376,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 370, assets/sass/_normalize.scss */
+/* line 370, assets/sass/libs/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -387,7 +387,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 380, assets/sass/_normalize.scss */
+/* line 380, assets/sass/libs/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -401,7 +401,7 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 393, assets/sass/_normalize.scss */
+/* line 393, assets/sass/libs/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -428,45 +428,52 @@ table {
 ================================================== */
 /* #Basic Styles
 ================================================== */
-/* line 83, assets/sass/_base.scss */
+/* line 84, assets/sass/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 87, assets/sass/_base.scss */
+/* line 88, assets/sass/_base.scss */
 a {
   text-decoration: none;
+  outline: 0;
 }
 
-/* line 88, assets/sass/_base.scss */
+/* line 89, assets/sass/_base.scss */
+a:active, a:focus {
+  border: 0;
+  outline: 0;
+}
+
+/* line 90, assets/sass/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 89, assets/sass/_base.scss */
+/* line 91, assets/sass/_base.scss */
 em {
   text-style: italic;
 }
 
-/* line 91, assets/sass/_base.scss */
+/* line 93, assets/sass/_base.scss */
 .hide {
   display: none;
 }
 
-/* line 92, assets/sass/_base.scss */
+/* line 94, assets/sass/_base.scss */
 .show {
   display: block;
 }
 
-/* line 93, assets/sass/_base.scss */
+/* line 95, assets/sass/_base.scss */
 .hideme {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
 @media only screen and (max-width: 800px) {
-  /* line 93, assets/sass/_base.scss */
+  /* line 95, assets/sass/_base.scss */
   .hideme {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
@@ -479,13 +486,13 @@ em {
 ================================================== */
 /* #Images
 ================================================== */
-/* line 113, assets/sass/_base.scss */
+/* line 115, assets/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 115, assets/sass/_base.scss */
+/* line 117, assets/sass/_base.scss */
 a img:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
@@ -494,60 +501,60 @@ a img:hover {
 
 /*  Image Styles
    ========================================================================== */
-/* line 120, assets/sass/_base.scss */
+/* line 122, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 121, assets/sass/_base.scss */
+/* line 123, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 122, assets/sass/_base.scss */
+/* line 124, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 123, assets/sass/_base.scss */
+/* line 125, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 124, assets/sass/_base.scss */
+/* line 126, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 125, assets/sass/_base.scss */
+/* line 127, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 126, assets/sass/_base.scss */
+/* line 128, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 127, assets/sass/_base.scss */
+/* line 129, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 128, assets/sass/_base.scss */
+/* line 130, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 129, assets/sass/_base.scss */
+/* line 131, assets/sass/_base.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -556,22 +563,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 130, assets/sass/_base.scss */
+/* line 132, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 131, assets/sass/_base.scss */
+/* line 133, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 132, assets/sass/_base.scss */
+/* line 134, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 133, assets/sass/_base.scss */
+/* line 135, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -581,7 +588,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 134, assets/sass/_base.scss */
+/* line 136, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
@@ -590,7 +597,7 @@ a img.aligncenter {
 }
 
 /* You can also use a <br class="clear" /> to clear columns */
-/* line 138, assets/sass/_base.scss */
+/* line 140, assets/sass/_base.scss */
 .clear {
   clear: both;
   display: block;
@@ -727,27 +734,16 @@ body {
 
 /* --- Open Menu Desktop --- */
 /* line 11, assets/sass/_layout.scss */
-body.pml-open nav.menu {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  position: fixed;
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-transform: translateZ(1px);
-  -moz-transform: translateZ(1px);
-  -o-transform: translateZ(1px);
-  transform: translateZ(1px);
-  z-index: 20;
+#sidebar {
   background-color: #020202;
+  overflow-x: hidden;
 }
-/* line 21, assets/sass/_layout.scss */
-body.pml-open nav.menu #logo img {
+/* line 16, assets/sass/_layout.scss */
+#sidebar .logo img {
   margin: 30px 10px 15px 20px;
 }
-/* line 22, assets/sass/_layout.scss */
-body.pml-open nav.menu .tagline {
+/* line 17, assets/sass/_layout.scss */
+#sidebar .tagline {
   color: white;
   display: block;
   font-size: 11px;
@@ -756,21 +752,28 @@ body.pml-open nav.menu .tagline {
   font-weight: bold;
   margin-left: 20px;
 }
-/* line 24, assets/sass/_layout.scss */
-body.pml-open nav.menu .main-menu {
+/* line 27, assets/sass/_layout.scss */
+#sidebar .main-menu {
   margin-top: 50px;
 }
-/* line 26, assets/sass/_layout.scss */
-body.pml-open nav.menu .main-menu a {
+/* line 29, assets/sass/_layout.scss */
+#sidebar .main-menu a {
   z-index: 30;
   position: relative;
+  outline: 0;
 }
-/* line 27, assets/sass/_layout.scss */
-body.pml-open nav.menu .main-menu a:hover {
+/* line 34, assets/sass/_layout.scss */
+#sidebar .main-menu a:hover {
   cursor: pointer;
 }
-/* line 29, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item {
+/* line 35, assets/sass/_layout.scss */
+#sidebar .main-menu a:active, #sidebar .main-menu a:focus {
+  background-color: none;
+  border: 0;
+  outline: 0;
+}
+/* line 38, assets/sass/_layout.scss */
+#sidebar .menu-item {
   margin-bottom: -40px;
   margin-left: 20px;
   margin-right: 10px;
@@ -784,16 +787,16 @@ body.pml-open nav.menu .menu-item {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 31, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item .text {
+/* line 40, assets/sass/_layout.scss */
+#sidebar .menu-item .text {
   width: 121px;
   position: relative;
   top: -66px;
   z-index: 12;
   height: 66px;
 }
-/* line 32, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item span.num {
+/* line 41, assets/sass/_layout.scss */
+#sidebar .menu-item span.num {
   display: block;
   display: inline-block;
   width: 20px;
@@ -801,8 +804,8 @@ body.pml-open nav.menu .menu-item span.num {
   color: white;
   padding-left: 10px;
 }
-/* line 33, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item span.title {
+/* line 42, assets/sass/_layout.scss */
+#sidebar .menu-item span.title {
   display: inline-block;
   width: 70px;
   font-size: 14px;
@@ -812,8 +815,8 @@ body.pml-open nav.menu .menu-item span.title {
   padding-left: 10px;
   padding-top: 5px;
 }
-/* line 34, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item img {
+/* line 43, assets/sass/_layout.scss */
+#sidebar .menu-item img {
   display: block;
   position: relative;
   z-index: 2;
@@ -825,37 +828,34 @@ body.pml-open nav.menu .menu-item img {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 35, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item:hover {
+/* line 44, assets/sass/_layout.scss */
+#sidebar .menu-item:hover {
   background-color: transparent;
 }
-/* line 37, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item:hover img {
+/* line 46, assets/sass/_layout.scss */
+#sidebar .menu-item:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
-/* line 40, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-active .text {
-  background: rgba(210, 156, 14, 0.5);
-}
-/* line 41, assets/sass/_layout.scss */
-body.pml-open nav.menu .credit-active {
+/* line 54, assets/sass/_layout.scss */
+#sidebar .credit-active {
   background-color: #3a3a3a;
 }
-/* line 43, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu {
+/* line 56, assets/sass/_layout.scss */
+#sidebar .secondary-menu {
   margin-top: 35px;
 }
-/* line 45, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu .menu-active {
+/* line 58, assets/sass/_layout.scss */
+#sidebar .secondary-menu .menu-active {
   background-color: #d29c0e;
 }
-/* line 47, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu ul {
+/* line 60, assets/sass/_layout.scss */
+#sidebar .secondary-menu ul {
   margin: 20px 0px 20px 0px;
+  padding: 0;
 }
-/* line 49, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu ul li {
+/* line 63, assets/sass/_layout.scss */
+#sidebar .secondary-menu ul li {
   list-style-type: none;
   font-size: 14px;
   color: white;
@@ -864,24 +864,25 @@ body.pml-open nav.menu .secondary-menu ul li {
   padding: 3px 0px 3px 20px;
   width: 140px;
 }
-/* line 51, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu ul li a {
+/* line 65, assets/sass/_layout.scss */
+#sidebar .secondary-menu ul li a {
   color: white;
+  outline: 0;
 }
-/* line 52, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu ul li a:hover {
+/* line 66, assets/sass/_layout.scss */
+#sidebar .secondary-menu ul li a:hover {
   text-decoration: none;
 }
-/* line 53, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu ul li:hover {
+/* line 67, assets/sass/_layout.scss */
+#sidebar .secondary-menu ul li:hover {
   background-color: #d29c0e;
 }
-/* line 56, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu img {
+/* line 70, assets/sass/_layout.scss */
+#sidebar .secondary-menu img {
   margin: 20px 0px 20px 20px;
 }
-/* line 58, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu .social-title a {
+/* line 72, assets/sass/_layout.scss */
+#sidebar .secondary-menu .social-title a {
   font: 14px/20px Georgia, Times, "Times New Roman", serif;
   color: white;
   text-transform: none;
@@ -890,82 +891,12 @@ body.pml-open nav.menu .secondary-menu .social-title a {
   position: relative;
   top: 15px;
 }
-/* line 59, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu .social-title a:hover {
+/* line 73, assets/sass/_layout.scss */
+#sidebar .secondary-menu .social-title a:hover {
   text-decoration: underline;
 }
 
-/*
-nav.push-menu-left {
-    top: 0;
-    height: 100%;
-    width: 80px;
-    overflow: hidden;
-    border-right:1px solid $white;
-    left: 0px;
-    .wrapper {overflow-y:auto; overflow-x:hidden;height: 100%; width:100%; padding-right: 15px;  }
-    @include breakpoint(small) {
-      left: -80px;
-    }
-     @include animate(.3s);
-}*/
-/* line 79, assets/sass/_layout.scss */
-nav.push-menu-left {
-  top: 0;
-  height: 100%;
-  width: 160px;
-  overflow: hidden;
-  border-right: 1px solid white;
-  left: 0px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-/* line 86, assets/sass/_layout.scss */
-nav.push-menu-left .wrapper {
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: 100%;
-  width: 100%;
-  padding-right: 15px;
-}
-@media only screen and (max-width: 800px) {
-  /* line 79, assets/sass/_layout.scss */
-  nav.push-menu-left {
-    left: -160px;
-  }
-}
-
-/* line 93, assets/sass/_layout.scss */
-body.pml-open nav.push-menu-left {
-  left: 0;
-  width: 160px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-/* line 100, assets/sass/_layout.scss */
-body.pml-open .panel-wrap {
-  margin-left: 160px;
-}
-@media only screen and (max-width: 800px) {
-  /* line 100, assets/sass/_layout.scss */
-  body.pml-open .panel-wrap {
-    margin-left: 0px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-}
-
-/* line 111, assets/sass/_layout.scss */
+/* line 81, assets/sass/_layout.scss */
 .credits-menu-left {
   position: fixed;
   -webkit-transform: translate3d(0, 0, 0);
@@ -987,7 +918,7 @@ body.pml-open .panel-wrap {
   z-index: 11;
   color: white;
 }
-/* line 129, assets/sass/_layout.scss */
+/* line 99, assets/sass/_layout.scss */
 .credits-menu-left .credits-wrap {
   padding: 30px 15px 15px 15px;
   position: absolute;
@@ -999,62 +930,52 @@ body.pml-open .panel-wrap {
   overflow: auto;
 }
 @media only screen and (max-width: 800px) {
-  /* line 129, assets/sass/_layout.scss */
+  /* line 99, assets/sass/_layout.scss */
   .credits-menu-left .credits-wrap {
     padding: 80px 15px 15px 15px;
   }
 }
-/* line 139, assets/sass/_layout.scss */
+/* line 109, assets/sass/_layout.scss */
 .credits-menu-left p {
   font-size: 11px;
   line-height: 17px;
   color: white;
   padding-right: 10px;
 }
-/* line 142, assets/sass/_layout.scss */
+/* line 112, assets/sass/_layout.scss */
 .credits-menu-left p.top-one {
   margin-bottom: 80px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 142, assets/sass/_layout.scss */
+  /* line 112, assets/sass/_layout.scss */
   .credits-menu-left p.top-one {
     margin-bottom: 20px;
   }
 }
-/* line 143, assets/sass/_layout.scss */
+/* line 113, assets/sass/_layout.scss */
 .credits-menu-left p.top-two {
   margin-bottom: 40px;
 }
-/* line 144, assets/sass/_layout.scss */
+/* line 114, assets/sass/_layout.scss */
 .credits-menu-left h4 {
   font: 11px/17px "Cabin", sans-serif;
   color: white;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-/* line 145, assets/sass/_layout.scss */
+/* line 115, assets/sass/_layout.scss */
 .credits-menu-left a {
   color: white;
   text-decoration: underline;
 }
 @media only screen and (max-width: 800px) {
-  /* line 111, assets/sass/_layout.scss */
+  /* line 81, assets/sass/_layout.scss */
   .credits-menu-left {
     left: -250px;
   }
 }
 
-/* line 151, assets/sass/_layout.scss */
-body.pml-open.credits-open .credits-menu-left {
-  left: 160px;
-}
-
-/* line 155, assets/sass/_layout.scss */
-body.credits-open .credits-menu-left {
-  left: 80px;
-}
-
-/* line 162, assets/sass/_layout.scss */
+/* line 122, assets/sass/_layout.scss */
 .close-credits-menu {
   position: absolute;
   top: 10px;
@@ -1062,57 +983,13 @@ body.credits-open .credits-menu-left {
   z-index: 20;
   color: white;
 }
-/* line 167, assets/sass/_layout.scss */
+/* line 127, assets/sass/_layout.scss */
 .close-credits-menu:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
 
-/* line 171, assets/sass/_layout.scss */
-.mask {
-  position: fixed;
-  top: 0;
-  left: 300px;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 183, assets/sass/_layout.scss */
-#open {
-  display: none;
-  z-index: 20000;
-  color: #020202;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  font-family: "Cabin", sans-serif;
-  font-weight: bold;
-  padding: 5px;
-  background: rgba(255, 255, 255, 0.7);
-}
-@media only screen and (max-width: 800px) {
-  /* line 183, assets/sass/_layout.scss */
-  #open {
-    -webkit-transform: translate3d(0, 0, 0);
-    display: block;
-    -webkit-transform: translateZ(1px);
-    -moz-transform: translateZ(1px);
-    -o-transform: translateZ(1px);
-    transform: translateZ(1px);
-  }
-}
-
-/* line 199, assets/sass/_layout.scss */
-body.pml-open #open {
-  left: 180px;
-  -webkit-transition: all 0.3;
-  -moz-transition: all 0.3;
-  -ms-transition: all 0.3;
-  -o-transition: all 0.3;
-  transition: all 0.3;
-}
-
-/* line 202, assets/sass/_layout.scss */
+/* line 131, assets/sass/_layout.scss */
 .panel {
   position: absolute;
   width: 100%;
@@ -1121,29 +998,17 @@ body.pml-open #open {
   overflow: auto;
   overflow-x: hidden;
 }
-
-/* line 212, assets/sass/_layout.scss */
-.panel-wrap {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  margin-left: 80px;
-}
-@media only screen and (max-width: 800px) {
-  /* line 212, assets/sass/_layout.scss */
-  .panel-wrap {
-    margin-left: 0px;
-  }
+/* line 139, assets/sass/_layout.scss */
+.panel .panel-pad {
+  padding: 30px 160px 30px 30px;
 }
 
 /* ------SHARE BUTTONS ---------*/
-/* line 227, assets/sass/_layout.scss */
+/* line 151, assets/sass/_layout.scss */
 .social {
   width: 100%;
 }
-/* line 228, assets/sass/_layout.scss */
+/* line 152, assets/sass/_layout.scss */
 .social .social-title {
   font: 14px/20px "Cabin", sans-serif;
   color: #020202;
@@ -1151,12 +1016,12 @@ body.pml-open #open {
   padding-left: 4px;
 }
 
-/* line 231, assets/sass/_layout.scss */
+/* line 155, assets/sass/_layout.scss */
 .addthis_toolbox {
   text-align: center;
 }
 
-/* line 232, assets/sass/_layout.scss */
+/* line 156, assets/sass/_layout.scss */
 .addthis_toolbox > a {
   height: 25px;
   width: 25px;
@@ -1164,12 +1029,12 @@ body.pml-open #open {
   float: left;
 }
 
-/* line 233, assets/sass/_layout.scss */
+/* line 157, assets/sass/_layout.scss */
 .addthis_toolbox.addthis_32x32_style span {
   width: 26px !important;
 }
 
-/* line 234, assets/sass/_layout.scss */
+/* line 158, assets/sass/_layout.scss */
 .addthis_toolbox > a > span {
   height: 25px !important;
   width: 25px !important;
@@ -1177,195 +1042,195 @@ body.pml-open #open {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
 }
 
-/* line 235, assets/sass/_layout.scss */
+/* line 159, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-facebook {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -25px 0 !important;
 }
 
-/* line 236, assets/sass/_layout.scss */
+/* line 160, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-twitter {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -50px 0 !important;
 }
 
-/* line 237, assets/sass/_layout.scss */
+/* line 161, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-linkedin {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -2px 0 !important;
 }
 
-/* line 238, assets/sass/_layout.scss */
+/* line 162, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-pinterest_share {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -74px 0 !important;
 }
 
-/* line 239, assets/sass/_layout.scss */
+/* line 163, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-google_plusone_share {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -124px 0 !important;
 }
 
-/* line 240, assets/sass/_layout.scss */
+/* line 164, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-email {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -98px 0 !important;
 }
 
-/* line 241, assets/sass/_layout.scss */
+/* line 165, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-digg {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -176px 0 !important;
   width: 28px !important;
 }
 
-/* line 242, assets/sass/_layout.scss */
+/* line 166, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-evernote {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -146px 0 !important;
 }
 
-/* line 243, assets/sass/_layout.scss */
+/* line 167, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-compact {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -204px 0 !important;
 }
 
-/* line 245, assets/sass/_layout.scss */
+/* line 169, assets/sass/_layout.scss */
 .grady-social {
   padding: 20px 0px 0px 200px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 245, assets/sass/_layout.scss */
+  /* line 169, assets/sass/_layout.scss */
   .grady-social {
     padding-left: 10%;
     padding-bottom: 30px;
   }
 }
 
-/* line 252, assets/sass/_layout.scss */
+/* line 176, assets/sass/_layout.scss */
 .grady-social-top {
   padding: 20px 0px 0px 200px;
 }
-/* line 254, assets/sass/_layout.scss */
+/* line 178, assets/sass/_layout.scss */
 .grady-social-top .white-social {
   color: white;
 }
 @media only screen and (max-width: 800px) {
-  /* line 252, assets/sass/_layout.scss */
+  /* line 176, assets/sass/_layout.scss */
   .grady-social-top {
     padding-left: 10%;
     padding-bottom: 0px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1060px) {
-  /* line 252, assets/sass/_layout.scss */
+  /* line 176, assets/sass/_layout.scss */
   .grady-social-top {
     padding-left: 50px;
   }
 }
 
-/* line 261, assets/sass/_layout.scss */
+/* line 185, assets/sass/_layout.scss */
 .timeline-social {
   padding: 20px 0px 200px 0px;
 }
 
-/* line 264, assets/sass/_layout.scss */
+/* line 188, assets/sass/_layout.scss */
 .timeline-social-top {
   padding: 20px 0px 0px 0px;
 }
 
-/* line 268, assets/sass/_layout.scss */
+/* line 192, assets/sass/_layout.scss */
 .nicu-social {
   padding: 40px 0px 20px 0px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 268, assets/sass/_layout.scss */
+  /* line 192, assets/sass/_layout.scss */
   .nicu-social {
     padding-left: 0;
     padding-bottom: 0px;
   }
 }
 
-/* line 273, assets/sass/_layout.scss */
+/* line 197, assets/sass/_layout.scss */
 .nicu-social-top {
   padding: 0px 0px 0px 120px;
 }
-/* line 275, assets/sass/_layout.scss */
+/* line 199, assets/sass/_layout.scss */
 .nicu-social-top .white-social {
   color: #c2c2c2;
 }
 @media only screen and (max-width: 800px) {
-  /* line 273, assets/sass/_layout.scss */
+  /* line 197, assets/sass/_layout.scss */
   .nicu-social-top {
     padding-left: 10%;
   }
 }
 
-/* line 279, assets/sass/_layout.scss */
+/* line 203, assets/sass/_layout.scss */
 .map-social {
   padding: 0px 0px 20px 0px;
 }
-/* line 281, assets/sass/_layout.scss */
+/* line 205, assets/sass/_layout.scss */
 .map-social .social-title {
   color: white;
 }
 
-/* line 284, assets/sass/_layout.scss */
+/* line 208, assets/sass/_layout.scss */
 .nav-social {
   padding: 0px 0px 20px 10px;
 }
 
-/* line 290, assets/sass/_layout.scss */
+/* line 214, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-facebook {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -25px 0 !important;
 }
-/* line 291, assets/sass/_layout.scss */
+/* line 215, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-twitter {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -50px 0 !important;
 }
-/* line 292, assets/sass/_layout.scss */
+/* line 216, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-linkedin {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -2px 0 !important;
 }
-/* line 293, assets/sass/_layout.scss */
+/* line 217, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-pinterest_share {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -74px 0 !important;
 }
-/* line 294, assets/sass/_layout.scss */
+/* line 218, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-google_plusone_share {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -124px 0 !important;
 }
-/* line 295, assets/sass/_layout.scss */
+/* line 219, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-email {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -98px 0 !important;
 }
-/* line 296, assets/sass/_layout.scss */
+/* line 220, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-digg {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -176px 0 !important;
   width: 28px !important;
 }
-/* line 297, assets/sass/_layout.scss */
+/* line 221, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-evernote {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -146px 0 !important;
 }
-/* line 298, assets/sass/_layout.scss */
+/* line 222, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-compact {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -204px 0 !important;
 }
 
 /* ------END OF STORY NAV ---------*/
-/* line 304, assets/sass/_layout.scss */
+/* line 228, assets/sass/_layout.scss */
 .left-nav {
   position: relative;
   height: 0px;
@@ -1373,13 +1238,13 @@ body.pml-open #open {
   top: -80px;
   float: left;
 }
-/* line 305, assets/sass/_layout.scss */
+/* line 229, assets/sass/_layout.scss */
 .left-nav a {
   position: relative;
   left: 7%;
   font-style: italic;
 }
-/* line 306, assets/sass/_layout.scss */
+/* line 230, assets/sass/_layout.scss */
 .left-nav .fa {
   font-size: 45px;
   position: relative;
@@ -1387,7 +1252,7 @@ body.pml-open #open {
   right: 5px;
 }
 
-/* line 309, assets/sass/_layout.scss */
+/* line 233, assets/sass/_layout.scss */
 .right-nav {
   position: relative;
   height: 0px;
@@ -1395,14 +1260,14 @@ body.pml-open #open {
   top: -80px;
   float: right;
 }
-/* line 310, assets/sass/_layout.scss */
+/* line 234, assets/sass/_layout.scss */
 .right-nav a {
   float: right;
   position: relative;
   right: 10%;
   font-style: italic;
 }
-/* line 311, assets/sass/_layout.scss */
+/* line 235, assets/sass/_layout.scss */
 .right-nav .fa {
   font-size: 45px;
   position: relative;
@@ -1411,8 +1276,8 @@ body.pml-open #open {
 }
 
 /* ----------- Home ------------- */
-/* line 314, assets/sass/_layout.scss */
-#home .panel-wrap {
+/* line 238, assets/sass/_layout.scss */
+#home .panel-pad {
   background: url("assets/img/cover-large.jpg") top left no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1422,39 +1287,39 @@ body.pml-open #open {
   overflow: hidden;
   left: 0;
 }
-/* line 320, assets/sass/_layout.scss */
-#home .panel-wrap img {
+/* line 244, assets/sass/_layout.scss */
+#home .panel-pad img {
   width: 60%;
   padding: 10% 20% 0 20%;
 }
 @media only screen and (max-width: 800px) {
-  /* line 320, assets/sass/_layout.scss */
-  #home .panel-wrap img {
+  /* line 244, assets/sass/_layout.scss */
+  #home .panel-pad img {
     padding: 20% 5% 0% 5%;
     width: 90%;
   }
 }
-/* line 325, assets/sass/_layout.scss */
-#home .panel-wrap .instructions {
+/* line 249, assets/sass/_layout.scss */
+#home .panel-pad .instructions {
   position: absolute;
   width: 210px;
   bottom: 2%;
   left: 200px;
   float: left;
 }
-/* line 327, assets/sass/_layout.scss */
-#home .panel-wrap .instructions img {
+/* line 251, assets/sass/_layout.scss */
+#home .panel-pad .instructions img {
   width: 118px;
   padding: 0;
 }
 @media only screen and (max-width: 800px) {
-  /* line 325, assets/sass/_layout.scss */
-  #home .panel-wrap .instructions {
+  /* line 249, assets/sass/_layout.scss */
+  #home .panel-pad .instructions {
     display: none;
   }
 }
-/* line 331, assets/sass/_layout.scss */
-#home .panel-wrap .right-nav {
+/* line 255, assets/sass/_layout.scss */
+#home .panel-pad .right-nav {
   position: absolute;
   width: 100%;
   height: 0px;
@@ -1462,38 +1327,39 @@ body.pml-open #open {
   right: 2%;
   float: right;
 }
-/* line 333, assets/sass/_layout.scss */
-#home .panel-wrap .right-nav .fa {
+/* line 257, assets/sass/_layout.scss */
+#home .panel-pad .right-nav .fa {
   font-size: 45px;
   position: relative;
   top: 8px;
   left: 5px;
 }
-/* line 334, assets/sass/_layout.scss */
-#home .panel-wrap .right-nav a {
+/* line 258, assets/sass/_layout.scss */
+#home .panel-pad .right-nav a {
   color: #020202;
 }
-/* line 336, assets/sass/_layout.scss */
-#home .panel-wrap h1 {
+/* line 260, assets/sass/_layout.scss */
+#home .panel-pad h1 {
   display: none;
 }
 
-/* line 339, assets/sass/_layout.scss */
+/* line 263, assets/sass/_layout.scss */
 html.ie8 nav {
   display: none;
 }
 
-/* line 340, assets/sass/_layout.scss */
+/* line 264, assets/sass/_layout.scss */
 html.ie8 .menu {
   display: none;
 }
 
-/* line 341, assets/sass/_layout.scss */
+/* line 265, assets/sass/_layout.scss */
 html.ie8 .panel {
   display: none;
 }
 
 /* --------- PANEL IMPORTS --------------*/
+/* --------- LIB IMPORTS --------------*/
 /**
  * Featherlight - ultra slim jQuery lightbox
  * Version 1.0.1 - http://noelboss.github.io/featherlight/
@@ -1502,7 +1368,7 @@ html.ie8 .panel {
  * MIT Licensed.
 **/
 @media all {
-  /* line 8, assets/sass/_featherlight.scss */
+  /* line 8, assets/sass/libs/_featherlight.scss */
   .featherlight {
     display: none;
     position: fixed;
@@ -1518,12 +1384,12 @@ html.ie8 .panel {
     background: rgba(0, 0, 0, 0);
   }
 
-  /* line 8, assets/sass/_featherlight.scss */
+  /* line 8, assets/sass/libs/_featherlight.scss */
   .featherlight:last-of-type {
     background: rgba(0, 0, 0, 0.8);
   }
 
-  /* line 8, assets/sass/_featherlight.scss */
+  /* line 8, assets/sass/libs/_featherlight.scss */
   .featherlight:before {
     content: '';
     display: inline-block;
@@ -1532,7 +1398,7 @@ html.ie8 .panel {
     margin-right: -.25em;
   }
 
-  /* line 8, assets/sass/_featherlight.scss */
+  /* line 8, assets/sass/libs/_featherlight.scss */
   .featherlight .featherlight-content {
     position: relative;
     text-align: left;
@@ -1550,12 +1416,12 @@ html.ie8 .panel {
     white-space: normal;
   }
 
-  /* line 8, assets/sass/_featherlight.scss */
+  /* line 8, assets/sass/libs/_featherlight.scss */
   .featherlight .featherlight-inner {
     display: block;
   }
 
-  /* line 8, assets/sass/_featherlight.scss */
+  /* line 8, assets/sass/libs/_featherlight.scss */
   .featherlight .featherlight-close-icon {
     position: absolute;
     z-index: 9999;
@@ -1571,24 +1437,24 @@ html.ie8 .panel {
     color: #000;
   }
 
-  /* line 8, assets/sass/_featherlight.scss */
+  /* line 8, assets/sass/libs/_featherlight.scss */
   .featherlight .featherlight-image {
     width: 100%;
   }
 
-  /* line 8, assets/sass/_featherlight.scss */
+  /* line 8, assets/sass/libs/_featherlight.scss */
   .featherlight-iframe .featherlight-content {
     border-bottom: 0;
     padding: 0;
   }
 
-  /* line 8, assets/sass/_featherlight.scss */
+  /* line 8, assets/sass/libs/_featherlight.scss */
   .featherlight iframe {
     border: 0;
   }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 8, assets/sass/_featherlight.scss */
+  /* line 8, assets/sass/libs/_featherlight.scss */
   .featherlight .featherlight-content {
     margin-left: 10px;
     margin-right: 10px;
@@ -1597,7 +1463,7 @@ html.ie8 .panel {
     border-bottom: 10px solid transparent;
   }
 }
-/* line 1, assets/sass/_swipe.scss */
+/* line 1, assets/sass/libs/_swipe.scss */
 html, body {
   height: 100%;
   margin: 0px;
@@ -1605,7 +1471,7 @@ html, body {
   width: 100%;
 }
 
-/* line 7, assets/sass/_swipe.scss */
+/* line 7, assets/sass/libs/_swipe.scss */
 .swipe .nav {
   position: absolute;
   width: 80px;
@@ -1620,36 +1486,36 @@ html, body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 20, assets/sass/_swipe.scss */
+/* line 20, assets/sass/libs/_swipe.scss */
 .swipe .nav.next {
-  right: 0;
+  right: 200px;
   -webkit-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
 
-/* line 25, assets/sass/_swipe.scss */
+/* line 25, assets/sass/libs/_swipe.scss */
 .swipe .nav.prev {
   -webkit-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
-  right: 0;
+  right: 200px;
   top: 30%;
 }
 
-/* line 32, assets/sass/_swipe.scss */
+/* line 32, assets/sass/libs/_swipe.scss */
 .swipe {
   overflow: hidden;
   visibility: hidden;
   position: relative;
 }
 
-/* line 37, assets/sass/_swipe.scss */
+/* line 37, assets/sass/libs/_swipe.scss */
 .swipe-wrap {
   overflow: hidden;
   position: relative;
   margin-left: 0px;
 }
 
-/* line 42, assets/sass/_swipe.scss */
+/* line 42, assets/sass/libs/_swipe.scss */
 .swipe-wrap > div.panel {
   float: left;
   width: 100%;
@@ -1658,36 +1524,31 @@ html, body {
   padding-right: 0px;
 }
 
-/* line 52, assets/sass/_swipe.scss */
-.panel-pad {
-  padding: 30px 400px 30px 30px;
-}
-
-/* line 56, assets/sass/_swipe.scss */
+/* line 52, assets/sass/libs/_swipe.scss */
 .blue {
   background-color: blue;
 }
 
-/* line 57, assets/sass/_swipe.scss */
+/* line 53, assets/sass/libs/_swipe.scss */
 .yellow {
   background-color: yellow;
 }
 
-/* line 58, assets/sass/_swipe.scss */
+/* line 54, assets/sass/libs/_swipe.scss */
 .red {
   background-color: red;
 }
 
-/* line 59, assets/sass/_swipe.scss */
+/* line 55, assets/sass/libs/_swipe.scss */
 .green {
   background-color: green;
 }
 
-/* line 61, assets/sass/_swipe.scss */
+/* line 57, assets/sass/libs/_swipe.scss */
 .sb-toggle-left {
   position: absolute;
   top: 10px;
-  left: 400px;
+  left: 200px;
   z-index: 999999;
   background-color: red;
 }
@@ -1727,10 +1588,10 @@ html, body {
  * 004 - Animation
  * 005 - Helper Classes
  *
- * ----------------------------
+ * ---------------------------- 
  * 001 - Box Model, Html & Body
  */
-/* line 25, assets/sass/_slidebars.scss */
+/* line 25, assets/sass/libs/_slidebars.scss */
 html, body, #sb-site, .sb-site-container, .sb-slidebar {
   /* Set box model to prevent any user added margins or paddings from altering the widths or heights. */
   margin: 0;
@@ -1740,20 +1601,20 @@ html, body, #sb-site, .sb-site-container, .sb-slidebar {
   box-sizing: border-box;
 }
 
-/* line 34, assets/sass/_slidebars.scss */
+/* line 34, assets/sass/libs/_slidebars.scss */
 html, body {
   width: 100%;
   overflow-x: hidden;
   /* Stops horizontal scrolling. */
 }
 
-/* line 39, assets/sass/_slidebars.scss */
+/* line 39, assets/sass/libs/_slidebars.scss */
 html {
   height: 100%;
   /* Site is as tall as device. */
 }
 
-/* line 43, assets/sass/_slidebars.scss */
+/* line 43, assets/sass/libs/_slidebars.scss */
 body {
   min-height: 100%;
   height: auto;
@@ -1762,7 +1623,7 @@ body {
 }
 
 /* Site scroll locking - prevent site from scrolling when a Slidebar is open, except when static Slidebars are only available. */
-/* line 50, assets/sass/_slidebars.scss */
+/* line 50, assets/sass/libs/_slidebars.scss */
 html.sb-scroll-lock.sb-active:not(.sb-static) {
   overflow: hidden;
 }
@@ -1770,7 +1631,7 @@ html.sb-scroll-lock.sb-active:not(.sb-static) {
 /* ----------
  * 002 - Site
  */
-/* line 58, assets/sass/_slidebars.scss */
+/* line 58, assets/sass/libs/_slidebars.scss */
 #sb-site, .sb-site-container {
   /* You may now use class .sb-site-container instead of #sb-site and use your own id. However please make sure you don't set any of the following styles any differently on your id. */
   width: 100%;
@@ -1783,13 +1644,13 @@ html.sb-scroll-lock.sb-active:not(.sb-static) {
 }
 
 /* Micro clearfix by Nicolas Gallagher, ensures the site container hits the top and bottom of the screen. */
-/* line 68, assets/sass/_slidebars.scss */
+/* line 68, assets/sass/libs/_slidebars.scss */
 #sb-site:before, #sb-site:after, .sb-site-container:before, .sb-site-container:after {
   content: ' ';
   display: table;
 }
 
-/* line 73, assets/sass/_slidebars.scss */
+/* line 73, assets/sass/libs/_slidebars.scss */
 #sb-site:before, #sb-site:after, .sb-site-container:before, .sb-site-container:after {
   clear: both;
 }
@@ -1797,7 +1658,7 @@ html.sb-scroll-lock.sb-active:not(.sb-static) {
 /* ---------------
  * 003 - Slidebars
  */
-/* line 81, assets/sass/_slidebars.scss */
+/* line 81, assets/sass/libs/_slidebars.scss */
 .sb-slidebar {
   height: 100%;
   overflow-y: auto;
@@ -1812,154 +1673,59 @@ html.sb-scroll-lock.sb-active:not(.sb-static) {
   /* Default Slidebars background colour, overwrite this with your own css. */
 }
 
-/* line 91, assets/sass/_slidebars.scss */
+/* line 91, assets/sass/libs/_slidebars.scss */
 .sb-slidebar, .sb-slidebar * {
   -webkit-transform: translateZ(0px);
   /* Fixes issues with translated and z-indexed elements on iOS 7. */
 }
 
-/* line 95, assets/sass/_slidebars.scss */
+/* line 95, assets/sass/libs/_slidebars.scss */
 .sb-left {
   left: 0;
   /* Set Slidebar to the left. */
 }
 
-/* line 99, assets/sass/_slidebars.scss */
+/* line 99, assets/sass/libs/_slidebars.scss */
 .sb-right {
   right: 0;
   /* Set Slidebar to the right. */
 }
 
-/* line 104, assets/sass/_slidebars.scss */
+/* line 104, assets/sass/libs/_slidebars.scss */
 html.sb-static .sb-slidebar,
 .sb-slidebar.sb-static {
   position: absolute;
   /* Makes Slidebars scroll naturally with the site, and unfixes them for Android Browser < 3 and iOS < 5. */
 }
 
-/* line 108, assets/sass/_slidebars.scss */
+/* line 108, assets/sass/libs/_slidebars.scss */
 .sb-slidebar.sb-active {
   display: block;
   /* Makes Slidebars visibile when open. Changed from visibility to display to allow -webkit-overflow-scrolling. */
 }
 
-/* line 112, assets/sass/_slidebars.scss */
+/* line 112, assets/sass/libs/_slidebars.scss */
 .sb-style-overlay {
   z-index: 9999;
   /* Set z-index high to ensure it overlays any other site elements. */
 }
 
-/* line 116, assets/sass/_slidebars.scss */
+/* line 116, assets/sass/libs/_slidebars.scss */
 .sb-momentum-scrolling {
   -webkit-overflow-scrolling: touch;
   /* Adds native momentum scrolling for iOS & Android devices. */
 }
 
-/* Slidebar widths for browsers/devices that don't support media queries. */
-/* line 121, assets/sass/_slidebars.scss */
+/* Slidebar widths . */
+/* line 121, assets/sass/libs/_slidebars.scss */
 .sb-slidebar {
-  width: 30%;
+  width: 160px;
 }
 
-/* line 125, assets/sass/_slidebars.scss */
-.sb-width-thin {
-  width: 15%;
-}
-
-/* line 129, assets/sass/_slidebars.scss */
-.sb-width-wide {
-  width: 45%;
-}
-
-@media (max-width: 480px) {
-  /* Slidebar widths on extra small screens. */
-  /* line 134, assets/sass/_slidebars.scss */
-  .sb-slidebar {
-    width: 70%;
-  }
-
-  /* line 138, assets/sass/_slidebars.scss */
-  .sb-width-thin {
-    width: 55%;
-  }
-
-  /* line 142, assets/sass/_slidebars.scss */
-  .sb-width-wide {
-    width: 85%;
-  }
-}
-@media (min-width: 481px) {
-  /* Slidebar widths on small screens. */
-  /* line 148, assets/sass/_slidebars.scss */
-  .sb-slidebar {
-    width: 55%;
-  }
-
-  /* line 152, assets/sass/_slidebars.scss */
-  .sb-width-thin {
-    width: 40%;
-  }
-
-  /* line 156, assets/sass/_slidebars.scss */
-  .sb-width-wide {
-    width: 70%;
-  }
-}
-@media (min-width: 768px) {
-  /* Slidebar widths on medium screens. */
-  /* line 162, assets/sass/_slidebars.scss */
-  .sb-slidebar {
-    width: 40%;
-  }
-
-  /* line 166, assets/sass/_slidebars.scss */
-  .sb-width-thin {
-    width: 25%;
-  }
-
-  /* line 170, assets/sass/_slidebars.scss */
-  .sb-width-wide {
-    width: 55%;
-  }
-}
-@media (min-width: 992px) {
-  /* Slidebar widths on large screens. */
-  /* line 176, assets/sass/_slidebars.scss */
-  .sb-slidebar {
-    width: 30%;
-  }
-
-  /* line 180, assets/sass/_slidebars.scss */
-  .sb-width-thin {
-    width: 15%;
-  }
-
-  /* line 184, assets/sass/_slidebars.scss */
-  .sb-width-wide {
-    width: 45%;
-  }
-}
-@media (min-width: 1200px) {
-  /* Slidebar widths on extra large screens. */
-  /* line 190, assets/sass/_slidebars.scss */
-  .sb-slidebar {
-    width: 20%;
-  }
-
-  /* line 194, assets/sass/_slidebars.scss */
-  .sb-width-thin {
-    width: 5%;
-  }
-
-  /* line 198, assets/sass/_slidebars.scss */
-  .sb-width-wide {
-    width: 35%;
-  }
-}
 /* ---------------
  * 004 - Animation
  */
-/* line 207, assets/sass/_slidebars.scss */
+/* line 130, assets/sass/libs/_slidebars.scss */
 .sb-slide, #sb-site, .sb-site-container, .sb-slidebar {
   -webkit-transform: translate(0px);
   -moz-transform: translate(0px);
@@ -1978,7 +1744,7 @@ html.sb-static .sb-slidebar,
 /* --------------------
  * 005 - Helper Classes
  */
-/* line 226, assets/sass/_slidebars.scss */
+/* line 149, assets/sass/libs/_slidebars.scss */
 .sb-hide {
   display: none;
   /* Optionally applied to control classes when Slidebars is disabled over a certain width. */

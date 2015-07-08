@@ -8,24 +8,33 @@ body {
 //NAVIGATION MENU
 
 /* --- Open Menu Desktop --- */
-body.pml-open nav.menu{
-  @include animate(.3s);
-  position: fixed;
-   -webkit-transform: translate3d(0,0,0);
-   -webkit-transform:translateZ(1px);
-  -moz-transform:translateZ(1px);
-  -o-transform:translateZ(1px);
-  transform:translateZ(1px);
-  z-index: 20;
+#sidebar{
+ 
   background-color: $black;
-  #logo img{margin: 30px 10px 15px 20px; }
-    .tagline{color: $white; display:block; font-size:11px; line-height:16px; font-style: italic; font-weight: bold; margin-left: 20px; }
+  overflow-x: hidden;
+
+    .logo img{margin: 30px 10px 15px 20px; }
+    .tagline{
+      color: $white; 
+      display:block; 
+      font-size:11px; 
+      line-height:16px; 
+      font-style: italic; 
+      font-weight: bold; 
+      margin-left: 20px; 
+    }
     
     .main-menu{
       margin-top:50px;
-      a{z-index: 30; position: relative;}
-       a:hover{cursor: pointer; }
+      a{
+        z-index: 30; 
+        position: relative;
+        outline: 0;
+      }
+      a:hover{cursor: pointer; }
+      a:active, a:focus{background-color:none; border: 0; outline:0;}
     }
+
     .menu-item{
       margin-bottom: -40px; margin-left: 20px; margin-right:10px;  position:relative; z-index:1; height: 120px; overflow: hidden; @include animate(0.3s);
       .text{width: 121px; position:relative; top: -66px;  z-index:12; height:66px;   }
@@ -37,7 +46,11 @@ body.pml-open nav.menu{
         img{ @include opacity(0.9);}
       }
     }
-    .menu-active .text{background:rgba(210, 156, 14, 0.50);}
+
+    .menu-active .text{
+      //background:rgba(210, 156, 14, 0.50);
+    }
+
     .credit-active{background-color: $darkgray;}
     
     .secondary-menu{
@@ -46,9 +59,10 @@ body.pml-open nav.menu{
       margin-top: 35px;
       ul{
         margin: 20px 0px 20px 0px;
+        padding: 0;
         li{
           list-style-type: none; font-size: 14px; color: $white; line-height: 18px; color: $white; padding: 3px 0px 3px 20px; width: 140px;
-          a{color: $white} 
+          a{color: $white; outline: 0;} 
             a:hover{text-decoration: none;}
             &:hover{background-color: $gold;}
           }
@@ -62,51 +76,7 @@ body.pml-open nav.menu{
 
 }
 
-/*
-nav.push-menu-left {
-    top: 0;
-    height: 100%;
-    width: 80px;
-    overflow: hidden;
-    border-right:1px solid $white;
-    left: 0px;
-    .wrapper {overflow-y:auto; overflow-x:hidden;height: 100%; width:100%; padding-right: 15px;  }
-    @include breakpoint(small) {
-      left: -80px;
-    }
-     @include animate(.3s);
-}*/
-nav.push-menu-left {
-    top: 0;
-    height: 100%;
-    width: 160px;
-    overflow: hidden;
-    border-right:1px solid $white;
-    left: 0px;
-    .wrapper {overflow-y:auto; overflow-x:hidden;height: 100%; width:100%; padding-right: 15px;  }
-    @include breakpoint(small) {
-      left: -160px;
-    }
-    @include animate(.3s);
-}
  
-body.pml-open nav.push-menu-left {
-    left: 0;
-    width: 160px;
-    @include animate(.3s);
-}
-
-body.pml-open{
-  .panel-wrap{
-    margin-left: 160px;  
-    @include breakpoint(small) {
-      margin-left: 0px; @include animate(.3s);
-    }
-  }
-}
-
-
-
 //CREDITS MENU 
 .credits-menu-left{
     position: fixed;
@@ -148,17 +118,7 @@ body.pml-open{
 
     }
 }
-body.pml-open.credits-open .credits-menu-left{
-    left: 160px;
-}
-
-body.credits-open .credits-menu-left{
-    left: 80px;
-    @include breakpoint(small) {
-       
-    }
-}
-
+ 
 .close-credits-menu{
   position: absolute; 
   top: 10px; right: 10px;
@@ -166,37 +126,6 @@ body.credits-open .credits-menu-left{
   color: $white;
   &:hover{@include opacity(0.7)}
 }
-
- 
-.mask {
-    position: fixed;
-    top: 0;
-    left: 300px;
-    //z-index: 15;
-    width: 100%;
-    height: 100%;
-    //background: rgba(0, 0, 0, 0.8);
-}
- 
-
-
-#open{
-  display: none;  z-index: 20000; color:$black;
-  position: fixed; top: 20px; left:20px;
-  font-family: $cabin; font-weight:bold;
-  padding: 5px; background: rgba(255,255,255,0.7);
-
-  @include breakpoint(small) {
-    -webkit-transform: translate3d(0,0,0);
-      display:block;
-       -webkit-transform:translateZ(1px);
-      -moz-transform:translateZ(1px);
-      -o-transform:translateZ(1px);
-      transform:translateZ(1px);
-
-  } 
-}
-body.pml-open #open{left: 180px; @include animate(0.3)}
  
 
 .panel {
@@ -206,19 +135,14 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
   top: 0;
   overflow: auto; 
   overflow-x: hidden;
-   
-}
-
-.panel-wrap{
-  @include animate(0.3s);
-  margin-left: 80px; 
   
-  @include breakpoint(small) {
-    margin-left: 0px;  
+  .panel-pad{
+   padding: 30px 160px 30px 30px;
   }
-
  
 }
+
+ 
 
 
 
@@ -311,7 +235,7 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
   .fa{font-size: 45px; position:relative; top: 8px; left: 5px;}}
 
 /* ----------- Home ------------- */
-#home .panel-wrap{
+#home .panel-pad{
   background: url('assets/img/cover-large.jpg')top left no-repeat;
   @include background-size(cover);
   height: 100%;
@@ -340,6 +264,6 @@ html.ie8 nav{display: none;}
 html.ie8 .menu{display: none;}
 html.ie8 .panel{display: none;}
 
-/* --------- PANEL IMPORTS --------------*/
+
  
  

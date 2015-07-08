@@ -18,14 +18,14 @@ html,body {
 	background-color: rgba(0,0,0,0.8)
 }
 .swipe .nav.next {
-	right: 0;
+	right: 200px;
 	-webkit-border-radius: 3px 0 0 3px;
 	border-radius: 3px 0 0 3px;
 }
 .swipe .nav.prev {
 	-webkit-border-radius: 0 3px 3px 0;
 	border-radius: 0 3px 3px 0;
-  right: 0;
+  right: 200px;
   top: 30%;
 }
 
@@ -44,21 +44,17 @@ html,body {
   width:100%;
   min-height: 100%;
   position: relative;
-
   padding-right:0px;
    
 }
 
-.panel-pad{
-   padding: 30px 300px 30px 30px;
-}
 
 .blue{background-color: blue}
 .yellow{background-color: yellow}
 .red{background-color: red}
 .green{background-color:green}
 
-.sb-toggle-left{position: absolute; top: 10px; left: 400px; z-index: 999999; background-color: red;}
+.sb-toggle-left{position: absolute; top: 10px; left: 200px; z-index: 999999; background-color: red;}
 
 /*
 .sb-sidebar-full{
