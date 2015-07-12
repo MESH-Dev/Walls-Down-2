@@ -991,24 +991,25 @@ body {
 
 /* line 131, assets/sass/_layout.scss */
 .panel {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  overflow: auto;
   overflow-x: hidden;
+  overflow-y: scroll;
+  float: left;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  padding-right: 0px;
 }
-/* line 139, assets/sass/_layout.scss */
+/* line 142, assets/sass/_layout.scss */
 .panel .panel-pad {
-  padding: 30px 160px 30px 30px;
+  padding: 0px 160px 0px 0px;
 }
 
 /* ------SHARE BUTTONS ---------*/
-/* line 151, assets/sass/_layout.scss */
+/* line 156, assets/sass/_layout.scss */
 .social {
   width: 100%;
 }
-/* line 152, assets/sass/_layout.scss */
+/* line 157, assets/sass/_layout.scss */
 .social .social-title {
   font: 14px/20px "Cabin", sans-serif;
   color: #020202;
@@ -1016,12 +1017,12 @@ body {
   padding-left: 4px;
 }
 
-/* line 155, assets/sass/_layout.scss */
+/* line 160, assets/sass/_layout.scss */
 .addthis_toolbox {
   text-align: center;
 }
 
-/* line 156, assets/sass/_layout.scss */
+/* line 161, assets/sass/_layout.scss */
 .addthis_toolbox > a {
   height: 25px;
   width: 25px;
@@ -1029,12 +1030,12 @@ body {
   float: left;
 }
 
-/* line 157, assets/sass/_layout.scss */
+/* line 162, assets/sass/_layout.scss */
 .addthis_toolbox.addthis_32x32_style span {
   width: 26px !important;
 }
 
-/* line 158, assets/sass/_layout.scss */
+/* line 163, assets/sass/_layout.scss */
 .addthis_toolbox > a > span {
   height: 25px !important;
   width: 25px !important;
@@ -1042,195 +1043,195 @@ body {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
 }
 
-/* line 159, assets/sass/_layout.scss */
+/* line 164, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-facebook {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -25px 0 !important;
 }
 
-/* line 160, assets/sass/_layout.scss */
+/* line 165, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-twitter {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -50px 0 !important;
 }
 
-/* line 161, assets/sass/_layout.scss */
+/* line 166, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-linkedin {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -2px 0 !important;
 }
 
-/* line 162, assets/sass/_layout.scss */
+/* line 167, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-pinterest_share {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -74px 0 !important;
 }
 
-/* line 163, assets/sass/_layout.scss */
+/* line 168, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-google_plusone_share {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -124px 0 !important;
 }
 
-/* line 164, assets/sass/_layout.scss */
+/* line 169, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-email {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -98px 0 !important;
 }
 
-/* line 165, assets/sass/_layout.scss */
+/* line 170, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-digg {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -176px 0 !important;
   width: 28px !important;
 }
 
-/* line 166, assets/sass/_layout.scss */
+/* line 171, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-evernote {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -146px 0 !important;
 }
 
-/* line 167, assets/sass/_layout.scss */
+/* line 172, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-compact {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -204px 0 !important;
 }
 
-/* line 169, assets/sass/_layout.scss */
+/* line 174, assets/sass/_layout.scss */
 .grady-social {
   padding: 20px 0px 0px 200px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 169, assets/sass/_layout.scss */
+  /* line 174, assets/sass/_layout.scss */
   .grady-social {
     padding-left: 10%;
     padding-bottom: 30px;
   }
 }
 
-/* line 176, assets/sass/_layout.scss */
+/* line 181, assets/sass/_layout.scss */
 .grady-social-top {
   padding: 20px 0px 0px 200px;
 }
-/* line 178, assets/sass/_layout.scss */
+/* line 183, assets/sass/_layout.scss */
 .grady-social-top .white-social {
   color: white;
 }
 @media only screen and (max-width: 800px) {
-  /* line 176, assets/sass/_layout.scss */
+  /* line 181, assets/sass/_layout.scss */
   .grady-social-top {
     padding-left: 10%;
     padding-bottom: 0px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1060px) {
-  /* line 176, assets/sass/_layout.scss */
+  /* line 181, assets/sass/_layout.scss */
   .grady-social-top {
     padding-left: 50px;
   }
 }
 
-/* line 185, assets/sass/_layout.scss */
+/* line 190, assets/sass/_layout.scss */
 .timeline-social {
   padding: 20px 0px 200px 0px;
 }
 
-/* line 188, assets/sass/_layout.scss */
+/* line 193, assets/sass/_layout.scss */
 .timeline-social-top {
   padding: 20px 0px 0px 0px;
 }
 
-/* line 192, assets/sass/_layout.scss */
+/* line 197, assets/sass/_layout.scss */
 .nicu-social {
   padding: 40px 0px 20px 0px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 192, assets/sass/_layout.scss */
+  /* line 197, assets/sass/_layout.scss */
   .nicu-social {
     padding-left: 0;
     padding-bottom: 0px;
   }
 }
 
-/* line 197, assets/sass/_layout.scss */
+/* line 202, assets/sass/_layout.scss */
 .nicu-social-top {
   padding: 0px 0px 0px 120px;
 }
-/* line 199, assets/sass/_layout.scss */
+/* line 204, assets/sass/_layout.scss */
 .nicu-social-top .white-social {
   color: #c2c2c2;
 }
 @media only screen and (max-width: 800px) {
-  /* line 197, assets/sass/_layout.scss */
+  /* line 202, assets/sass/_layout.scss */
   .nicu-social-top {
     padding-left: 10%;
   }
 }
 
-/* line 203, assets/sass/_layout.scss */
+/* line 208, assets/sass/_layout.scss */
 .map-social {
   padding: 0px 0px 20px 0px;
 }
-/* line 205, assets/sass/_layout.scss */
+/* line 210, assets/sass/_layout.scss */
 .map-social .social-title {
   color: white;
 }
 
-/* line 208, assets/sass/_layout.scss */
+/* line 213, assets/sass/_layout.scss */
 .nav-social {
   padding: 0px 0px 20px 10px;
 }
 
-/* line 214, assets/sass/_layout.scss */
+/* line 219, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-facebook {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -25px 0 !important;
 }
-/* line 215, assets/sass/_layout.scss */
+/* line 220, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-twitter {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -50px 0 !important;
 }
-/* line 216, assets/sass/_layout.scss */
+/* line 221, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-linkedin {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -2px 0 !important;
 }
-/* line 217, assets/sass/_layout.scss */
+/* line 222, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-pinterest_share {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -74px 0 !important;
 }
-/* line 218, assets/sass/_layout.scss */
+/* line 223, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-google_plusone_share {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -124px 0 !important;
 }
-/* line 219, assets/sass/_layout.scss */
+/* line 224, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-email {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -98px 0 !important;
 }
-/* line 220, assets/sass/_layout.scss */
+/* line 225, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-digg {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -176px 0 !important;
   width: 28px !important;
 }
-/* line 221, assets/sass/_layout.scss */
+/* line 226, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-evernote {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -146px 0 !important;
 }
-/* line 222, assets/sass/_layout.scss */
+/* line 227, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-compact {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -204px 0 !important;
 }
 
 /* ------END OF STORY NAV ---------*/
-/* line 228, assets/sass/_layout.scss */
+/* line 233, assets/sass/_layout.scss */
 .left-nav {
   position: relative;
   height: 0px;
@@ -1238,13 +1239,13 @@ body {
   top: -80px;
   float: left;
 }
-/* line 229, assets/sass/_layout.scss */
+/* line 234, assets/sass/_layout.scss */
 .left-nav a {
   position: relative;
   left: 7%;
   font-style: italic;
 }
-/* line 230, assets/sass/_layout.scss */
+/* line 235, assets/sass/_layout.scss */
 .left-nav .fa {
   font-size: 45px;
   position: relative;
@@ -1252,7 +1253,7 @@ body {
   right: 5px;
 }
 
-/* line 233, assets/sass/_layout.scss */
+/* line 238, assets/sass/_layout.scss */
 .right-nav {
   position: relative;
   height: 0px;
@@ -1260,14 +1261,14 @@ body {
   top: -80px;
   float: right;
 }
-/* line 234, assets/sass/_layout.scss */
+/* line 239, assets/sass/_layout.scss */
 .right-nav a {
   float: right;
   position: relative;
   right: 10%;
   font-style: italic;
 }
-/* line 235, assets/sass/_layout.scss */
+/* line 240, assets/sass/_layout.scss */
 .right-nav .fa {
   font-size: 45px;
   position: relative;
@@ -1276,7 +1277,7 @@ body {
 }
 
 /* ----------- Home ------------- */
-/* line 238, assets/sass/_layout.scss */
+/* line 243, assets/sass/_layout.scss */
 #home .panel-pad {
   background: url("assets/img/cover-large.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -1287,19 +1288,19 @@ body {
   overflow: hidden;
   left: 0;
 }
-/* line 244, assets/sass/_layout.scss */
+/* line 249, assets/sass/_layout.scss */
 #home .panel-pad img {
   width: 60%;
   padding: 10% 20% 0 20%;
 }
 @media only screen and (max-width: 800px) {
-  /* line 244, assets/sass/_layout.scss */
+  /* line 249, assets/sass/_layout.scss */
   #home .panel-pad img {
     padding: 20% 5% 0% 5%;
     width: 90%;
   }
 }
-/* line 249, assets/sass/_layout.scss */
+/* line 254, assets/sass/_layout.scss */
 #home .panel-pad .instructions {
   position: absolute;
   width: 210px;
@@ -1307,18 +1308,18 @@ body {
   left: 200px;
   float: left;
 }
-/* line 251, assets/sass/_layout.scss */
+/* line 256, assets/sass/_layout.scss */
 #home .panel-pad .instructions img {
   width: 118px;
   padding: 0;
 }
 @media only screen and (max-width: 800px) {
-  /* line 249, assets/sass/_layout.scss */
+  /* line 254, assets/sass/_layout.scss */
   #home .panel-pad .instructions {
     display: none;
   }
 }
-/* line 255, assets/sass/_layout.scss */
+/* line 260, assets/sass/_layout.scss */
 #home .panel-pad .right-nav {
   position: absolute;
   width: 100%;
@@ -1327,38 +1328,661 @@ body {
   right: 2%;
   float: right;
 }
-/* line 257, assets/sass/_layout.scss */
+/* line 262, assets/sass/_layout.scss */
 #home .panel-pad .right-nav .fa {
   font-size: 45px;
   position: relative;
   top: 8px;
   left: 5px;
 }
-/* line 258, assets/sass/_layout.scss */
+/* line 263, assets/sass/_layout.scss */
 #home .panel-pad .right-nav a {
   color: #020202;
 }
-/* line 260, assets/sass/_layout.scss */
+/* line 265, assets/sass/_layout.scss */
 #home .panel-pad h1 {
   display: none;
 }
 
-/* line 263, assets/sass/_layout.scss */
+/* line 268, assets/sass/_layout.scss */
 html.ie8 nav {
   display: none;
 }
 
-/* line 264, assets/sass/_layout.scss */
+/* line 269, assets/sass/_layout.scss */
 html.ie8 .menu {
   display: none;
 }
 
-/* line 265, assets/sass/_layout.scss */
+/* line 270, assets/sass/_layout.scss */
 html.ie8 .panel {
   display: none;
 }
 
 /* --------- PANEL IMPORTS --------------*/
+/* line 1, assets/sass/panels/_house-call.scss */
+.house-call {
+  background: url(assets/img/house-call-bg.jpg);
+  background-size: cover;
+}
+
+/* line 14, assets/sass/_gridanimation.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, assets/sass/_gridanimation.scss */
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: '';
+}
+
+/* line 16, assets/sass/_gridanimation.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* helper class when showing content */
+/* Main content */
+/* line 27, assets/sass/_gridanimation.scss */
+.main {
+  position: relative;
+  z-index: 50;
+}
+
+/* Grid container */
+/* line 33, assets/sass/_gridanimation.scss */
+.grid {
+  position: relative;
+}
+
+/* Overlay */
+/* line 38, assets/sass/_gridanimation.scss */
+.grid::after {
+  content: '';
+  background: rgba(202, 202, 202, 0.4);
+  opacity: 100;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/* line 52, assets/sass/_gridanimation.scss */
+.view-single .grid::after {
+  opacity: 1;
+}
+
+/* Grid item */
+/* line 60, assets/sass/_gridanimation.scss */
+.grid__item {
+  padding: 45px 55px 30px;
+  position: relative;
+  color: inherit;
+  min-height: 300px;
+  cursor: pointer;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+/* Grid item "border" */
+/* line 82, assets/sass/_gridanimation.scss */
+.grid__item::before {
+  position: absolute;
+  content: '';
+  top: 0px;
+  right: 55px;
+  bottom: 0px;
+  left: 55px;
+  border-bottom: 1px solid rgba(74, 74, 74, 0.075);
+}
+
+/* line 92, assets/sass/_gridanimation.scss */
+.grid__item * {
+  z-index: 10;
+}
+
+/* grid item element and full content element styles */
+/* line 97, assets/sass/_gridanimation.scss */
+.title {
+  margin: 0;
+  font-size: 1.875em;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+/* line 104, assets/sass/_gridanimation.scss */
+.title--preview {
+  -webkit-flex: 1;
+  flex: 1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* line 116, assets/sass/_gridanimation.scss */
+.loader {
+  height: 1px;
+  width: 40%;
+  margin: 1em auto;
+  position: relative;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* line 124, assets/sass/_gridanimation.scss */
+.loader::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #a4e7ad;
+  left: 0;
+  top: -1px;
+  -webkit-transform: scale3d(0, 1, 1);
+  transform: scale3d(0, 1, 1);
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+/* line 138, assets/sass/_gridanimation.scss */
+.grid__item--loading .loader::before {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 147, assets/sass/_gridanimation.scss */
+.category {
+  margin: 0;
+  position: relative;
+  font-size: 0.95em;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  display: block;
+}
+
+/* line 159, assets/sass/_gridanimation.scss */
+.title--preview,
+.loader,
+.category {
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+/* closing (delays) */
+/* line 167, assets/sass/_gridanimation.scss */
+.title--preview {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+/* line 172, assets/sass/_gridanimation.scss */
+.loader {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* line 177, assets/sass/_gridanimation.scss */
+.grid__item .category {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+/* opening */
+/* line 183, assets/sass/_gridanimation.scss */
+.grid__item--animate .title--preview {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  opacity: 0;
+  -webkit-transform: translate3d(0, -20px, 0);
+  transform: translate3d(0, -20px, 0);
+}
+
+/* line 191, assets/sass/_gridanimation.scss */
+.grid__item--animate .loader {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 0;
+  -webkit-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -30px, 0);
+}
+
+/* line 199, assets/sass/_gridanimation.scss */
+.grid__item--animate .category {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+  opacity: 0;
+  -webkit-transform: translate3d(0, -40px, 0);
+  transform: translate3d(0, -40px, 0);
+}
+
+/* line 207, assets/sass/_gridanimation.scss */
+.meta {
+  font-size: 0.765em;
+  text-align: left;
+}
+
+/* line 212, assets/sass/_gridanimation.scss */
+.meta .fa {
+  margin-right: 4px;
+}
+
+/* line 216, assets/sass/_gridanimation.scss */
+.meta:before, .meta:after {
+  display: table;
+  content: '';
+}
+
+/* line 217, assets/sass/_gridanimation.scss */
+.meta:after {
+  clear: both;
+}
+
+/* line 219, assets/sass/_gridanimation.scss */
+.meta__avatar {
+  display: block;
+  border-radius: 50%;
+  margin: 2em auto;
+}
+
+/* line 225, assets/sass/_gridanimation.scss */
+.meta--preview .meta__avatar {
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+}
+
+/* line 231, assets/sass/_gridanimation.scss */
+.grid__item:hover .meta--preview .meta__avatar,
+.grid__item:focus .meta--preview .meta__avatar {
+  -webkit-filter: none;
+  filter: none;
+}
+
+/* line 237, assets/sass/_gridanimation.scss */
+.meta__date,
+.meta__reading-time {
+  display: block;
+  float: left;
+  color: #aaa;
+}
+
+/* line 243, assets/sass/_gridanimation.scss */
+.meta__reading-time {
+  text-align: right;
+  float: right;
+}
+
+/* line 248, assets/sass/_gridanimation.scss */
+.meta__misc {
+  display: block;
+  clear: both;
+  text-align: left;
+  padding: 5px 0;
+}
+
+/* line 255, assets/sass/_gridanimation.scss */
+.meta__misc--seperator {
+  padding: 20px 0 0;
+  margin: 65px 0 0;
+  border-top: 1px solid whitesmoke;
+}
+
+/* line 261, assets/sass/_gridanimation.scss */
+.article-nav {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+/* line 268, assets/sass/_gridanimation.scss */
+.article-nav button {
+  border: none;
+  color: #81c483;
+  background: none;
+}
+
+/* line 274, assets/sass/_gridanimation.scss */
+.article-nav button:hover {
+  color: #333;
+}
+
+/* line 281, assets/sass/_gridanimation.scss */
+.meta--preview .meta__avatar,
+.meta--preview .meta__date,
+.meta--preview .meta__reading-time {
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/* line 289, assets/sass/_gridanimation.scss */
+.grid__item--loading .meta__avatar {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* line 294, assets/sass/_gridanimation.scss */
+.grid__item--loading .meta__date {
+  -webkit-transition-delay: 0.17s;
+  transition-delay: 0.17s;
+}
+
+/* line 299, assets/sass/_gridanimation.scss */
+.grid__item--loading .meta__reading-time {
+  -webkit-transition-delay: 0.24s;
+  transition-delay: 0.24s;
+}
+
+/* line 307, assets/sass/_gridanimation.scss */
+.grid__item--loading .meta__avatar,
+.grid__item--loading .meta__date,
+.grid__item--loading .meta__reading-time {
+  -webkit-transform: scale3d(0.5, 0.5, 1);
+  transform: scale3d(0.5, 0.5, 1);
+  opacity: 0;
+}
+
+/* Placeholder element (dummy that gets animated when we click on an item) */
+/* line 316, assets/sass/_gridanimation.scss */
+.placeholder {
+  pointer-events: none;
+  position: absolute;
+  width: calc(100% + 5px);
+  height: calc(100vh + 5px);
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: white;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+/* line 329, assets/sass/_gridanimation.scss */
+.placeholder.placeholder--trans-in {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* line 336, assets/sass/_gridanimation.scss */
+.placeholder.placeholder--trans-out {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+/* main content */
+/* line 342, assets/sass/_gridanimation.scss */
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  height: 0;
+  /* Avoid second scroll bar in Chrome! */
+  visibility: hidden;
+  z-index: 400;
+  overflow: hidden;
+  background: yellow;
+}
+
+/* line 356, assets/sass/_gridanimation.scss */
+.content.content--show {
+  height: 100vh;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+/* scroll helper wrap */
+/* line 363, assets/sass/_gridanimation.scss */
+.scroll-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* single content item */
+/* line 375, assets/sass/_gridanimation.scss */
+.content__item {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  padding: 60px 60px 80px 60px;
+  pointer-events: none;
+  font-size: 0.85em;
+}
+/* line 385, assets/sass/_gridanimation.scss */
+.content__item p {
+  max-width: 1200px;
+  margin: 1em auto;
+  text-align: justify;
+}
+/* line 390, assets/sass/_gridanimation.scss */
+.content__item p:first-of-type {
+  font-size: 1.35em;
+}
+
+/* line 395, assets/sass/_gridanimation.scss */
+.content__item.content__item--show {
+  height: auto;
+  min-height: 100vh;
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+/* content elements */
+/* line 405, assets/sass/_gridanimation.scss */
+.category--full {
+  font-size: 1.25em;
+  margin-bottom: 20px;
+  color: #81c483;
+}
+
+/* line 411, assets/sass/_gridanimation.scss */
+.title--full {
+  font-size: 3.25em;
+}
+
+/* line 415, assets/sass/_gridanimation.scss */
+.meta--full {
+  font-size: 1em;
+  margin: 0 auto 2em;
+  max-width: 1200px;
+}
+/* line 419, assets/sass/_gridanimation.scss */
+.meta--full .meta__author {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* line 425, assets/sass/_gridanimation.scss */
+.meta--full .meta__author::before {
+  content: 'by ';
+  font-weight: normal;
+}
+/* line 429, assets/sass/_gridanimation.scss */
+.meta--full .meta__category {
+  font-style: italic;
+  float: left;
+  margin: 0 5px;
+  font-family: "Playfair Display", serif;
+}
+/* line 435, assets/sass/_gridanimation.scss */
+.meta--full .meta__category::before {
+  content: "in ";
+}
+/* line 438, assets/sass/_gridanimation.scss */
+.meta--full .meta__avatar {
+  margin: 1em auto;
+}
+
+/* line 448, assets/sass/_gridanimation.scss */
+.category--full,
+.title--full,
+.meta--full .meta__avatar,
+.meta--full .meta__author,
+.meta--full .meta__date,
+.meta--full .meta__reading-time {
+  opacity: 0;
+}
+
+/* line 452, assets/sass/_gridanimation.scss */
+.content__item p {
+  opacity: 0;
+}
+
+/* line 457, assets/sass/_gridanimation.scss */
+.category--full,
+.title--full {
+  -webkit-transform: translate3d(0, 40px, 0);
+  transform: translate3d(0, 40px, 0);
+}
+
+/* line 466, assets/sass/_gridanimation.scss */
+.meta--full .meta__avatar,
+.meta--full .meta__author,
+.meta--full .meta__date,
+.meta--full .meta__reading-time {
+  -webkit-transform: scale3d(0.5, 0.5, 1);
+  transform: scale3d(0.5, 0.5, 1);
+}
+
+/* line 478, assets/sass/_gridanimation.scss */
+.content__item--show .category--full,
+.content__item--show .title--full,
+.content__item--show .meta--full .meta__avatar,
+.content__item--show .meta--full .meta__author,
+.content__item--show .meta--full .meta__date,
+.content__item--show .meta--full .meta__reading-time {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/* line 490, assets/sass/_gridanimation.scss */
+.content__item--show .category--full,
+.content__item--show .title--full {
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+/* line 495, assets/sass/_gridanimation.scss */
+.content__item--show .title--full {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+/* line 500, assets/sass/_gridanimation.scss */
+.content__item--show .meta--full .meta__avatar {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+/* line 505, assets/sass/_gridanimation.scss */
+.content__item--show .meta--full .meta__date {
+  -webkit-transition-delay: 0.27s;
+  transition-delay: 0.27s;
+}
+
+/* line 510, assets/sass/_gridanimation.scss */
+.content__item--show .meta--full .meta__reading-time {
+  -webkit-transition-delay: 0.34s;
+  transition-delay: 0.34s;
+}
+
+/* line 515, assets/sass/_gridanimation.scss */
+.content__item--show.content__item p {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s 0.25s;
+  transition: opacity 0.5s 0.25s;
+}
+
+/* close button (for content and sidebar) */
+/* line 522, assets/sass/_gridanimation.scss */
+.close-button {
+  position: absolute;
+  border: none;
+  background: none;
+  margin: 0;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  color: #ddd;
+  cursor: pointer;
+  pointer-events: none;
+  padding: 20px 30px;
+  opacity: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+/* line 546, assets/sass/_gridanimation.scss */
+.close-button span {
+  display: none;
+}
+
+/* line 550, assets/sass/_gridanimation.scss */
+.close-button:hover {
+  color: #7b7b7b;
+}
+
+/* show class for content close button */
+/* line 555, assets/sass/_gridanimation.scss */
+.close-button--show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* --------- LIB IMPORTS --------------*/
 /**
  * Featherlight - ultra slim jQuery lightbox
@@ -1510,41 +2134,32 @@ html, body {
 
 /* line 37, assets/sass/libs/_swipe.scss */
 .swipe-wrap {
-  overflow: hidden;
+  overflow: auto !important;
   position: relative;
   margin-left: 0px;
 }
 
-/* line 42, assets/sass/libs/_swipe.scss */
-.swipe-wrap > div.panel {
-  float: left;
-  width: 100%;
-  min-height: 100%;
-  position: relative;
-  padding-right: 0px;
-}
-
-/* line 52, assets/sass/libs/_swipe.scss */
+/* line 48, assets/sass/libs/_swipe.scss */
 .blue {
   background-color: blue;
 }
 
-/* line 53, assets/sass/libs/_swipe.scss */
+/* line 49, assets/sass/libs/_swipe.scss */
 .yellow {
   background-color: yellow;
 }
 
-/* line 54, assets/sass/libs/_swipe.scss */
+/* line 50, assets/sass/libs/_swipe.scss */
 .red {
   background-color: red;
 }
 
-/* line 55, assets/sass/libs/_swipe.scss */
+/* line 51, assets/sass/libs/_swipe.scss */
 .green {
   background-color: green;
 }
 
-/* line 57, assets/sass/libs/_swipe.scss */
+/* line 53, assets/sass/libs/_swipe.scss */
 .sb-toggle-left {
   position: absolute;
   top: 10px;

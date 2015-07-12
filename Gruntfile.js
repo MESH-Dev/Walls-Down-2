@@ -39,7 +39,7 @@ module.exports = function (grunt) {
             tasks: ['concat']
           },
           css: {
-            files: 'assets/sass/*.scss',
+            files: ['assets/sass/**/*.scss'],
             tasks: ['compass']
           }
           

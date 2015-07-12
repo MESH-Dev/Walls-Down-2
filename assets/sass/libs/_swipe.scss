@@ -35,19 +35,15 @@ html,body {
   position: relative;
 }
 .swipe-wrap {
-  overflow: hidden;
+  overflow: auto !important;
   position: relative;
   margin-left: 0px;
-}
-.swipe-wrap > div.panel {
-  float:left;
-  width:100%;
-  min-height: 100%;
-  position: relative;
-  padding-right:0px;
-   
-}
 
+}
+ 
+ .swipe-wrap > div {
+ 
+}
 
 .blue{background-color: blue}
 .yellow{background-color: yellow}
