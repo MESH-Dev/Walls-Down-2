@@ -34,6 +34,7 @@ $(document).ready(function() {
       $.slidebars.open('left');
     }
  
+  //VERTICAL SCROLL FIX!
   var h = $( window ).height();
   h = h+'px';
   $('.panel').css('height',h);
