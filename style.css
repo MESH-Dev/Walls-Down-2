@@ -8,7 +8,7 @@
  */
 @import url("http://fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic");
 @import url("assets/font-awesome-4.2.0/css/font-awesome.min.css");
-/* line 22, assets/sass/libs/_normalize.scss */
+/* line 11, assets/sass/libs/_normalize.scss */
 article,
 aside,
 details,
@@ -27,7 +27,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 32, assets/sass/libs/_normalize.scss */
+/* line 30, assets/sass/libs/_normalize.scss */
 audio,
 canvas,
 video {
@@ -92,7 +92,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 95, assets/sass/libs/_normalize.scss */
+/* line 94, assets/sass/libs/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -122,7 +122,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 126, assets/sass/libs/_normalize.scss */
+/* line 125, assets/sass/libs/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -158,7 +158,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 164, assets/sass/libs/_normalize.scss */
+/* line 161, assets/sass/libs/_normalize.scss */
 code,
 kbd,
 pre,
@@ -194,7 +194,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 198, assets/sass/libs/_normalize.scss */
+/* line 197, assets/sass/libs/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -273,7 +273,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 278, assets/sass/libs/_normalize.scss */
+/* line 275, assets/sass/libs/_normalize.scss */
 button,
 input,
 select,
@@ -290,7 +290,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 290, assets/sass/libs/_normalize.scss */
+/* line 289, assets/sass/libs/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -302,7 +302,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 302, assets/sass/libs/_normalize.scss */
+/* line 301, assets/sass/libs/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -315,7 +315,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 317, assets/sass/libs/_normalize.scss */
+/* line 314, assets/sass/libs/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -329,7 +329,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 327, assets/sass/libs/_normalize.scss */
+/* line 326, assets/sass/libs/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -339,7 +339,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-/* line 337, assets/sass/libs/_normalize.scss */
+/* line 336, assets/sass/libs/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -367,7 +367,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 361, assets/sass/libs/_normalize.scss */
+/* line 360, assets/sass/libs/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -376,7 +376,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 370, assets/sass/libs/_normalize.scss */
+/* line 369, assets/sass/libs/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -475,7 +475,7 @@ em {
 @media only screen and (max-width: 800px) {
   /* line 95, assets/sass/_base.scss */
   .hideme {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
   }
 }
@@ -744,7 +744,7 @@ body {
 }
 /* line 17, assets/sass/_layout.scss */
 #sidebar .tagline {
-  color: white;
+  color: #FFF;
   display: block;
   font-size: 11px;
   line-height: 16px;
@@ -801,7 +801,7 @@ body {
   display: inline-block;
   width: 20px;
   font-size: 48px;
-  color: white;
+  color: #FFF;
   padding-left: 10px;
 }
 /* line 42, assets/sass/_layout.scss */
@@ -809,9 +809,9 @@ body {
   display: inline-block;
   width: 70px;
   font-size: 14px;
-  color: white;
+  color: #FFF;
   line-height: 18px;
-  color: white;
+  color: #FFF;
   padding-left: 10px;
   padding-top: 5px;
 }
@@ -858,15 +858,15 @@ body {
 #sidebar .secondary-menu ul li {
   list-style-type: none;
   font-size: 14px;
-  color: white;
+  color: #FFF;
   line-height: 18px;
-  color: white;
+  color: #FFF;
   padding: 3px 0px 3px 20px;
   width: 140px;
 }
 /* line 65, assets/sass/_layout.scss */
 #sidebar .secondary-menu ul li a {
-  color: white;
+  color: #FFF;
   outline: 0;
 }
 /* line 66, assets/sass/_layout.scss */
@@ -916,7 +916,7 @@ body {
   background-color: #3a3a3a;
   left: -150px;
   z-index: 11;
-  color: white;
+  color: #FFF;
 }
 /* line 99, assets/sass/_layout.scss */
 .credits-menu-left .credits-wrap {
@@ -939,7 +939,7 @@ body {
 .credits-menu-left p {
   font-size: 11px;
   line-height: 17px;
-  color: white;
+  color: #FFF;
   padding-right: 10px;
 }
 /* line 112, assets/sass/_layout.scss */
@@ -959,13 +959,13 @@ body {
 /* line 114, assets/sass/_layout.scss */
 .credits-menu-left h4 {
   font: 11px/17px "Cabin", sans-serif;
-  color: white;
+  color: #FFF;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 /* line 115, assets/sass/_layout.scss */
 .credits-menu-left a {
-  color: white;
+  color: #FFF;
   text-decoration: underline;
 }
 @media only screen and (max-width: 800px) {
@@ -981,7 +981,7 @@ body {
   top: 10px;
   right: 10px;
   z-index: 20;
-  color: white;
+  color: #FFF;
 }
 /* line 127, assets/sass/_layout.scss */
 .close-credits-menu:hover {
@@ -999,17 +999,17 @@ body {
   position: relative;
   padding-right: 0px;
 }
-/* line 142, assets/sass/_layout.scss */
+/* line 143, assets/sass/_layout.scss */
 .panel .panel-pad {
   padding: 0px 160px 0px 0px;
 }
 
 /* ------SHARE BUTTONS ---------*/
-/* line 156, assets/sass/_layout.scss */
+/* line 157, assets/sass/_layout.scss */
 .social {
   width: 100%;
 }
-/* line 157, assets/sass/_layout.scss */
+/* line 158, assets/sass/_layout.scss */
 .social .social-title {
   font: 14px/20px "Cabin", sans-serif;
   color: #020202;
@@ -1017,12 +1017,12 @@ body {
   padding-left: 4px;
 }
 
-/* line 160, assets/sass/_layout.scss */
+/* line 161, assets/sass/_layout.scss */
 .addthis_toolbox {
   text-align: center;
 }
 
-/* line 161, assets/sass/_layout.scss */
+/* line 162, assets/sass/_layout.scss */
 .addthis_toolbox > a {
   height: 25px;
   width: 25px;
@@ -1030,12 +1030,12 @@ body {
   float: left;
 }
 
-/* line 162, assets/sass/_layout.scss */
+/* line 163, assets/sass/_layout.scss */
 .addthis_toolbox.addthis_32x32_style span {
   width: 26px !important;
 }
 
-/* line 163, assets/sass/_layout.scss */
+/* line 164, assets/sass/_layout.scss */
 .addthis_toolbox > a > span {
   height: 25px !important;
   width: 25px !important;
@@ -1043,195 +1043,195 @@ body {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
 }
 
-/* line 164, assets/sass/_layout.scss */
+/* line 165, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-facebook {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -25px 0 !important;
 }
 
-/* line 165, assets/sass/_layout.scss */
+/* line 166, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-twitter {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -50px 0 !important;
 }
 
-/* line 166, assets/sass/_layout.scss */
+/* line 167, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-linkedin {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -2px 0 !important;
 }
 
-/* line 167, assets/sass/_layout.scss */
+/* line 168, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-pinterest_share {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -74px 0 !important;
 }
 
-/* line 168, assets/sass/_layout.scss */
+/* line 169, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-google_plusone_share {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -124px 0 !important;
 }
 
-/* line 169, assets/sass/_layout.scss */
+/* line 170, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-email {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -98px 0 !important;
 }
 
-/* line 170, assets/sass/_layout.scss */
+/* line 171, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-digg {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -176px 0 !important;
   width: 28px !important;
 }
 
-/* line 171, assets/sass/_layout.scss */
+/* line 172, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-evernote {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -146px 0 !important;
 }
 
-/* line 172, assets/sass/_layout.scss */
+/* line 173, assets/sass/_layout.scss */
 .addthis_toolbox span.aticon-compact {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -204px 0 !important;
 }
 
-/* line 174, assets/sass/_layout.scss */
+/* line 175, assets/sass/_layout.scss */
 .grady-social {
   padding: 20px 0px 0px 200px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 174, assets/sass/_layout.scss */
+  /* line 175, assets/sass/_layout.scss */
   .grady-social {
     padding-left: 10%;
     padding-bottom: 30px;
   }
 }
 
-/* line 181, assets/sass/_layout.scss */
+/* line 182, assets/sass/_layout.scss */
 .grady-social-top {
   padding: 20px 0px 0px 200px;
 }
-/* line 183, assets/sass/_layout.scss */
+/* line 184, assets/sass/_layout.scss */
 .grady-social-top .white-social {
-  color: white;
+  color: #FFF;
 }
 @media only screen and (max-width: 800px) {
-  /* line 181, assets/sass/_layout.scss */
+  /* line 182, assets/sass/_layout.scss */
   .grady-social-top {
     padding-left: 10%;
     padding-bottom: 0px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1060px) {
-  /* line 181, assets/sass/_layout.scss */
+  /* line 182, assets/sass/_layout.scss */
   .grady-social-top {
     padding-left: 50px;
   }
 }
 
-/* line 190, assets/sass/_layout.scss */
+/* line 191, assets/sass/_layout.scss */
 .timeline-social {
   padding: 20px 0px 200px 0px;
 }
 
-/* line 193, assets/sass/_layout.scss */
+/* line 194, assets/sass/_layout.scss */
 .timeline-social-top {
   padding: 20px 0px 0px 0px;
 }
 
-/* line 197, assets/sass/_layout.scss */
+/* line 198, assets/sass/_layout.scss */
 .nicu-social {
   padding: 40px 0px 20px 0px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 197, assets/sass/_layout.scss */
+  /* line 198, assets/sass/_layout.scss */
   .nicu-social {
     padding-left: 0;
     padding-bottom: 0px;
   }
 }
 
-/* line 202, assets/sass/_layout.scss */
+/* line 203, assets/sass/_layout.scss */
 .nicu-social-top {
   padding: 0px 0px 0px 120px;
 }
-/* line 204, assets/sass/_layout.scss */
+/* line 205, assets/sass/_layout.scss */
 .nicu-social-top .white-social {
   color: #c2c2c2;
 }
 @media only screen and (max-width: 800px) {
-  /* line 202, assets/sass/_layout.scss */
+  /* line 203, assets/sass/_layout.scss */
   .nicu-social-top {
     padding-left: 10%;
   }
 }
 
-/* line 208, assets/sass/_layout.scss */
+/* line 209, assets/sass/_layout.scss */
 .map-social {
   padding: 0px 0px 20px 0px;
 }
-/* line 210, assets/sass/_layout.scss */
+/* line 211, assets/sass/_layout.scss */
 .map-social .social-title {
   color: white;
 }
 
-/* line 213, assets/sass/_layout.scss */
+/* line 214, assets/sass/_layout.scss */
 .nav-social {
   padding: 0px 0px 20px 10px;
 }
 
-/* line 219, assets/sass/_layout.scss */
+/* line 220, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-facebook {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -25px 0 !important;
 }
-/* line 220, assets/sass/_layout.scss */
+/* line 221, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-twitter {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -50px 0 !important;
 }
-/* line 221, assets/sass/_layout.scss */
+/* line 222, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-linkedin {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -2px 0 !important;
 }
-/* line 222, assets/sass/_layout.scss */
+/* line 223, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-pinterest_share {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -74px 0 !important;
 }
-/* line 223, assets/sass/_layout.scss */
+/* line 224, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-google_plusone_share {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -124px 0 !important;
 }
-/* line 224, assets/sass/_layout.scss */
+/* line 225, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-email {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -98px 0 !important;
 }
-/* line 225, assets/sass/_layout.scss */
+/* line 226, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-digg {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -176px 0 !important;
   width: 28px !important;
 }
-/* line 226, assets/sass/_layout.scss */
+/* line 227, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-evernote {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -146px 0 !important;
 }
-/* line 227, assets/sass/_layout.scss */
+/* line 228, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.aticon-compact {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -204px 0 !important;
 }
 
 /* ------END OF STORY NAV ---------*/
-/* line 233, assets/sass/_layout.scss */
+/* line 234, assets/sass/_layout.scss */
 .left-nav {
   position: relative;
   height: 0px;
@@ -1239,13 +1239,13 @@ body {
   top: -80px;
   float: left;
 }
-/* line 234, assets/sass/_layout.scss */
+/* line 235, assets/sass/_layout.scss */
 .left-nav a {
   position: relative;
   left: 7%;
   font-style: italic;
 }
-/* line 235, assets/sass/_layout.scss */
+/* line 236, assets/sass/_layout.scss */
 .left-nav .fa {
   font-size: 45px;
   position: relative;
@@ -1253,7 +1253,7 @@ body {
   right: 5px;
 }
 
-/* line 238, assets/sass/_layout.scss */
+/* line 239, assets/sass/_layout.scss */
 .right-nav {
   position: relative;
   height: 0px;
@@ -1261,14 +1261,14 @@ body {
   top: -80px;
   float: right;
 }
-/* line 239, assets/sass/_layout.scss */
+/* line 240, assets/sass/_layout.scss */
 .right-nav a {
   float: right;
   position: relative;
   right: 10%;
   font-style: italic;
 }
-/* line 240, assets/sass/_layout.scss */
+/* line 241, assets/sass/_layout.scss */
 .right-nav .fa {
   font-size: 45px;
   position: relative;
@@ -1277,30 +1277,30 @@ body {
 }
 
 /* ----------- Home ------------- */
-/* line 243, assets/sass/_layout.scss */
+/* line 244, assets/sass/_layout.scss */
 #home .panel-pad {
   background: url("assets/img/cover-large.jpg") top left no-repeat;
-  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  -webkit-background-size: cover;
   background-size: cover;
   height: 100%;
   overflow: hidden;
   left: 0;
 }
-/* line 249, assets/sass/_layout.scss */
+/* line 250, assets/sass/_layout.scss */
 #home .panel-pad img {
   width: 60%;
   padding: 10% 20% 0 20%;
 }
 @media only screen and (max-width: 800px) {
-  /* line 249, assets/sass/_layout.scss */
+  /* line 250, assets/sass/_layout.scss */
   #home .panel-pad img {
     padding: 20% 5% 0% 5%;
     width: 90%;
   }
 }
-/* line 254, assets/sass/_layout.scss */
+/* line 255, assets/sass/_layout.scss */
 #home .panel-pad .instructions {
   position: absolute;
   width: 210px;
@@ -1308,18 +1308,18 @@ body {
   left: 200px;
   float: left;
 }
-/* line 256, assets/sass/_layout.scss */
+/* line 257, assets/sass/_layout.scss */
 #home .panel-pad .instructions img {
   width: 118px;
   padding: 0;
 }
 @media only screen and (max-width: 800px) {
-  /* line 254, assets/sass/_layout.scss */
+  /* line 255, assets/sass/_layout.scss */
   #home .panel-pad .instructions {
     display: none;
   }
 }
-/* line 260, assets/sass/_layout.scss */
+/* line 261, assets/sass/_layout.scss */
 #home .panel-pad .right-nav {
   position: absolute;
   width: 100%;
@@ -1328,33 +1328,33 @@ body {
   right: 2%;
   float: right;
 }
-/* line 262, assets/sass/_layout.scss */
+/* line 263, assets/sass/_layout.scss */
 #home .panel-pad .right-nav .fa {
   font-size: 45px;
   position: relative;
   top: 8px;
   left: 5px;
 }
-/* line 263, assets/sass/_layout.scss */
+/* line 264, assets/sass/_layout.scss */
 #home .panel-pad .right-nav a {
   color: #020202;
 }
-/* line 265, assets/sass/_layout.scss */
+/* line 266, assets/sass/_layout.scss */
 #home .panel-pad h1 {
   display: none;
 }
 
-/* line 268, assets/sass/_layout.scss */
+/* line 269, assets/sass/_layout.scss */
 html.ie8 nav {
   display: none;
 }
 
-/* line 269, assets/sass/_layout.scss */
+/* line 270, assets/sass/_layout.scss */
 html.ie8 .menu {
   display: none;
 }
 
-/* line 270, assets/sass/_layout.scss */
+/* line 271, assets/sass/_layout.scss */
 html.ie8 .panel {
   display: none;
 }
@@ -1524,7 +1524,7 @@ html.ie8 .panel {
   display: block;
 }
 
-/* line 159, assets/sass/_gridanimation.scss */
+/* line 157, assets/sass/_gridanimation.scss */
 .title--preview,
 .loader,
 .category {
@@ -1616,14 +1616,14 @@ html.ie8 .panel {
   filter: grayscale(50%);
 }
 
-/* line 231, assets/sass/_gridanimation.scss */
+/* line 230, assets/sass/_gridanimation.scss */
 .grid__item:hover .meta--preview .meta__avatar,
 .grid__item:focus .meta--preview .meta__avatar {
   -webkit-filter: none;
   filter: none;
 }
 
-/* line 237, assets/sass/_gridanimation.scss */
+/* line 236, assets/sass/_gridanimation.scss */
 .meta__date,
 .meta__reading-time {
   display: block;
@@ -1649,7 +1649,7 @@ html.ie8 .panel {
 .meta__misc--seperator {
   padding: 20px 0 0;
   margin: 65px 0 0;
-  border-top: 1px solid whitesmoke;
+  border-top: 1px solid #f5f5f5;
 }
 
 /* line 261, assets/sass/_gridanimation.scss */
@@ -1672,7 +1672,7 @@ html.ie8 .panel {
   color: #333;
 }
 
-/* line 281, assets/sass/_gridanimation.scss */
+/* line 279, assets/sass/_gridanimation.scss */
 .meta--preview .meta__avatar,
 .meta--preview .meta__date,
 .meta--preview .meta__reading-time {
@@ -1700,7 +1700,7 @@ html.ie8 .panel {
   transition-delay: 0.24s;
 }
 
-/* line 307, assets/sass/_gridanimation.scss */
+/* line 305, assets/sass/_gridanimation.scss */
 .grid__item--loading .meta__avatar,
 .grid__item--loading .meta__date,
 .grid__item--loading .meta__reading-time {
@@ -1719,7 +1719,7 @@ html.ie8 .panel {
   z-index: 100;
   top: 0;
   left: 0;
-  background: white;
+  background: #fff;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
 }
@@ -1855,7 +1855,7 @@ html.ie8 .panel {
   margin: 1em auto;
 }
 
-/* line 448, assets/sass/_gridanimation.scss */
+/* line 443, assets/sass/_gridanimation.scss */
 .category--full,
 .title--full,
 .meta--full .meta__avatar,
@@ -1870,14 +1870,14 @@ html.ie8 .panel {
   opacity: 0;
 }
 
-/* line 457, assets/sass/_gridanimation.scss */
+/* line 456, assets/sass/_gridanimation.scss */
 .category--full,
 .title--full {
   -webkit-transform: translate3d(0, 40px, 0);
   transform: translate3d(0, 40px, 0);
 }
 
-/* line 466, assets/sass/_gridanimation.scss */
+/* line 463, assets/sass/_gridanimation.scss */
 .meta--full .meta__avatar,
 .meta--full .meta__author,
 .meta--full .meta__date,
@@ -1886,7 +1886,7 @@ html.ie8 .panel {
   transform: scale3d(0.5, 0.5, 1);
 }
 
-/* line 478, assets/sass/_gridanimation.scss */
+/* line 473, assets/sass/_gridanimation.scss */
 .content__item--show .category--full,
 .content__item--show .title--full,
 .content__item--show .meta--full .meta__avatar,
@@ -1902,7 +1902,7 @@ html.ie8 .panel {
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
-/* line 490, assets/sass/_gridanimation.scss */
+/* line 489, assets/sass/_gridanimation.scss */
 .content__item--show .category--full,
 .content__item--show .title--full {
   -webkit-transition-timing-function: ease-out;
@@ -2005,7 +2005,7 @@ html.ie8 .panel {
     white-space: nowrap;
     cursor: pointer;
     background: #333;
-    background: rgba(0, 0, 0, 0);
+    background: transparent;
   }
 
   /* line 8, assets/sass/libs/_featherlight.scss */
@@ -2093,9 +2093,10 @@ html, body {
   margin: 0px;
   padding: 0px;
   width: 100%;
+  overflow-y: scroll;
 }
 
-/* line 7, assets/sass/libs/_swipe.scss */
+/* line 9, assets/sass/libs/_swipe.scss */
 .swipe .nav {
   position: absolute;
   width: 80px;
@@ -2110,14 +2111,14 @@ html, body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 20, assets/sass/libs/_swipe.scss */
+/* line 22, assets/sass/libs/_swipe.scss */
 .swipe .nav.next {
   right: 200px;
   -webkit-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
 
-/* line 25, assets/sass/libs/_swipe.scss */
+/* line 27, assets/sass/libs/_swipe.scss */
 .swipe .nav.prev {
   -webkit-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
@@ -2125,41 +2126,42 @@ html, body {
   top: 30%;
 }
 
-/* line 32, assets/sass/libs/_swipe.scss */
+/* line 34, assets/sass/libs/_swipe.scss */
 .swipe {
   overflow: hidden;
   visibility: hidden;
   position: relative;
+  overflow: scroll;
 }
 
-/* line 37, assets/sass/libs/_swipe.scss */
+/* line 40, assets/sass/libs/_swipe.scss */
 .swipe-wrap {
-  overflow: auto !important;
+  overflow: hidden;
   position: relative;
   margin-left: 0px;
 }
 
-/* line 48, assets/sass/libs/_swipe.scss */
+/* line 52, assets/sass/libs/_swipe.scss */
 .blue {
   background-color: blue;
 }
 
-/* line 49, assets/sass/libs/_swipe.scss */
+/* line 53, assets/sass/libs/_swipe.scss */
 .yellow {
   background-color: yellow;
 }
 
-/* line 50, assets/sass/libs/_swipe.scss */
+/* line 54, assets/sass/libs/_swipe.scss */
 .red {
   background-color: red;
 }
 
-/* line 51, assets/sass/libs/_swipe.scss */
+/* line 55, assets/sass/libs/_swipe.scss */
 .green {
   background-color: green;
 }
 
-/* line 53, assets/sass/libs/_swipe.scss */
+/* line 57, assets/sass/libs/_swipe.scss */
 .sb-toggle-left {
   position: absolute;
   top: 10px;
@@ -2306,7 +2308,7 @@ html.sb-scroll-lock.sb-active:not(.sb-static) {
   /* Set Slidebar to the right. */
 }
 
-/* line 104, assets/sass/libs/_slidebars.scss */
+/* line 103, assets/sass/libs/_slidebars.scss */
 html.sb-static .sb-slidebar,
 .sb-slidebar.sb-static {
   position: absolute;

@@ -836,7 +836,7 @@ $(document).ready(function() {
     }
   }).data('Swipe');
 
-   window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+  //window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
 
   $('.next').on('click', Slider.next);
   $('.prev').on('click', Slider.prev);
@@ -857,6 +857,14 @@ $(document).ready(function() {
       $.slidebars.open('left');
     }
  
+  var h = $( window ).height();
+  h = h+'px';
+  $('.panel').css('height',h);
+  $( window ).resize(function() {
+    h = $( window ).height();
+    h = h+'px';
+    $('.panel').css('height',h);
+  });
 
   /*Add in breakpoints to hide/show menu and activate slidebarsloc
   $( window ).resize(function() {

@@ -3,6 +3,8 @@ html,body {
     margin: 0px;
     padding: 0px;
     width: 100%;
+    overflow-y: scroll;
+    //overflow: auto;
 } 
 .swipe .nav {
 	position: absolute;
@@ -33,9 +35,11 @@ html,body {
   overflow: hidden;
   visibility: hidden;
   position: relative;
+  overflow: scroll;
 }
 .swipe-wrap {
-  overflow: auto !important;
+  //overflow: auto !important;
+  overflow: hidden;
   position: relative;
   margin-left: 0px;
 
