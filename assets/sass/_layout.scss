@@ -1,6 +1,6 @@
 
-body {
-  //overflow-x: hidden;
+body,html {
+   overflow: hidden;
    @include animate(.3s); 
 }
 
@@ -55,7 +55,7 @@ body {
     
     .secondary-menu{
       //position: fixed; bottom: 0px;
-      .menu-active{background-color: $gold;}
+      .menu-active{background-color: $purple;}
       margin-top: 35px;
       ul{
         margin: 20px 0px 20px 0px;
@@ -64,7 +64,7 @@ body {
           list-style-type: none; font-size: 14px; color: $white; line-height: 18px; color: $white; padding: 3px 0px 3px 20px; width: 140px;
           a{color: $white; outline: 0;} 
             a:hover{text-decoration: none;}
-            &:hover{background-color: $gold;}
+            &:hover{background-color: $purple;}
           }
       }
       img{margin: 20px 0px 20px 20px }
@@ -240,31 +240,7 @@ body {
   a{float: right;  position: relative;  right: 10%;  font-style:italic;}
   .fa{font-size: 45px; position:relative; top: 8px; left: 5px;}}
 
-/* ----------- Home ------------- */
-#home .panel-pad{
-  background: url('assets/img/cover-large.jpg')top left no-repeat;
-  @include background-size(cover);
-  height: 100%;
-  overflow: hidden;
-  left: 0;
-  img{width: 60%; padding: 10% 20% 0 20%;
-    @include breakpoint(small) {padding: 20% 5% 0% 5%; width:90%;}
-  
-  }
  
-  .instructions{
-    position: absolute; width:210px;  bottom:2%; left:200px;; float: left;
-    img{width: 118px; padding: 0;}
-    @include breakpoint(small) {display:none;}
-  }
-
-  .right-nav{position: absolute; width:100%;  height: 0px;  top:89%; right:2%; float: right;
-     a{ }
-    .fa{font-size: 45px; position:relative; top: 8px; left: 5px;}
-    a{color:$black}
-  }
-  h1{display:none;}
-}
 
 html.ie8 nav{display: none;}
 html.ie8 .menu{display: none;}

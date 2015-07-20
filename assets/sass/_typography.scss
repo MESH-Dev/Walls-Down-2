@@ -13,9 +13,28 @@ span.underline{text-decoration: underline;}
 //headings
 h1{font:48px/50px $georgia ; color: $black; text-transform:uppercase;}
 h2{font:32px/36px $georgia ; color: $black; }
-h3{font:24px/30px $cabin ; color: $gold;  text-transform:uppercase;}
+h3{font:24px/30px $cabin ; color: $purple;  text-transform:uppercase;}
 h4{font:14px/17px $cabin ; color: $black; text-transform:uppercase;}
-h5{font:10px/17px $cabin ; color: $gold;  text-transform:uppercase;}
+h5{font:10px/17px $cabin ; color: $purple;  text-transform:uppercase;}
+
+h1.cabin-header{
+	font-size: 26px; line-height:30px;
+	font-family: $cabin;
+	text-transform:uppercase;
+	font-weight: bold;
+	 
+	
+}
+
+.purple{
+	color: $purple;
+}
+.black{
+	color: $black;
+}
+.white{
+	color: $white;
+}
  
 em{font-style:italic;}
 
@@ -33,7 +52,7 @@ blockquote{margin: 0px 0px 20px 50px; font: 18px/26px $georgia; font-style: ital
  
 
 //anchors
-a{color:$gold;text-decoration:none;}
+a{color:$purple;text-decoration:none;}
   a:hover{cursor: pointer; opacity: 0.8}
 
 //lists

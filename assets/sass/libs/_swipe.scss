@@ -3,8 +3,8 @@ html,body {
     margin: 0px;
     padding: 0px;
     width: 100%;
-    overflow-y: scroll;
-    //overflow: auto;
+    overflow: hidden;
+ 
 } 
 .swipe .nav {
 	position: absolute;
@@ -48,13 +48,9 @@ html,body {
  .swipe-wrap > div {
  
 }
+ 
 
-.blue{background-color: blue}
-.yellow{background-color: yellow}
-.red{background-color: red}
-.green{background-color:green}
-
-.sb-toggle-left{position: absolute; top: 10px; left: 200px; z-index: 999999; background-color: red;}
+.sb-toggle-left{position: absolute; top: 10px; left: 10px; z-index: 999999; }
 
 /*
 .sb-sidebar-full{
