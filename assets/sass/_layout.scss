@@ -10,7 +10,8 @@ body,html {
 /* --- Open Menu Desktop --- */
 #sidebar{
  
-  background-color: $black;
+  background-color: $black; 
+  border-right: 1px solid white;
   overflow-x: hidden;
 
     .logo img{margin: 30px 10px 15px 20px; }
@@ -132,7 +133,7 @@ body,html {
  
   overflow-x: hidden;
   overflow-y: scroll; 
-
+  
   float:left;
   width:100%;
   min-height: 100%;

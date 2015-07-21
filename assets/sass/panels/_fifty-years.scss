@@ -1,0 +1,91 @@
+.fifty-years{
+	width:100%;
+	margin-right: 150px;
+	background: url('assets/img/map-bg.jpg') top left no-repeat;
+    @include background-size(cover);
+
+
+	
+    .step {
+        position: relative;
+        //width: 900px;
+        padding: 0px;
+        margin: 0px 0px 0px 0px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing:    border-box;
+        -ms-box-sizing:     border-box;
+        -o-box-sizing:      border-box;
+        box-sizing:         border-box;
+       // font-family: 'PT Serif', georgia, serif;
+        //font-size: 48px;
+        //line-height: 1.5;
+        
+    }
+    .impress-enabled .step {
+        margin: 0;
+        /*opacity: 0.3;*/
+        opacity: 1;
+		
+        -webkit-transition: opacity 1s;
+        -moz-transition:    opacity 1s;
+        -ms-transition:     opacity 1s;
+        -o-transition:      opacity 1s;
+        transition:         opacity 1s;
+    }
+
+    .impress-enabled .step.active { opacity: 1 }
+
+
+	.slide {
+	    display: block;
+		
+	    width: 350px;
+	   img{
+	   	width: 100%;
+	   }
+ 
+	}
+
+	.slide-point {
+	    display: block;
+	    width: 350px;
+	    background-color: $white;
+	    -webkit-box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
+		-moz-box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
+		box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
+	    .story-link{
+			padding: 20px 0px 20px 0px ;
+			img{
+	    		display: inline;
+	    		float: left;
+	    		padding-right: 20px;
+	    	}
+	    } 	   
+	}
+
+	.slide-story {
+	    display: block;
+	    width: 860px;
+		padding: 30px;
+	    background-color: $white;
+	    -webkit-box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
+		-moz-box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
+		box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
+	    .story-left{
+	    	display: inline;
+			width: 540px;
+			float: left;
+			padding-right: 40px;
+	    } 	
+	    .story-right{
+	    	display: inline;
+			width: 220px;
+			float: left;
+	    } 	   
+	}
+
+
+
+
+
+}

@@ -1,0 +1,31 @@
+.first-step{
+	background-color: $black;
+	width: 100%;
+	 
+	.container{
+		width: 1060px;
+		padding-right: 150px;
+		margin: 0 auto;
+	}
+	.title img{
+		width: 100%;
+	}
+	.title-text{
+		width: 600px;
+		position: relative;
+		top: -140px;
+		padding-left: 220px;
+		h2{
+			color: $blue;
+		}
+	}
+	.video-container{
+		width: 640px;
+		position: relative;
+		top: -120px;
+		margin-left: 220px;
+		border: 3px solid #353535;
+		height: 400px;
+
+	}
+}

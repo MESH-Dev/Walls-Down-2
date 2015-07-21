@@ -17,13 +17,15 @@ h3{font:24px/30px $cabin ; color: $purple;  text-transform:uppercase;}
 h4{font:14px/17px $cabin ; color: $black; text-transform:uppercase;}
 h5{font:10px/17px $cabin ; color: $purple;  text-transform:uppercase;}
 
-h1.cabin-header{
+.cabin-header{
 	font-size: 26px; line-height:30px;
 	font-family: $cabin;
 	text-transform:uppercase;
 	font-weight: bold;
-	 
-	
+}
+
+.cabin{
+	font-family: $cabin;
 }
 
 .purple{
@@ -34,6 +36,14 @@ h1.cabin-header{
 }
 .white{
 	color: $white;
+}
+
+h2.callout-text{
+	font-size: 20px; 
+	line-height: 28px;
+	font-style: italic;
+	font-weight: normal;
+	padding: 0; margin:0;
 }
  
 em{font-style:italic;}
