@@ -13,6 +13,7 @@ $(document).ready(function() {
     }
   }).data('Swipe');
 
+
   //window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
 
   $('.next').on('click', Slider.next);
@@ -69,12 +70,6 @@ $(document).ready(function() {
     Slider.slide(idx);
   });
  
- 
-  
-
-
-
-
   /*
   /*------------------ MENU ACTIVE/Hover TOGGLE from hash-----------------
   $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');

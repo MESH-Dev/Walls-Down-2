@@ -1336,7 +1336,6 @@ html.ie8 .panel {
 /* line 1, assets/sass/panels/_fifty-years.scss */
 .fifty-years {
   width: 100%;
-  margin-right: 150px;
   background: url("assets/img/map-bg.jpg") top left no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2130,26 +2129,26 @@ a.grid__item:hover {
     padding: 80px 0 20px 0;
   }
 }
-/* line 13, assets/sass/panels/_letters.scss */
+/* line 15, assets/sass/panels/_letters.scss */
 .letter .letter-container {
   width: 500px;
   padding: 80px 0 100px 200px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 13, assets/sass/panels/_letters.scss */
+  /* line 15, assets/sass/panels/_letters.scss */
   .letter .letter-container {
     width: 100%;
     padding: 0 0 100px 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1060px) {
-  /* line 13, assets/sass/panels/_letters.scss */
+  /* line 15, assets/sass/panels/_letters.scss */
   .letter .letter-container {
     padding-left: 60px;
     width: 60%;
   }
 }
-/* line 23, assets/sass/panels/_letters.scss */
+/* line 25, assets/sass/panels/_letters.scss */
 .letter .left-nav {
   position: relative;
   height: 0px;
@@ -2158,18 +2157,18 @@ a.grid__item:hover {
   left: 0px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 23, assets/sass/panels/_letters.scss */
+  /* line 25, assets/sass/panels/_letters.scss */
   .letter .left-nav {
     left: -10px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1060px) {
-  /* line 23, assets/sass/panels/_letters.scss */
+  /* line 25, assets/sass/panels/_letters.scss */
   .letter .left-nav {
     left: -10px;
   }
 }
-/* line 30, assets/sass/panels/_letters.scss */
+/* line 32, assets/sass/panels/_letters.scss */
 .letter .right-nav {
   position: relative;
   height: 0px;
@@ -2178,21 +2177,16 @@ a.grid__item:hover {
   left: 0px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 30, assets/sass/panels/_letters.scss */
+  /* line 32, assets/sass/panels/_letters.scss */
   .letter .right-nav {
     left: -10px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1060px) {
-  /* line 30, assets/sass/panels/_letters.scss */
+  /* line 32, assets/sass/panels/_letters.scss */
   .letter .right-nav {
     left: -10px;
   }
-}
-
-/* line 42, assets/sass/panels/_letters.scss */
-#ceo-letter .letter {
-  background-color: red;
 }
 
 /* --------- LIB IMPORTS --------------*/
