@@ -9,12 +9,10 @@ $(document).ready(function() {
     stopPropagation: false,
     transitionEnd: function(index, elem) { //set new hash after transistion
       var this_hash = $(elem).attr('id');
-       window.location.hash = this_hash;
+      window.location.hash = this_hash;
+      
     }
   }).data('Swipe');
-
-
-  //window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
 
   $('.next').on('click', Slider.next);
   $('.prev').on('click', Slider.prev);
@@ -58,7 +56,7 @@ $(document).ready(function() {
  
   //Check initial hash and slide to panel
   var hash = window.location.hash ? window.location.hash : '#home';
-  if (hash.indexOf("#/") >= 0) hash ="#fifty-years";
+  if (hash.indexOf("#/") >= 0) hash ="#coverage";
  
   var idx = $('a[href='+hash+']').attr('id');
   Slider.slide(idx);
@@ -67,39 +65,50 @@ $(document).ready(function() {
   $('a.slide-nav').click(function(e) {
     e.preventDefault();
     var idx = $(this).attr('id');
+
     Slider.slide(idx);
   });
+
+
+  //Slideout menus
+  $("#credit-link").click(function(e){
+    $('body').addClass("credits-open");
+    activeSide = "credits-open";
+    e.preventDefault();
+  });
+
+  $("#issues-link").click(function(e){
+    $('body').addClass("issues-open");
+    activeSide = "issues-open";
+    e.preventDefault();
+  });
+
+    // hide active menu if close menu button is clicked  
+  $(".close-credits-menu").click(function(){
+      $('body').removeClass("credits-open");
+      $('body').removeClass("issues-open");
+      activeSide = "";
+  });
  
-  /*
-  /*------------------ MENU ACTIVE/Hover TOGGLE from hash-----------------
+   
+  /*------------------ MENU ACTIVE/Hover TOGGLE from hash-----------------*/
   $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
 
   window.addEventListener("hashchange", function () {
       var hash = window.location.hash ? window.location.hash : '#home';
       if (hash.indexOf("#/") >= 0) hash ="#fifty-years";
       var idx = $('a[href='+hash+']').attr('id');
- 
-      
 
-      $("nav.menu a div").removeClass('menu-active');
+      $(".main-menu a div").removeClass('menu-active');
       $(".secondary-menu li").removeClass('menu-active');
+
       $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
       $('.secondary-menu li a[href="'+ hash +'"]').parent("li").addClass('menu-active');
  
  
    }, false);
  
-  */
-
-
-
-
-
-
-
-
-
-
+  
 
 
 
@@ -109,179 +118,25 @@ $(document).ready(function() {
 
 // --------------------------------------------------------------------------------------------
 
-//
- //   window.onpopstate = function(event)
- //    {
- //      var hash = window.location.hash;
- //      var $panel = $(hash);
-//
- //      $scrollElement.stop().animate({
- //        scrollLeft: $panel.offset().left
- //      }, 500, 'swing', function() {
- //        window.location.hash = hash;
- //      });
- //    };
-//
-//
- //   $('html, body').each(function () {
- //     var initScrollLeft = $(this).attr('scrollLeft');
-//
- //     $(this).attr('scrollLeft', initScrollLeft + 1);
- //     if ($(this).attr('scrollLeft') == initScrollLeft + 1) {
- //       scrollElement = this.nodeName.toLowerCase();
- //       $(this).attr('scrollLeft', initScrollLeft);
- //       return false; 
- //     }
- //   });
- //   $scrollElement = $(scrollElement);
- // });
-//
- // /* Smooth scrolling of links between panels */
- // $(function() {
- //   var $panels = $('.panel');
-//
- //   $panels.each(function() {
- //     var $panel = $(this);
- //     var hash = '#' + this.id;
-//
- //     $('a[href="' + hash + '"]').click(function(event) {
- //       $scrollElement.stop().animate({
- //         scrollLeft: $panel.offset().left
- //       }, 500, 'swing', function() {
- //         window.location.hash = hash;
- //       });
-//
- //       event.preventDefault();
- //     });
- //   });
- // });
-//
  // /* Panel Scroll on keyup */
- // $(function() {
- //   var $window = $(window);
-//
- //   var $panels = $('.panel');
- //   var panelArr =[];
- //   $panels.each(function() {
- //     var idhash = "#" + $(this).attr('id');
- //     panelArr.push(idhash);
- //   });
- // 
- //   $('html').keydown(function(e){
- //     if(e.which == 37) //LEFT ARROW
- //     {
- //       var hash = window.location.hash ? window.location.hash : '#home';
- //       if (hash.indexOf("#/") >= 0) hash ="#map"; //Check if hash includes "/#/" ? set to #map
- //       var idx = panelArr.indexOf(hash);
-//
- //       //check if hash is in panelArr 
- //       //- if yes, get prev id in array, set panel to hash and scroll
- //       if(idx != -1)
- //       {
- //         $panel = $(panelArr[idx-1]);
- //         $scrollElement.stop().animate({
- //           scrollLeft: $panel.offset().left
- //         }, 500, 'swing', function() {
- //           window.location.hash = panelArr[idx-1];
- //         });
- //       }
- //       e.preventDefault();
- //     }
- //
- //     if(e.which == 39) //right ARROW
- //     {
- //       var hash = window.location.hash ? window.location.hash : '#home';
- //       if (hash.indexOf("#/") >= 0) hash ="#map"; //Check if hash includes "/#/" ? set to #map
- //       var idx = panelArr.indexOf(hash);
-//
- //       //check if hash is in panelArr 
- //       //- if yes, get prev id in array, set panel to hash and scroll
- //       if(idx != -1)
- //       {
- //         $panel = $(panelArr[idx+1]);
- //         $scrollElement.stop().animate({
- //           scrollLeft: $panel.offset().left
- //         }, 500, 'swing', function() {
- //           window.location.hash = panelArr[idx+1];
- //         });
- //       }
- //       e.preventDefault();
- //     }
- //     
- //   });
-//
-//
-//
-//
-//
-//
- // });
-
-
-
-
-//  /* Force snap to panel on resize.*/
-//  $(function() {
-//    var $window = $(window);
-//    var timer;//
-
-//    $window.resize(function() {
-//      window.clearTimeout(timer);
-//      timer = window.setTimeout(function() {
-//        var hash = window.location.hash ? window.location.hash : '#home';//
-
-//        $scrollElement.stop().animate({
-//          scrollLeft: $(hash).offset().left
-//        }, 200);
-//      }, 100);
-//    });
-//  });
-// //
-
-//  /* Fix scroll snapping during browser finds*/
-//  $(function() {
-//    var $window = $(window);
-//    var timer;//
-
-//    /* Most finds will scroll a single panel. */
-//    var scrollToPanel = function(panel) {
-//      $scrollElement.scrollLeft($(panel).offset().left);
-//    };//
-
-//    /* Others will scroll between panels but not cause a panel scroll  */
-//    var scrollToClosestPanel = function() {
-//      var currentScroll = $window.scrollLeft();
-//      var panelOffsets = $.map($('.panel').get(), function(el) {
-//        return $(el).offset().left;
-//      });
-//      var closestOffset = 0;
-//      var closestDistance = 99999999;//
-
-//      $.each(panelOffsets, function(i, offset) {
-//        var offsetDistance = Math.abs(currentScroll - offset);
-//        if(offsetDistance < closestDistance) {
-//          closestDistance = offsetDistance;
-//          closestOffset = offset;
-//        }
-//      });
-//      $scrollElement.scrollLeft(closestOffset);
-//    };//
-
-//    $('.panel').scroll(function() {
-//      window.clearTimeout(timer);
-//      timer = window.setTimeout(scrollToPanel, 50, this);
-//    });//
-
-//    /* 50ms is enough time to let the animation between panels do its
-//       thing without triggering this debounced panel snap.  */
-//    $window.scroll(function() {
-//      window.clearTimeout(timer);
-//      timer = window.setTimeout(scrollToClosestPanel, 50);
-//    }).bind('load', scrollToClosestPanel);
-//  });
-   
 
  
+   $('html').keydown(function(e){
+     if(e.which == 37) //LEFT ARROW
+     {
+       Slider.prev();
+       e.preventDefault();
+     }
+ 
+     if(e.which == 39) //right ARROW
+     {
+       Slider.next();
+       e.preventDefault();
+     }
+     
+   });
+
+
 
 /*------------------MAP and IMPRESS-----------------*/
 
@@ -300,147 +155,65 @@ $(document).ready(function() {
   if( isDesktop && viewportwidth >767){
     var map = impress();
     
-    if (window.location.hash == "#fifty-years") {
+    if (window.location.hash == "#coverage") {
       map.init();
       map.goto(0);
     }
     window.addEventListener("hashchange", function () {
-      if (window.location.hash == "#fifty-years") {
+      hash = window.location.hash;
+      hash = hash.replace('/','');
+
+      type = hash.split("-").length - 1;
+      if (type == 0) type = 'topic';
+      if (type > 0) type = 'story';
+      
+      if (hash == "#coverage") {
         map.init();
-          map.goto(0);
-          // $('#plain li').removeClass('inactive');
-          // $('.intro-text').removeClass('inactive');
-          // $('.intro-text').fadeIn();
-          // $('.slide').fadeIn();
-          // $('.slide').css('max-height', '200px');
-          // $('.slide').css('overflow', 'hidden');
+        map.goto(0);
       }
+      else if(hash =='#title' ){
+        gotoTitle();
+      }
+      else if(type =='topic' ){
+        gotoTopic(hash);
+      }
+      else if(type =='story' ){
+        gotoStory(hash);
+      }
+
+
     }, false);
-
   }
- 
-  //   $('div.number-wrap').click(function(){
-  //       var state = $(this).parent().attr("id");
-  //       var $st = $(this).parent();
-  //       stateid = "#"+state;
-  //       state = "."+state;
-   
-  //       $('#plain li').not(state).addClass('inactive');
-  //       $('.intro-text').fadeOut();
-  //       $('.slide').not($st).fadeOut();
-  //       $st.css('max-height', '600px');
-  //       $st.css('overflow', 'auto');
- 
- 
-  //   });
 
-  //   $('#fullmap, .zoom-out a, a#maptitle ').click(function(){
-  //       $('#plain li').removeClass('inactive');
-  //       $('.intro-text').removeClass('inactive');
-  //       $('.intro-text').fadeIn();
-  //       $('.slide').fadeIn();
-  //       $('.slide').css('max-height', '200px');
-  //       $('.slide').css('overflow', 'hidden');
-  //   });
+     function gotoTitle(){
+      $('#title').delay(500).fadeIn('slow');
+      $('.slide-topic').fadeIn('slow');
+      $('.slide-story').fadeOut();
+      $('.slide-point').fadeOut();
+    }
 
-    
-  // }
+    function gotoTopic(hash){
+      $(hash).fadeIn();
+      $(hash).siblings().fadeOut('2000');
+      points = hash+"-points";
+      $('.slide-point').fadeOut();
+      $('#title').fadeOut();
+      $(points).delay(500).fadeIn('slow');
+      $('.slide-story').fadeOut();
 
-  // $('#map-read-more').click(function(e){
- 
-  //   $('#map-more').fadeIn();
-  //    $(this).hide();
-  //   e.preventDefault();
-  // });
-  // $('#map-read-close').click(function(e){
- 
-  //   $('#map-more').fadeOut();
-  //   $('#map-read-more').show();
-  //   e.preventDefault();
-  // });
+    }
 
+     function gotoStory(hash){
+      $(hash).fadeIn('slow');
+      $('.slide-point').fadeOut();
+    }
 
 });
 
 
  
-/*------------------ MENU-----------------
-$(function() {
+
  
-    var $togglePushLeft = $(".toggle-push-left" );
-    var $pushMenuLeft = $( ".push-menu-left" );
-    var activeNav;
-    var activeCredits;
-
-    //$('body').addClass("pml-open");
- 
-    var viewportwidth = $(window).width();
-    if(viewportwidth < 768){
-      $('body').removeClass("pml-open");
-      //hidemenu on click out of menu
-      $(".panel-wrap").click(function(){
-          if($('body').hasClass('pml-open'))
-          {
-            $('body').removeClass('pml-open');
-          }
-      } );
-    }
-
-    $(window).resize(function() {
-      viewportwidth= $(window).width();
-      if(viewportwidth < 768){
-       $('body').removeClass("pml-open");
-      }
-      else{
-        $('body').addClass("pml-open");
-      }
-    });
-
-
-    /* push menu left  
-    $(".toggle-push-left").click(
-      function(){
-        if($('body').hasClass('pml-open')){
-          $('body').removeClass('pml-open');
-        }
-        else{
-          $('body').addClass('pml-open');
-        }
-      }
-    );
-
-    
- 
-    /* hide active menu if close menu button is clicked  
-    $(".close-menu").click(function(){
-        $('body').removeClass(activeNav);
-        $('body').removeClass(".credits-open");
-        activeNav = "";
-    });
- 
-    //CREDITS MENU --------------
-    /* push menu left 
-    $("#credit-link").click(function(e){
-        $('body').addClass("credits-open");
-        activeCredits = "credits-open";
-        $(this).parent().addClass('credit-active');
-        e.preventDefault();
-    });
-
-    /* hide active menu if close menu button is clicked  
-    $(".close-credits-menu").click(function(){
-        $('body').removeClass(activeCredits);
-        $(".secondary-menu li").removeClass('credit-active');
-        activeCredits = "";
- 
-    });
-});*/
-
-/*------------------ MENU ACTIVE/Hover TOGGLE from hash-----------------
- 
-
-*/
-
 
 
 
