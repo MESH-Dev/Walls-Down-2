@@ -830,11 +830,11 @@ $(document).ready(function() {
     continuous: false,
     disableScroll: false,
     stopPropagation: false,
-    transitionEnd: function(index, elem) { //set new hash after transistion
-      var this_hash = $(elem).attr('id');
-      window.location.hash = this_hash;
-      
-    }
+     transitionEnd: function(index, elem) { //set new hash after transistion
+        var this_hash = $(elem).attr('id');
+ 
+       window.location.hash = this_hash; //~~~~~~~~~THIS IS CAUSING AN ERROR!!!!~~~~~~
+     }
   }).data('Swipe');
 
   $('.next').on('click', Slider.next);
@@ -878,7 +878,7 @@ $(document).ready(function() {
   });*/
  
   //Check initial hash and slide to panel
-  var hash = window.location.hash ? window.location.hash : '#home';
+  var hash = window.location.hash ? window.location.hash : '#wallsdown';
   if (hash.indexOf("#/") >= 0) hash ="#coverage";
  
   var idx = $('a[href='+hash+']').attr('id');
@@ -888,7 +888,6 @@ $(document).ready(function() {
   $('a.slide-nav').click(function(e) {
     e.preventDefault();
     var idx = $(this).attr('id');
-
     Slider.slide(idx);
   });
 
