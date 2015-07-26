@@ -1681,7 +1681,7 @@ html.ie8 .panel {
 }
 
 /* line 1, assets/sass/panels/_home.scss */
-.home {
+.wallsdown {
   background: url("assets/img/cover-large.jpg") -140px 45px no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1689,19 +1689,19 @@ html.ie8 .panel {
   background-size: cover;
 }
 /* line 6, assets/sass/panels/_home.scss */
-.home img {
+.wallsdown img {
   width: 60%;
   padding: 10% 20% 0 20%;
 }
 @media only screen and (max-width: 800px) {
   /* line 6, assets/sass/panels/_home.scss */
-  .home img {
+  .wallsdown img {
     padding: 20% 5% 0% 5%;
     width: 90%;
   }
 }
 /* line 10, assets/sass/panels/_home.scss */
-.home .instructions {
+.wallsdown .instructions {
   position: absolute;
   width: 210px;
   bottom: 2%;
@@ -1709,18 +1709,18 @@ html.ie8 .panel {
   float: left;
 }
 /* line 12, assets/sass/panels/_home.scss */
-.home .instructions img {
+.wallsdown .instructions img {
   width: 118px;
   padding: 0;
 }
 @media only screen and (max-width: 800px) {
   /* line 10, assets/sass/panels/_home.scss */
-  .home .instructions {
+  .wallsdown .instructions {
     display: none;
   }
 }
 /* line 16, assets/sass/panels/_home.scss */
-.home .right-nav {
+.wallsdown .right-nav {
   position: absolute;
   width: 100%;
   height: 0px;
@@ -1729,29 +1729,29 @@ html.ie8 .panel {
   float: right;
 }
 /* line 18, assets/sass/panels/_home.scss */
-.home .right-nav .fa {
+.wallsdown .right-nav .fa {
   font-size: 45px;
   position: relative;
   top: 8px;
   left: 5px;
 }
 /* line 19, assets/sass/panels/_home.scss */
-.home .right-nav a {
+.wallsdown .right-nav a {
   color: #020202;
 }
 /* line 23, assets/sass/panels/_home.scss */
-.home .home-header {
+.wallsdown .home-header {
   padding-left: 60px;
   width: 90%;
 }
 /* line 26, assets/sass/panels/_home.scss */
-.home .home-header h1 {
+.wallsdown .home-header h1 {
   font-size: 24px;
   line-height: 28px;
   text-transform: none;
 }
 /* line 31, assets/sass/panels/_home.scss */
-.home .home-header h1 span.cabin-callout {
+.wallsdown .home-header h1 span.cabin-callout {
   font-family: "Cabin", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -2413,6 +2413,13 @@ a.grid__item:hover {
   }
 }
 
+/* line 1, assets/sass/panels/_think.scss */
+.think {
+  background-color: #c2c2c2;
+  width: 100%;
+  height: 100%;
+}
+
 /* --------- LIB IMPORTS --------------*/
 /**
  * Featherlight - ultra slim jQuery lightbox
@@ -2526,57 +2533,39 @@ html, body {
   overflow: hidden;
 }
 
-/* line 9, assets/sass/libs/_swipe.scss */
-.swipe .nav {
-  position: absolute;
-  width: 80px;
-  height: 38px;
-  z-index: 10;
-  text-align: center;
-  line-height: 40px;
-  display: inline-block;
-  color: #fff;
-  top: 20%;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* line 22, assets/sass/libs/_swipe.scss */
-.swipe .nav.next {
-  right: 200px;
-  -webkit-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
-}
-
-/* line 27, assets/sass/libs/_swipe.scss */
-.swipe .nav.prev {
-  -webkit-border-radius: 0 3px 3px 0;
-  border-radius: 0 3px 3px 0;
-  right: 200px;
-  top: 30%;
-}
-
-/* line 34, assets/sass/libs/_swipe.scss */
+/* line 11, assets/sass/libs/_swipe.scss */
 .swipe {
   overflow: hidden;
   visibility: hidden;
   position: relative;
-  overflow: scroll;
 }
 
-/* line 40, assets/sass/libs/_swipe.scss */
+/* line 17, assets/sass/libs/_swipe.scss */
 .swipe-wrap {
   overflow: hidden;
   position: relative;
-  margin-left: 0px;
 }
 
-/* line 53, assets/sass/libs/_swipe.scss */
+/* line 25, assets/sass/libs/_swipe.scss */
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+/* line 32, assets/sass/libs/_swipe.scss */
 .sb-toggle-left {
   position: absolute;
   top: 10px;
   left: 10px;
   z-index: 999999;
+  display: none;
+}
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 32, assets/sass/libs/_swipe.scss */
+  .sb-toggle-left {
+    display: block;
+  }
 }
 
 /*

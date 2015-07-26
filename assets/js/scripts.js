@@ -58,13 +58,16 @@ $(document).ready(function() {
   var hash = window.location.hash ? window.location.hash : '#wallsdown';
   if (hash.indexOf("#/") >= 0) hash ="#coverage";
  
-  var idx = $('a[href='+hash+']').attr('id');
+  var idx = $('a[href='+hash+']').attr('data-index-number');
   Slider.slide(idx);
+
+
+
 
   //MAIN MENU CLICKS - SCROLL
   $('a.slide-nav').click(function(e) {
     e.preventDefault();
-    var idx = $(this).attr('id');
+    var idx = $(this).attr('data-index-number');
     Slider.slide(idx);
   });
 
@@ -95,7 +98,7 @@ $(document).ready(function() {
 
   window.addEventListener("hashchange", function () {
       var hash = window.location.hash ? window.location.hash : '#home';
-      if (hash.indexOf("#/") >= 0) hash ="#fifty-years";
+      if (hash.indexOf("#/") >= 0) hash ="#coverage";
       var idx = $('a[href='+hash+']').attr('id');
 
       $(".main-menu a div").removeClass('menu-active');
@@ -164,27 +167,34 @@ $(document).ready(function() {
     }
     window.addEventListener("hashchange", function () {
       hash = window.location.hash;
-      hash = hash.replace('/','');
 
-      type = hash.split("-").length - 1;
-      if (type == 0) type = 'topic';
-      if (type > 0) type = 'story';
-      
       if (hash == "#coverage") {
-        map.init();
-        map.goto(0);
-        $('#title').delay(100).fadeIn('slow');
-        $('.slide-topic').delay(3000).fadeIn('slow');
-        $('#instruction').delay(3000).fadeIn('slow');
-      }
-      else if(hash =='#title' ){
-        gotoTitle();
-      }
-      else if(type =='topic' ){
-        gotoTopic(hash);
-      }
-      else if(type =='story' ){
-        gotoStory(hash);
+          map.init();
+          map.goto(0);
+          $('#title').delay(100).fadeIn('slow');
+          $('.slide-topic').delay(3000).fadeIn('slow');
+          $('#instruction').delay(3000).fadeIn('slow');
+        }
+
+      if (hash.indexOf("#/") >= 0){
+        hash = hash.replace('/','');
+
+        type = hash.split("-").length - 1;
+        if (type === 0) type = 'topic';
+        if (type > 0) type = 'story';
+        
+        if (hash == "#coverage") {
+
+        }
+        else if(hash =='#title' ){
+          gotoTitle();
+        }
+        else if(type =='topic' ){
+          gotoTopic(hash);
+        }
+        else if(type =='story' ){
+          gotoStory(hash);
+        }
       }
 
 
@@ -214,7 +224,7 @@ $(document).ready(function() {
       $('.slide-point').fadeOut();
     }
 
-});
+  });
 
 
  

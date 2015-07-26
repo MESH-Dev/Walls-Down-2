@@ -6,51 +6,33 @@ html,body {
     overflow: hidden;
  
 } 
-.swipe .nav {
-	position: absolute;
-	width: 80px;
-	height: 38px;
-	z-index: 10;
-	text-align: center;
-	line-height: 40px;
-	display: inline-block;
-	color: #fff;
-	top: 20%;
-	cursor: pointer;
-	background-color: rgba(0,0,0,0.8)
-}
-.swipe .nav.next {
-	right: 200px;
-	-webkit-border-radius: 3px 0 0 3px;
-	border-radius: 3px 0 0 3px;
-}
-.swipe .nav.prev {
-	-webkit-border-radius: 0 3px 3px 0;
-	border-radius: 0 3px 3px 0;
-  right: 200px;
-  top: 30%;
-}
+ 
 
 .swipe {
   overflow: hidden;
   visibility: hidden;
   position: relative;
-  overflow: scroll;
+  //overflow: scroll;
 }
 .swipe-wrap {
   //overflow: auto !important;
   overflow: hidden;
   position: relative;
-  margin-left: 0px;
+   
 
 }
  
  .swipe-wrap > div {
- 
+ float:left;
+  width:100%;
+  position: relative;
 }
  
 
-.sb-toggle-left{position: absolute; top: 10px; left: 10px; z-index: 999999; }
+.sb-toggle-left{position: absolute; top: 10px; left: 10px; z-index: 999999; display:none; @include breakpoint(nomap)  {
+        display: block
+    }
+ }
 
 /*
 .sb-sidebar-full{
