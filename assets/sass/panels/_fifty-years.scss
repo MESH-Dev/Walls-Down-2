@@ -25,8 +25,22 @@
         box-sizing:         border-box;
        // font-family: 'PT Serif', georgia, serif;
         //font-size: 48px;
-        //line-height: 1.5;
-        
+        //line-height: 1.5;   
+    }
+    .big-picture{
+    	position:absolute;
+    	left: 600px;
+    	width: 220px;
+    	top: 75px;
+    	a{
+			font-size: 14px; 
+			font-family: $cabin;
+			text-transform: uppercase;
+			font-weight: bold; display:block; 
+			margin-bottom: 12px;
+			img{width: 40px; padding: 3px 2px 0 2px; position: relative; top: 4px;}
+			 
+		}
     }
     .impress-enabled .step {
         margin: 0;
@@ -42,9 +56,10 @@
 
     .impress-enabled .step.active { opacity: 1 }
 
-
+	p#instruction{display: none; font-weight:bold;}
 	.slide-topic {
 		display: block;
+		display: none;
 	    width: 350px;
 	   	img{
 	   		width: 100%;
@@ -77,12 +92,14 @@
 					text-transform: uppercase;
 					font-weight: bold; display:block; 
 					margin-bottom: 15px;
+					vertical-align: bottom;
 				}
 				padding: 30px 0px 20px 0px ;
 				img{
 	    			display: inline;
 	    			float: left;
 	    			padding-right: 20px;
+	    			vertical-align: bottom;
 	    		}
 	    	} 	
 		}
@@ -130,16 +147,26 @@
 		    	text-align: left;
 		    	h3{
 		    		font-family: $georgia;
-		    		font-style: italic;
+		    		
 		    		color: black;
 		    		text-transform: none;
-		    		.cabin{
+		    		margin-top: 0px;
+		    		
+		    		&.cabin{
+		    			font-family: $cabin;
 		    			text-transform: uppercase;
 		    			font-weight: bold;
 		    			font-size: 20px;
 		    		}
 
 		    	}
+		    }
+
+		    .infographic{
+		    	img{
+		    		width:100%;
+		    	}
+
 		    }
 
 	    } 	
@@ -155,7 +182,7 @@
 				font-weight: bold; display:block; 
 				margin-bottom: 12px;
 				img{width: 40px; padding: 3px 2px 0 2px; position: relative; top: 4px;}
-				&.back-title{margin-left:38px;}
+				 
 			}
 			.related{
 				font-size: 14px; 

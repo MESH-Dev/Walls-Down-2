@@ -980,6 +980,10 @@ $(document).ready(function() {
     if (window.location.hash == "#coverage") {
       map.init();
       map.goto(0);
+      $('#title').delay(100).fadeIn('slow');
+      $('.slide-topic').delay(3000).fadeIn('slow');
+      $('#instruction').delay(3000).fadeIn('slow');
+
     }
     window.addEventListener("hashchange", function () {
       hash = window.location.hash;
@@ -992,6 +996,9 @@ $(document).ready(function() {
       if (hash == "#coverage") {
         map.init();
         map.goto(0);
+        $('#title').delay(100).fadeIn('slow');
+        $('.slide-topic').delay(3000).fadeIn('slow');
+        $('#instruction').delay(3000).fadeIn('slow');
       }
       else if(hash =='#title' ){
         gotoTitle();
