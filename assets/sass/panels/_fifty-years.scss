@@ -56,7 +56,11 @@
 
     .impress-enabled .step.active { opacity: 1 }
 
-	p#instruction{display: none; font-weight:bold;}
+	p#instruction{
+		 @include opacity(0);
+        
+        font-weight:bold;
+    }
 	.slide-topic {
 		display: block;
 		display: none;
@@ -109,8 +113,10 @@
 	.slide-story {
 	    display: block;
 	    display: none;
-	    width: 860px;
-		padding: 30px;
+	    width: 880px;
+	    //height: 600px;
+	    overflow: auto;
+		padding: 140px 30px 30px 30px;
 	    background-color: $white;
 	    -webkit-box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
 		-moz-box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);

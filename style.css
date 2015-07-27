@@ -1464,25 +1464,26 @@ html.ie8 .panel {
 }
 /* line 59, assets/sass/panels/_fifty-years.scss */
 .fifty-years p#instruction {
-  display: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
   font-weight: bold;
 }
-/* line 60, assets/sass/panels/_fifty-years.scss */
+/* line 64, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-topic {
   display: block;
   display: none;
   width: 350px;
 }
-/* line 64, assets/sass/panels/_fifty-years.scss */
+/* line 68, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-topic img {
   width: 100%;
 }
-/* line 67, assets/sass/panels/_fifty-years.scss */
+/* line 71, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-topic:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
-/* line 73, assets/sass/panels/_fifty-years.scss */
+/* line 77, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-point {
   display: block;
   display: none;
@@ -1492,22 +1493,22 @@ html.ie8 .panel {
   -moz-box-shadow: 6px 4px 52px 28px white;
   box-shadow: 6px 4px 52px 28px white;
 }
-/* line 82, assets/sass/panels/_fifty-years.scss */
+/* line 86, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-point ul {
   list-style-type: disc;
   margin: 0;
   list-style-position: outside;
   font-size: 40px;
 }
-/* line 87, assets/sass/panels/_fifty-years.scss */
+/* line 91, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-point ul li.story-link {
   padding: 30px 0px 20px 0px;
 }
-/* line 88, assets/sass/panels/_fifty-years.scss */
+/* line 92, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-point ul li.story-link h2 {
   margin-bottom: 5px;
 }
-/* line 89, assets/sass/panels/_fifty-years.scss */
+/* line 93, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-point ul li.story-link a {
   font-size: 14px;
   font-family: "Cabin", sans-serif;
@@ -1517,41 +1518,42 @@ html.ie8 .panel {
   margin-bottom: 15px;
   vertical-align: bottom;
 }
-/* line 98, assets/sass/panels/_fifty-years.scss */
+/* line 102, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-point ul li.story-link img {
   display: inline;
   float: left;
   padding-right: 20px;
   vertical-align: bottom;
 }
-/* line 109, assets/sass/panels/_fifty-years.scss */
+/* line 113, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-story {
   display: block;
   display: none;
-  width: 860px;
-  padding: 30px;
+  width: 880px;
+  overflow: auto;
+  padding: 140px 30px 30px 30px;
   background-color: white;
   -webkit-box-shadow: 6px 4px 52px 28px white;
   -moz-box-shadow: 6px 4px 52px 28px white;
   box-shadow: 6px 4px 52px 28px white;
 }
-/* line 118, assets/sass/panels/_fifty-years.scss */
+/* line 124, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-story .story-left {
   display: inline;
   width: 540px;
   float: left;
   padding-right: 40px;
 }
-/* line 124, assets/sass/panels/_fifty-years.scss */
+/* line 130, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-story .story-left .breadcrumbs {
   display: block;
 }
-/* line 127, assets/sass/panels/_fifty-years.scss */
+/* line 133, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-story .story-left .breadcrumbs ul {
   margin: 0 0 30px 0;
   padding: 0;
 }
-/* line 131, assets/sass/panels/_fifty-years.scss */
+/* line 137, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-story .story-left .breadcrumbs ul li {
   display: inline;
   float: left;
@@ -1562,37 +1564,37 @@ html.ie8 .panel {
   font-weight: bold;
   margin-bottom: 15px;
 }
-/* line 144, assets/sass/panels/_fifty-years.scss */
+/* line 150, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-story .story-left .title {
   display: block;
   padding: 0 0 0px 0;
   text-align: left;
 }
-/* line 148, assets/sass/panels/_fifty-years.scss */
+/* line 154, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-story .story-left .title h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   color: black;
   text-transform: none;
   margin-top: 0px;
 }
-/* line 155, assets/sass/panels/_fifty-years.scss */
+/* line 161, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-story .story-left .title h3.cabin {
   font-family: "Cabin", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 20px;
 }
-/* line 166, assets/sass/panels/_fifty-years.scss */
+/* line 172, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-story .story-left .infographic img {
   width: 100%;
 }
-/* line 173, assets/sass/panels/_fifty-years.scss */
+/* line 179, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-story .story-right {
   display: inline;
   width: 220px;
   float: left;
 }
-/* line 178, assets/sass/panels/_fifty-years.scss */
+/* line 184, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-story .story-right a {
   font-size: 14px;
   font-family: "Cabin", sans-serif;
@@ -1601,14 +1603,14 @@ html.ie8 .panel {
   display: block;
   margin-bottom: 12px;
 }
-/* line 184, assets/sass/panels/_fifty-years.scss */
+/* line 190, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-story .story-right a img {
   width: 40px;
   padding: 3px 2px 0 2px;
   position: relative;
   top: 4px;
 }
-/* line 187, assets/sass/panels/_fifty-years.scss */
+/* line 193, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-story .story-right .related {
   font-size: 14px;
   font-family: "Cabin", sans-serif;
@@ -1616,26 +1618,26 @@ html.ie8 .panel {
   font-weight: bold;
   display: block;
 }
-/* line 192, assets/sass/panels/_fifty-years.scss */
+/* line 198, assets/sass/panels/_fifty-years.scss */
 .fifty-years .slide-story .story-right .related a img {
   display: block;
   margin: 15px 0 0 0;
   width: 60%;
 }
-/* line 206, assets/sass/panels/_fifty-years.scss */
+/* line 212, assets/sass/panels/_fifty-years.scss */
 .fifty-years #title {
   margin-left: -250px;
   width: 350px;
 }
-/* line 210, assets/sass/panels/_fifty-years.scss */
+/* line 216, assets/sass/panels/_fifty-years.scss */
 .fifty-years #title img {
   margin-left: 90px;
 }
-/* line 213, assets/sass/panels/_fifty-years.scss */
+/* line 219, assets/sass/panels/_fifty-years.scss */
 .fifty-years #title h1 {
   display: none;
 }
-/* line 216, assets/sass/panels/_fifty-years.scss */
+/* line 222, assets/sass/panels/_fifty-years.scss */
 .fifty-years #title p {
   font-style: italic;
   background-color: white;
@@ -1677,7 +1679,7 @@ html.ie8 .panel {
   top: -120px;
   margin-left: 220px;
   border: 3px solid #353535;
-  height: 400px;
+  padding: 0;
 }
 
 /* line 1, assets/sass/panels/_home.scss */
@@ -1749,8 +1751,9 @@ html.ie8 .panel {
   font-size: 24px;
   line-height: 28px;
   text-transform: none;
+  text-align: center;
 }
-/* line 31, assets/sass/panels/_home.scss */
+/* line 32, assets/sass/panels/_home.scss */
 .wallsdown .home-header h1 span.cabin-callout {
   font-family: "Cabin", sans-serif;
   font-weight: bold;

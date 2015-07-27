@@ -833,7 +833,7 @@ $(document).ready(function() {
      transitionEnd: function(index, elem) { //set new hash after transistion
         var this_hash = $(elem).attr('id');
  
-       window.location.hash = this_hash; //~~~~~~~~~THIS IS CAUSING AN ERROR!!!!~~~~~~
+       window.location.hash = this_hash;  
      }
   }).data('Swipe');
 
@@ -985,7 +985,7 @@ $(document).ready(function() {
       map.goto(0);
       $('#title').delay(100).fadeIn('slow');
       $('.slide-topic').delay(3000).fadeIn('slow');
-      $('#instruction').delay(3000).fadeIn('slow');
+      $('#instruction').delay(3000).css('opacity','1');
 
     }
     window.addEventListener("hashchange", function () {
@@ -996,7 +996,7 @@ $(document).ready(function() {
           map.goto(0);
           $('#title').delay(100).fadeIn('slow');
           $('.slide-topic').delay(3000).fadeIn('slow');
-          $('#instruction').delay(3000).fadeIn('slow');
+          $('#instruction').delay(3000).css('opacity','1');
         }
 
       if (hash.indexOf("#/") >= 0){
