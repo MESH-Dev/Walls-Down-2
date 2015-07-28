@@ -178,10 +178,12 @@ $(document).ready(function() {
 
       if (hash.indexOf("#/") >= 0){
         hash = hash.replace('/','');
-
-        type = hash.split("-").length - 1;
-        if (type === 0) type = 'topic';
-        if (type > 0) type = 'story';
+        if(hash.indexOf("story") >= 0){
+          type = 'story';
+        }
+        if(hash.indexOf("topic") >= 0){
+          type = 'topic';
+        }
         
         if (hash == "#coverage") {
 
@@ -190,6 +192,7 @@ $(document).ready(function() {
           gotoTitle();
         }
         else if(type =='topic' ){
+          console.log(hash);
           gotoTopic(hash);
         }
         else if(type =='story' ){
@@ -211,6 +214,7 @@ $(document).ready(function() {
     function gotoTopic(hash){
       $(hash).fadeIn();
       $(hash).siblings().fadeOut('2000');
+      hash = hash.replace('-topic','');
       points = hash+"-points";
       $('.slide-point').fadeOut();
       $('#title').fadeOut();
