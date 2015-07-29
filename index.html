@@ -58,7 +58,7 @@
 								<img src="assets/img/house-call-banner.png" alt="">
 						</div>
 
-						<a class="grid__item" href="#">
+						<a class="grid__item" id="peter" href="">
 							<h3 class="title title--preview cabin-header black">The Advocate</h2>
 							<div class="loader"></div>
 							<div class="meta meta--preview">
@@ -67,7 +67,7 @@
 							<span class="swatch peter-swatch"><h3 class="cabin-header purple">How he re-envisions health care <span class="fa fa-angle-right"></span></h3> </span>
 						</a>
 
-						<a class="grid__item vcu" href="#">
+						<a class="grid__item vcu" id="vcu" href="">
 							<h3 class="title title--preview cabin-header black">The Medical Home</h2>
 							<div class="loader"></div>
 							<div class="meta meta--preview">
@@ -76,7 +76,7 @@
 							<span class="swatch vcu-swatch"><h3 class="cabin-header purple">What the truly vulnerable need  <span class="fa fa-angle-right"></span></h3> </span>
 						</a>
 
-						<a class="grid__item" href="#">
+						<a class="grid__item" id="sun-seeker" href="">
 							<h3 class="title title--preview cabin-header black">The Sun-Seeker</h2>
 							<div class="loader"></div>
 							<div class="meta meta--preview">
@@ -99,6 +99,7 @@
 										<img class="meta__avatar" src="assets/img/peter.png" alt="author01" />
 									</div>
 									<h1 class="title title--full  black">The Advocate</h1>
+									<div class="house-swatch"><img src="assets/img/house-title-bg.png" alt=""></div>
 									<span class="category category--full"><a href="#" id="close-button-one" class="close-button"><span class="fa fa-angle-left"></span>  Back to house call</a></span>
 								</div>
 								
@@ -194,7 +195,7 @@
 
 									<p>As of now, it seems that Independence at Home is on the right track. <a href="https://www.congress.gov/bill/114th-congress/senate-bill/971?q={%22search%22%3A[%22\%22s971\%22%22]}" target="_blank">In July of 2015, Congress voted to extend the demonstration from three to five years.</a> And maybe one day it will be more than a demonstration. But that’s not where the story ends. House calls is destined for more, as it is just part of a whole. </p>
 
-									<a href="" class="next-story">GO TO NEXT STORY</a>
+									<a href="" class="story-next">GO TO NEXT STORY</a>
 						 
 									 
 								</div>
@@ -206,6 +207,7 @@
 										<img class="meta__avatar" src="assets/img/vcu.png" alt="VCU" />
 									</div>
 									<h1 class="title title--full  black">The Medical Home</h1>
+									<div class="house-swatch"><img src="assets/img/house-title-bg.png" alt=""></div>
 									<span class="category category--full"><a href="#" id="close-button-two" class="close-button"><span class="fa fa-angle-left"></span>  Back to house call</a></span>
 								</div>
 								
@@ -275,7 +277,7 @@
 									<p>By itself, the clinic is a proven model for better health and lower costs for some of health care’s most costly patients. But as part of a whole, the clinic is more. It is a key ingredient in a new approach – a new demonstration that began enrolling patients in 2014. Javaun Harris was one of them.</p> 
 
 
-									 <a href="" class="next-story">GO TO NEXT STORY</a>
+									<a href="" class="story-next">GO TO NEXT STORY</a>
 								</div>
 							 
 							</article>
@@ -285,6 +287,7 @@
 										<img class="meta__avatar" src="assets/img/javone.png" alt="author01" />
 									</div>
 									<h1 class="title title--full   black">The Sun-Seeker</h1>
+									<div class="house-swatch"><img src="assets/img/house-title-bg.png" alt=""></div>
 									<span class="category category--full"><a href="#" id="close-button-three" class="close-button"><span class="fa fa-angle-left"></span>  Back to house call</a></span>
 								</div>
 								
@@ -403,7 +406,14 @@
 						</div> <!-- end Scroll wrap -->
 						<button class="close-button close-btn"><i class="fa fa-close"></i><span>Close</span></button>
 					</section> <!-- end content -->
+
+					<div class="right-nav">
+						<a href="#" class="next">The First Step <span class="fa fa-angle-right"></span></a>
+					</div>
 				</div> <!-- end main -->
+ 
+
+					
 			</div> <!-- end panel -->
 			
 			<div class="panel first-step" id="first-step">
@@ -418,11 +428,16 @@
  					<div class="video-container">
  						<iframe width="640" height="360" src="https://www.youtube.com/embed/tAkg4vrns00" frameborder="0" allowfullscreen></iframe>
  					</div>
-					 
+					<div class="left-nav">
+							<a href="#" class="prev"><span class="fa fa-angle-left"></span>House Call</a>
+						</div>
+						<div class="right-nav">
+							<a href="#" class="next">50 Years of Coverage<span class="fa fa-angle-right"></span></a>
+						</div> 
 				</div>
 			</div>
 
-			<div class="panel fifty-years" id="coverage">
+			<div class="panel fifty-years" id="#/title">
 				<div id="impress">
 					<div id="title" class="step" data-x="0" data-y="0" data-scale="4">
         		<h1><span class="fifty">50</span> <br>Years of coverage</h1> 
@@ -1283,6 +1298,12 @@
  
 
 				</div>
+				<div class="left-nav">
+					<a href="#" class="prev"><span class="fa fa-angle-left"></span> The First Step</a>
+				</div>
+				<div class="right-nav">
+					<a href="#" class="next">What Do You Think?<span class="fa fa-angle-right"></span></a>
+				</div> 
 			</div>
 
 		 
@@ -1396,6 +1417,12 @@
  					
  					<button id="submit-form" style="display:none;">Send my thoughts to the Walls Down creators!</button>
 				</div>	
+				<div class="left-nav">
+					<a href="#" class="prev"><span class="fa fa-angle-left"></span>50 Years of Coverage</a>
+				</div>
+				<div class="right-nav">
+					<a href="#" class="next">Editor Letter<span class="fa fa-angle-right"></span></a>
+				</div> 
 			</div>  
 
 			<div class="panel editor-letter" id="editor-letter">
@@ -1514,7 +1541,7 @@
 					</div>
 				</div>
 			</a>
-			<a class="slide-nav" href="#coverage" data-index-number="3">
+			<a class="slide-nav" href="#/title" data-index-number="3">
 				<div class="menu-item ">
 					<img src="assets/img/menu-fifty.jpg" alt="Fifty Years of Coverage">
 					<div class="text">

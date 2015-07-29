@@ -14,6 +14,21 @@
 		font-size: 20px;
 		line-height: 28px;
 	}
+
+	.right-nav{
+	    position: absolute;
+	    right: 240px;
+	    top: inherit;
+	    bottom: 100px;
+	    width: 300px;		 
+	}
+	.left-nav{
+	    position: absolute;
+	    left: 40px;
+	    top: inherit;
+	    bottom: 100px;
+	    width: 300px;		 
+	}
 }
 
 

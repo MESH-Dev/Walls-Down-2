@@ -831,9 +831,18 @@ $(document).ready(function() {
     disableScroll: false,
     stopPropagation: false,
      transitionEnd: function(index, elem) { //set new hash after transistion
+        var hash = window.location.hash;
         var this_hash = $(elem).attr('id');
+        if (this_hash.indexOf("#/") >= 0)
+        {
+          if(this_hash.indexOf("#/title") >= 0){
+            window.location.hash = hash;
+          }
  
-       window.location.hash = this_hash;
+        }
+        else{
+          window.location.hash = this_hash;
+        }
      }
   }).data('Swipe');
 
@@ -877,14 +886,6 @@ $(document).ready(function() {
     }
   });*/
  
-  //Check initial hash and slide to panel
-  var hash = window.location.hash ? window.location.hash : '#wallsdown';
-  if (hash.indexOf("#/") >= 0) hash ="#coverage";
- 
-  var idx = $('a[href='+hash+']').attr('data-index-number');
-  Slider.slide(idx);
-
-
 
 
   //MAIN MENU CLICKS - SCROLL
@@ -900,7 +901,6 @@ $(document).ready(function() {
     $('body').removeClass("issues-open");
     $('body').addClass("credits-open");
     $('.credits-menu-left').fadeIn('slow');
- 
     e.preventDefault();
   });
 
@@ -922,28 +922,67 @@ $(document).ready(function() {
  
    
   /*------------------ MENU ACTIVE/Hover TOGGLE from hash-----------------*/
-  $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
+
+  //Check initial hash and slide to panel
+  var hash = window.location.hash ? window.location.hash : '#wallsdown';
+  if (hash.indexOf("#coverage") >= 0) hash ="#/title";
+  if (hash.indexOf("#/") >= 0) {
+     idx = 3;
+  }
+  else{
+     idx = $('a[href='+hash+']').attr('data-index-number');
+  }
+  $('.main-menu a[data-index-number="'+ idx +'"]').children(".menu-item").addClass('menu-active');
+  $('.secondary-menu li a[data-index-number="'+ idx +'"]').parent("li").addClass('menu-active');
+  Slider.slide(idx);
+
 
   window.addEventListener("hashchange", function () {
       var hash = window.location.hash ? window.location.hash : '#home';
-      if (hash.indexOf("#/") >= 0) hash ="#coverage";
-      var idx = $('a[href='+hash+']').attr('id');
-
+      if (hash.indexOf("#coverage") >= 0) hash ="#/title";
+      
       $(".main-menu a div").removeClass('menu-active');
       $(".secondary-menu li").removeClass('menu-active');
 
-      $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
-      $('.secondary-menu li a[href="'+ hash +'"]').parent("li").addClass('menu-active');
+      if (hash.indexOf("#/") >= 0) {
+         idx = 3;
+      }
+      else{
+         idx = $('a[href='+hash+']').attr('data-index-number');
+      }
+
+      $('.main-menu a[data-index-number="'+ idx +'"]').children(".menu-item").addClass('menu-active');
+      $('.secondary-menu li a[data-index-number="'+ idx +'"]').parent("li").addClass('menu-active');
+
+    
  
  
    }, false);
- 
+
+
+
+  /* -----HOUSECALL CLICKS AND HASHES ----------*/
+
   
+  if(hash == '#peter' ||hash == '#vcu' || hash == '#sun-seeker'){
+    Slider.slide(1);
+ 
+  }
+
+ $('a.grid__item').click(function(){
+      var this_hash = $(this).attr('id');
+      window.location.hash = this_hash;
+
+ });
+
+ $('a.story-next').click(function(e) {
+      e.preventDefault();
+      hideContent();
+      //$('a#vcu')[0].click();
+ });
 
 
-
-
-
+ 
 
 
 // --------------------------------------------------------------------------------------------
@@ -984,19 +1023,28 @@ $(document).ready(function() {
  
   if( isDesktop && viewportwidth >767){
     var map = impress();
+
+    if (hash.indexOf("#coverage") >= 0) hash ="#/title";
+
+    var initmap = false;
+    if (hash.indexOf("#/") >= 0) initmap = true;
     
-    if (window.location.hash == "#coverage") {
+    if (initmap) {
       map.init();
-      map.goto(0);
+      map.goto(hash);
+      hash = hash.replace('/','');
+      $(hash).show();
       $('#title').delay(100).fadeIn('slow');
       $('.slide-topic').delay(3000).fadeIn('slow');
       $('#instruction').delay(3000).css('opacity','1');
-
     }
+
+
+
     window.addEventListener("hashchange", function () {
       hash = window.location.hash;
 
-      if (hash == "#coverage") {
+      if (hash == "#/title") {
           map.init();
           map.goto(0);
           $('#title').delay(100).fadeIn('slow');
@@ -1020,7 +1068,7 @@ $(document).ready(function() {
           gotoTitle();
         }
         else if(type =='topic' ){
-          console.log(hash);
+          
           gotoTopic(hash);
         }
         else if(type =='story' ){

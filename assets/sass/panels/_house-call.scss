@@ -36,6 +36,18 @@
 		top: 170px;
 		z-index: 0;
 	}
+
+	.right-nav{
+		height: 30px;
+		float: left;
+		width: 80%;
+		a{
+			color: $white;
+		}
+	}
+	.house-swatch{
+		margin-top: -170px;
+	}
 }
 
 $anim-time: 0.5s;

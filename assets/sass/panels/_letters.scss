@@ -23,19 +23,22 @@
 	}
 
 	.left-nav{
-	  	position: relative;  height: 0px;  width: 50%; top: 30px; left: 0px;
+	  	position: relative;  height: 0px;  width: 50%; top: -0px; left: -140px;
 	    @include breakpoint(small) {
 	      left:-10px;
 	    }
 	    @media only screen and (min-width: 768px) and (max-width: 1060px){ left:-10px;}
 	}
 	.right-nav{
-	  	position: relative;  height: 0px;  width: 50%; top: 30px; left: 0px;
+	  	position: relative;  height: 0px;  width: 50%; top: -0px; left: 200px;
 	    @include breakpoint(small) {
 	      left:-10px;
 	    }
 	    @media only screen and (min-width: 768px) and (max-width: 1060px){ left:-10px;}
 	}
+
+
+
 	
 	
 }
