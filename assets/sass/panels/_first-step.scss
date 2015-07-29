@@ -1,13 +1,13 @@
 .first-step{
 	background: url('assets/img/first-bg.jpg')0px 0 no-repeat;
-    @include background-size(cover);
+    @include background-size(cover); 
  
 	width: 100%;
 	 
 	.container{
 		width: 1060px;
 		padding-right: 150px;
-		margin: 0 0 0 160px;
+		margin: 0 0 0 0px;
 	}
 	.title img{
 		width: 100%;

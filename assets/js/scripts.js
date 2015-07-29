@@ -74,17 +74,18 @@ $(document).ready(function() {
 
   //Slideout menus
   $("#credit-link").click(function(e){
-    
-    $('.credits-menu-left').fadeIn('slow');
+    $('body').removeClass("issues-open");
     $('body').addClass("credits-open");
-    activeSide = "credits-open";
-
+    $('.credits-menu-left').fadeIn('slow');
+ 
     e.preventDefault();
   });
 
   $("#issues-link").click(function(e){
     $('body').addClass("issues-open");
-    activeSide = "issues-open";
+    $('body').removeClass("credits-open");
+    $('.credits-menu-left').fadeIn('slow');
+    
     e.preventDefault();
   });
 
@@ -93,7 +94,7 @@ $(document).ready(function() {
       $('body').removeClass("credits-open");
       $('body').removeClass("issues-open");
       $('.credits-menu-left').fadeOut();
-      activeSide = "";
+       
   });
  
    

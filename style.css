@@ -1008,7 +1008,7 @@ body, html {
   color: white;
 }
 /* line 113, assets/sass/_layout.scss */
-.credits-menu-left .credits-wrap {
+.credits-menu-left .credits-wrap, .credits-menu-left .more-wrap {
   padding: 30px 15px 15px 15px;
   position: absolute;
   top: 0px;
@@ -1020,7 +1020,7 @@ body, html {
 }
 @media only screen and (max-width: 800px) {
   /* line 113, assets/sass/_layout.scss */
-  .credits-menu-left .credits-wrap {
+  .credits-menu-left .credits-wrap, .credits-menu-left .more-wrap {
     padding: 80px 15px 15px 15px;
   }
 }
@@ -1670,7 +1670,7 @@ html.ie8 .panel {
 .first-step .container {
   width: 1060px;
   padding-right: 150px;
-  margin: 0 0 0 160px;
+  margin: 0 0 0 0px;
 }
 /* line 12, assets/sass/panels/_first-step.scss */
 .first-step .title img {
