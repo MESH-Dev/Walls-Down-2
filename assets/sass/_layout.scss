@@ -1,9 +1,7 @@
-
 body,html {
    overflow: hidden;
    @include animate(.3s); 
 }
-
 
 //NAVIGATION MENU
 
@@ -99,17 +97,19 @@ body,html {
     -o-transform:translateZ(1px);
     transform:translateZ(1px);
     overflow: hidden;
-    z-index: 1;
+    
     
     @include animate(0.3s);
     top: 0;
-    width: 210px;
+    width: 240px;
     height: 100%;
     background-color: $darkgray;
     left: 0px;
     @include opacity(0);
-    z-index: 11;
+    display: none;
+    z-index: 1;
     color: $white;
+
     .credits-wrap{ 
       padding: 30px 15px 15px 15px;
       position: absolute;
@@ -123,8 +123,7 @@ body,html {
     p{
       font-size: 11px; line-height: 17px; color: $white; padding-right:10px;
     }
-    p.top-one{margin-bottom: 80px; @include breakpoint(small) {margin-bottom: 20px;}}
-    p.top-two{margin-bottom: 40px;}
+ 
     h4{font:11px/17px $cabin ; color: $white; letter-spacing: 0.1em; text-transform:uppercase;}
     a{color:$white; text-decoration:underline;}
     @include breakpoint(small) {
@@ -144,6 +143,8 @@ body,html {
 body.credits-open #credits{
     left: 0px;
     @include opacity(1);
+
+
 }
 
 body.issues-open #issues{

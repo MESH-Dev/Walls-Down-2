@@ -4,7 +4,7 @@
     @include background-size(cover);
  
 	h1{
-	    width: 260px;
+	    width: 100%;
 	    padding: 0px 0px 40px 0px;
 	    @include breakpoint(small)
 	    {

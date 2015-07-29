@@ -8,7 +8,7 @@
   	}
  
 	.instructions{
-	    position: absolute; width:210px;  bottom:2%; left:40px; float: left; 
+	    position: absolute; width:210px;  bottom:2%; left:60px; float: left; 
 	    img{width: 118px; padding: 0;}
 	    @include breakpoint(small) {display:none;}
 	}
@@ -27,7 +27,7 @@
 			font-size: 24px; 
 			line-height:28px; 
 			text-transform:none;
-			text-align: center;
+
 
 			span.cabin-callout{
 				font-family: $cabin;

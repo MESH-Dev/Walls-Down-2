@@ -897,8 +897,11 @@ $(document).ready(function() {
 
   //Slideout menus
   $("#credit-link").click(function(e){
+    
+    $('.credits-menu-left').fadeIn('slow');
     $('body').addClass("credits-open");
     activeSide = "credits-open";
+
     e.preventDefault();
   });
 
@@ -912,6 +915,7 @@ $(document).ready(function() {
   $(".close-credits-menu").click(function(){
       $('body').removeClass("credits-open");
       $('body').removeClass("issues-open");
+      $('.credits-menu-left').fadeOut();
       activeSide = "";
   });
  

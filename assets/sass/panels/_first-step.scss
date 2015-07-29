@@ -1,11 +1,13 @@
 .first-step{
-	background-color: $black;
+	background: url('assets/img/first-bg.jpg')0px 0 no-repeat;
+    @include background-size(cover);
+ 
 	width: 100%;
 	 
 	.container{
 		width: 1060px;
 		padding-right: 150px;
-		margin: 0 auto;
+		margin: 0 0 0 160px;
 	}
 	.title img{
 		width: 100%;
@@ -15,7 +17,7 @@
 		position: relative;
 		top: -140px;
 		padding-left: 220px;
-		h2{
+		p{
 			color: $white;
 		}
 	}
