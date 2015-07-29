@@ -1808,7 +1808,7 @@ html.ie8 .panel {
 /* line 31, assets/sass/panels/_house-call.scss */
 .house-call .bottom-block {
   width: 100%;
-  height: 200px;
+  height: 140px;
   background-color: #131c29;
   position: relative;
   top: 170px;
@@ -2122,11 +2122,11 @@ a.grid__item:hover {
 .placeholder {
   pointer-events: none;
   position: absolute;
-  width: calc(100% + 5px);
-  height: calc(100vh + 5px);
+  width: 68.5%;
+  height: 100vh;
   z-index: 100;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 10.5%;
   background: white;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
@@ -2153,38 +2153,40 @@ a.grid__item:hover {
 /* line 359, assets/sass/panels/_house-call.scss */
 .content {
   position: absolute;
-  top: 0px;
-  left: 0;
-  width: calc(100% - 150px);
+  top: 10%;
+  left: 10%;
+  width: 70%;
+  height: 600px;
   pointer-events: none;
   height: 0;
   /* Avoid second scroll bar in Chrome! */
   visibility: hidden;
   z-index: 400;
   overflow: hidden;
+  background: white;
 }
 
-/* line 374, assets/sass/panels/_house-call.scss */
+/* line 377, assets/sass/panels/_house-call.scss */
 h2.title--full {
   font-size: 34px;
   line-height: 41px;
 }
 
-/* line 379, assets/sass/panels/_house-call.scss */
+/* line 382, assets/sass/panels/_house-call.scss */
 .content.content--show {
   height: 100vh;
   pointer-events: auto;
   visibility: visible;
 }
 
-/* line 385, assets/sass/panels/_house-call.scss */
+/* line 388, assets/sass/panels/_house-call.scss */
 .content-left-col {
   display: inline;
   float: left;
   width: 30%;
 }
 
-/* line 391, assets/sass/panels/_house-call.scss */
+/* line 394, assets/sass/panels/_house-call.scss */
 .content-right-col {
   display: inline;
   float: left;
@@ -2194,7 +2196,7 @@ h2.title--full {
 }
 
 /* scroll helper wrap */
-/* line 400, assets/sass/panels/_house-call.scss */
+/* line 403, assets/sass/panels/_house-call.scss */
 .scroll-wrap {
   position: absolute;
   width: 100%;
@@ -2208,7 +2210,7 @@ h2.title--full {
 }
 
 /* single content item */
-/* line 413, assets/sass/panels/_house-call.scss */
+/* line 416, assets/sass/panels/_house-call.scss */
 .content__item {
   position: absolute;
   top: 0;
@@ -2216,25 +2218,26 @@ h2.title--full {
   overflow: hidden;
   height: 0;
   opacity: 0;
+  height: 100%;
   padding: 60px 60px 80px 60px;
   pointer-events: none;
 }
-/* line 423, assets/sass/panels/_house-call.scss */
+/* line 428, assets/sass/panels/_house-call.scss */
 .content__item .meta img {
   margin-top: 20px;
 }
-/* line 427, assets/sass/panels/_house-call.scss */
+/* line 432, assets/sass/panels/_house-call.scss */
 .content__item .category {
   font-weight: bold;
   text-transform: uppercase;
   font-family: "Cabin", sans-serif;
 }
-/* line 434, assets/sass/panels/_house-call.scss */
+/* line 439, assets/sass/panels/_house-call.scss */
 .content__item .title {
   margin-bottom: 20px;
 }
 
-/* line 440, assets/sass/panels/_house-call.scss */
+/* line 445, assets/sass/panels/_house-call.scss */
 .content__item.content__item--show {
   height: auto;
   min-height: 100vh;
@@ -2245,7 +2248,7 @@ h2.title--full {
 }
 
 /* content elements */
-/* line 455, assets/sass/panels/_house-call.scss */
+/* line 461, assets/sass/panels/_house-call.scss */
 .category--full,
 .title--full,
 .meta--full .meta__avatar,
@@ -2253,26 +2256,26 @@ h2.title--full {
   opacity: 0;
 }
 
-/* line 459, assets/sass/panels/_house-call.scss */
+/* line 465, assets/sass/panels/_house-call.scss */
 .content__item p {
   opacity: 0;
 }
 
-/* line 464, assets/sass/panels/_house-call.scss */
+/* line 470, assets/sass/panels/_house-call.scss */
 .category--full,
 .title--full {
   -webkit-transform: translate3d(0, 40px, 0);
   transform: translate3d(0, 40px, 0);
 }
 
-/* line 471, assets/sass/panels/_house-call.scss */
+/* line 477, assets/sass/panels/_house-call.scss */
 .meta--full .meta__avatar,
 .meta--full .meta__author {
   -webkit-transform: scale3d(0.5, 0.5, 1);
   transform: scale3d(0.5, 0.5, 1);
 }
 
-/* line 481, assets/sass/panels/_house-call.scss */
+/* line 487, assets/sass/panels/_house-call.scss */
 .content__item--show .category--full,
 .content__item--show .title--full,
 .content__item--show .meta--full .meta__avatar,
@@ -2286,26 +2289,26 @@ h2.title--full {
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
-/* line 493, assets/sass/panels/_house-call.scss */
+/* line 499, assets/sass/panels/_house-call.scss */
 .content__item--show .category--full,
 .content__item--show .title--full {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 
-/* line 498, assets/sass/panels/_house-call.scss */
+/* line 504, assets/sass/panels/_house-call.scss */
 .content__item--show .title--full {
   -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
 }
 
-/* line 503, assets/sass/panels/_house-call.scss */
+/* line 509, assets/sass/panels/_house-call.scss */
 .content__item--show .meta--full .meta__avatar {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
 
-/* line 509, assets/sass/panels/_house-call.scss */
+/* line 515, assets/sass/panels/_house-call.scss */
 .content__item--show.content__item p {
   opacity: 1;
   -webkit-transition: opacity 0.5s 0.25s;
@@ -2313,7 +2316,7 @@ h2.title--full {
 }
 
 /* close button (for content and sidebar) */
-/* line 516, assets/sass/panels/_house-call.scss */
+/* line 522, assets/sass/panels/_house-call.scss */
 .close-btn {
   position: absolute;
   border: none;
@@ -2321,7 +2324,7 @@ h2.title--full {
   margin: 0;
   z-index: 100;
   top: 0;
-  right: 0;
+  right: 20px;
   font-size: 18px;
   color: #6c12c7;
   cursor: pointer;
@@ -2338,12 +2341,12 @@ h2.title--full {
   transition: opacity 0.3s;
 }
 
-/* line 540, assets/sass/panels/_house-call.scss */
+/* line 546, assets/sass/panels/_house-call.scss */
 .close-btn span {
   display: none;
 }
 
-/* line 544, assets/sass/panels/_house-call.scss */
+/* line 550, assets/sass/panels/_house-call.scss */
 .close-btn:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
@@ -2351,10 +2354,15 @@ h2.title--full {
 }
 
 /* show class for content close button */
-/* line 550, assets/sass/panels/_house-call.scss */
+/* line 556, assets/sass/panels/_house-call.scss */
 .close-button--show {
   opacity: 1;
   pointer-events: auto;
+}
+
+/* line 561, assets/sass/panels/_house-call.scss */
+.view-single .close-btn {
+  opacity: 1;
 }
 
 /* line 1, assets/sass/panels/_letters.scss */

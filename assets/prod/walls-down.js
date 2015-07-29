@@ -1419,6 +1419,7 @@ $(document).ready(function() {
  */
 (function() {
 
+
   var bodyEl = document.body,
     docElem = window.document.documentElement,
     support = { transitions: Modernizr.csstransitions },
@@ -1441,13 +1442,11 @@ $(document).ready(function() {
       }
     },
     gridEl = document.getElementById('theGrid'),
+    
     gridItemsContainer = gridEl.querySelector('section.grid'),
     contentItemsContainer = gridEl.querySelector('section.content'),
     gridItems = gridItemsContainer.querySelectorAll('.grid__item'),
     contentItems = contentItemsContainer.querySelectorAll('.content__item'),
-    closeCtrl1 = contentItemsContainer.querySelector('#close-button-one'),
-    closeCtrl2 = contentItemsContainer.querySelector('#close-button-two'),
-    closeCtrl3 = contentItemsContainer.querySelector('#close-button-three'),
     closeCtrl = contentItemsContainer.querySelector('.close-button'),
     current = -1,
     lockScroll = false, xscroll, yscroll,
@@ -1502,20 +1501,11 @@ $(document).ready(function() {
       // hide content
       hideContent();
     });
+    
+ 
 
-    closeCtrl1.addEventListener('click', function() {
-      // hide content
-      hideContent();
-    });
 
-    closeCtrl2.addEventListener('click', function() {
-      // hide content
-      hideContent();
-    });
-    closeCtrl3.addEventListener('click', function() {
-      // hide content
-      hideContent();
-    });
+
 
     // keyboard esc - hide content
     document.addEventListener('keydown', function(ev) {
@@ -1550,6 +1540,12 @@ $(document).ready(function() {
     
     // body overlay
     classie.add(bodyEl, 'view-single');
+    thebod = document.getElementsByClassName("view-single");
+    closeCtrlall = bodyEl.querySelector('div:not(.content)');
+    closeCtrlall.addEventListener('click', function() {
+      // hide content
+      hideContent();
+    });
 
     setTimeout(function() {
       // expands the placeholder
