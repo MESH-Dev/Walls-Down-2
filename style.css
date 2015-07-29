@@ -2164,6 +2164,11 @@ a.grid__item:hover {
   z-index: 400;
   overflow: hidden;
   background: white;
+  background: url("assets/img/letter-bg.jpg") 0px 0 no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* line 377, assets/sass/panels/_house-call.scss */

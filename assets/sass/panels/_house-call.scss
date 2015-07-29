@@ -368,8 +368,8 @@ a.grid__item:hover{
 	z-index: 400;
 	overflow: hidden;
 	background: $white;
-	//background: url('assets/img/letter-bg.jpg') 00px 0 no-repeat;
-    //@include background-size(cover);
+	background: url('assets/img/letter-bg.jpg') 00px 0 no-repeat;
+    @include background-size(cover);
 
 
 }
