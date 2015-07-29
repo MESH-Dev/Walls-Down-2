@@ -12,8 +12,15 @@ $(document).ready(function() {
         var this_hash = $(elem).attr('id');
         if (this_hash.indexOf("#/") >= 0)
         {
-          if(this_hash.indexOf("#/title") >= 0){
-            window.location.hash = hash;
+          if(hash.length > 20)
+          {
+              console.log('BIGG');
+              console.log(hash);
+              console.log(hash.length);
+              window.location.hash = hash;
+          }
+          else{
+              window.location.hash = this_hash;
           }
  
         }
@@ -258,7 +265,7 @@ $(document).ready(function() {
   }
 
   function gotoTitle(){
-      $('#title').delay(500).fadeIn('slow');
+      $('#title').delay(300).fadeIn('slow');
       $('.slide-topic').fadeIn('slow');
       $('.slide-story').fadeOut();
       $('.slide-point').fadeOut();
