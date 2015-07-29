@@ -18,16 +18,21 @@
 	.right-nav{
 	    position: absolute;
 	    right: 240px;
-	    top: inherit;
-	    bottom: 100px;
+	    top: 850px;
+ 
 	    width: 300px;		 
 	}
 	.left-nav{
 	    position: absolute;
-	    left: 40px;
-	    top: inherit;
-	    bottom: 100px;
+	    left: 20px;
+	    top: 850px;
+	   
 	    width: 300px;		 
+	}
+
+	.survey-share{
+		display: none;
+		padding-top: 40px;
 	}
 }
 

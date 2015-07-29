@@ -1095,15 +1095,16 @@ body.issues-open #issues {
 
 /* ------SHARE BUTTONS ---------*/
 /* line 182, assets/sass/_layout.scss */
-.social {
-  width: 100%;
+.social-share {
+  margin-bottom: 20px;
 }
+
 /* line 183, assets/sass/_layout.scss */
-.social .social-title {
+.social-title {
   font: 14px/20px "Cabin", sans-serif;
-  color: #020202;
   text-transform: uppercase;
   padding-left: 4px;
+  margin-bottom: 0px;
 }
 
 /* line 186, assets/sass/_layout.scss */
@@ -1129,12 +1130,12 @@ body.issues-open #issues {
   height: 25px !important;
   width: 25px !important;
   display: block;
-  background: url(assets/img/social_icons-single.png) no-repeat !important;
+  background: none !important;
 }
 
 /* line 190, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_facebook {
-  background: url(assets/img/social_icons-single.png) no-repeat !important;
+  background: url(assets/img/social_icons-single.png) no-repeat;
   background-position: -25px 0 !important;
 }
 
@@ -1639,21 +1640,29 @@ html.ie8 .panel {
   margin: 10px 0 0 0;
   width: 60%;
 }
-/* line 239, assets/sass/panels/_fifty-years.scss */
+/* line 233, assets/sass/panels/_fifty-years.scss */
+.fifty-years .slide-story .story-right .social-share {
+  padding-top: 20px;
+}
+/* line 235, assets/sass/panels/_fifty-years.scss */
+.fifty-years .slide-story .story-right .social-share h4 {
+  font-weight: bold;
+}
+/* line 246, assets/sass/panels/_fifty-years.scss */
 .fifty-years #title {
   margin-left: -250px;
   width: 350px;
 }
-/* line 243, assets/sass/panels/_fifty-years.scss */
+/* line 250, assets/sass/panels/_fifty-years.scss */
 .fifty-years #title img {
   margin-left: 0px;
   margin-bottom: 10px;
 }
-/* line 247, assets/sass/panels/_fifty-years.scss */
+/* line 254, assets/sass/panels/_fifty-years.scss */
 .fifty-years #title h1 {
   display: none;
 }
-/* line 250, assets/sass/panels/_fifty-years.scss */
+/* line 257, assets/sass/panels/_fifty-years.scss */
 .fifty-years #title p {
   font-style: italic;
   background-color: white;
@@ -1661,7 +1670,7 @@ html.ie8 .panel {
   -moz-box-shadow: 6px 4px 52px 28px white;
   box-shadow: 6px 4px 52px 28px white;
 }
-/* line 260, assets/sass/panels/_fifty-years.scss */
+/* line 267, assets/sass/panels/_fifty-years.scss */
 .fifty-years .right-nav {
   position: absolute;
   right: 240px;
@@ -1669,7 +1678,7 @@ html.ie8 .panel {
   bottom: 60px;
   width: 300px;
 }
-/* line 267, assets/sass/panels/_fifty-years.scss */
+/* line 274, assets/sass/panels/_fifty-years.scss */
 .fifty-years .left-nav {
   position: absolute;
   left: 40px;
@@ -1687,41 +1696,41 @@ html.ie8 .panel {
   background-size: cover;
   width: 100%;
 }
-/* line 7, assets/sass/panels/_first-step.scss */
+/* line 8, assets/sass/panels/_first-step.scss */
 .first-step .container {
   width: 1060px;
   padding-right: 150px;
   margin: 0 0 0 0px;
 }
-/* line 12, assets/sass/panels/_first-step.scss */
+/* line 13, assets/sass/panels/_first-step.scss */
 .first-step .title img {
   width: 100%;
 }
-/* line 15, assets/sass/panels/_first-step.scss */
+/* line 16, assets/sass/panels/_first-step.scss */
 .first-step .title-text {
   width: 600px;
   position: relative;
   top: -140px;
   padding-left: 220px;
 }
-/* line 20, assets/sass/panels/_first-step.scss */
+/* line 21, assets/sass/panels/_first-step.scss */
 .first-step .title-text p {
   color: white;
 }
-/* line 24, assets/sass/panels/_first-step.scss */
+/* line 25, assets/sass/panels/_first-step.scss */
 .first-step .video-container {
   width: 640px;
   position: relative;
-  top: -120px;
+  top: -175px;
   margin-left: 220px;
   border: 3px solid #353535;
   padding: 0;
 }
-/* line 35, assets/sass/panels/_first-step.scss */
+/* line 36, assets/sass/panels/_first-step.scss */
 .first-step .right-nav, .first-step .left-nav {
   margin-top: 50px;
 }
-/* line 37, assets/sass/panels/_first-step.scss */
+/* line 38, assets/sass/panels/_first-step.scss */
 .first-step .right-nav a, .first-step .left-nav a {
   color: white;
 }
@@ -2517,21 +2526,24 @@ h2.title--full {
 .think .right-nav {
   position: absolute;
   right: 240px;
-  top: inherit;
-  bottom: 100px;
+  top: 850px;
   width: 300px;
 }
 /* line 25, assets/sass/panels/_think.scss */
 .think .left-nav {
   position: absolute;
-  left: 40px;
-  top: inherit;
-  bottom: 100px;
+  left: 20px;
+  top: 850px;
   width: 300px;
+}
+/* line 33, assets/sass/panels/_think.scss */
+.think .survey-share {
+  display: none;
+  padding-top: 40px;
 }
 
 /* Default custom select styles */
-/* line 39, assets/sass/panels/_think.scss */
+/* line 44, assets/sass/panels/_think.scss */
 div.cs-select {
   display: inline-block;
   vertical-align: middle;
@@ -2549,25 +2561,25 @@ div.cs-select {
   user-select: none;
 }
 
-/* line 56, assets/sass/panels/_think.scss */
+/* line 61, assets/sass/panels/_think.scss */
 span.select-span {
   display: inline;
   padding: 0 10px 0 10px;
   width: 200px;
 }
 
-/* line 61, assets/sass/panels/_think.scss */
+/* line 66, assets/sass/panels/_think.scss */
 div.cs-select:focus {
   outline: none;
   /* For better accessibility add a style for this in your skin */
 }
 
-/* line 65, assets/sass/panels/_think.scss */
+/* line 70, assets/sass/panels/_think.scss */
 .cs-select select {
   display: none;
 }
 
-/* line 69, assets/sass/panels/_think.scss */
+/* line 74, assets/sass/panels/_think.scss */
 .cs-select span {
   display: block;
   position: relative;
@@ -2579,12 +2591,12 @@ div.cs-select:focus {
 }
 
 /* Placeholder and selected option */
-/* line 80, assets/sass/panels/_think.scss */
+/* line 85, assets/sass/panels/_think.scss */
 .cs-select > span {
   padding-right: 0px;
 }
 
-/* line 85, assets/sass/panels/_think.scss */
+/* line 90, assets/sass/panels/_think.scss */
 .cs-select > span::after,
 .cs-select .cs-selected span::after {
   speak: none;
@@ -2596,31 +2608,31 @@ div.cs-select:focus {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 95, assets/sass/panels/_think.scss */
+/* line 100, assets/sass/panels/_think.scss */
 .cs-select > span::after {
   content: '\25BE';
   right: 1em;
 }
 
-/* line 100, assets/sass/panels/_think.scss */
+/* line 105, assets/sass/panels/_think.scss */
 .cs-select .cs-selected span::after {
   content: '\2713';
   margin-left: 1em;
 }
 
-/* line 105, assets/sass/panels/_think.scss */
+/* line 110, assets/sass/panels/_think.scss */
 .cs-select.cs-active > span::after {
   -webkit-transform: translateY(-50%) rotate(180deg);
   transform: translateY(-50%) rotate(180deg);
 }
 
-/* line 110, assets/sass/panels/_think.scss */
+/* line 115, assets/sass/panels/_think.scss */
 div.cs-active {
   z-index: 200;
 }
 
 /* Options */
-/* line 115, assets/sass/panels/_think.scss */
+/* line 120, assets/sass/panels/_think.scss */
 .cs-select .cs-options {
   position: absolute;
   overflow: hidden;
@@ -2629,12 +2641,12 @@ div.cs-active {
   visibility: hidden;
 }
 
-/* line 123, assets/sass/panels/_think.scss */
+/* line 128, assets/sass/panels/_think.scss */
 .cs-select.cs-active .cs-options {
   visibility: visible;
 }
 
-/* line 127, assets/sass/panels/_think.scss */
+/* line 132, assets/sass/panels/_think.scss */
 .cs-select ul {
   list-style: none;
   margin: 0;
@@ -2642,46 +2654,46 @@ div.cs-active {
   width: 100%;
 }
 
-/* line 134, assets/sass/panels/_think.scss */
+/* line 139, assets/sass/panels/_think.scss */
 .cs-select ul span {
   padding: 1em;
 }
 
-/* line 138, assets/sass/panels/_think.scss */
+/* line 143, assets/sass/panels/_think.scss */
 .cs-select ul li.cs-focus span {
   background-color: #ddd;
 }
 
 /* Optgroup and optgroup label */
-/* line 143, assets/sass/panels/_think.scss */
+/* line 148, assets/sass/panels/_think.scss */
 .cs-select li.cs-optgroup ul {
   padding-left: 1em;
 }
 
-/* line 147, assets/sass/panels/_think.scss */
+/* line 152, assets/sass/panels/_think.scss */
 .cs-select li.cs-optgroup > span {
   cursor: default;
 }
 
-/* line 162, assets/sass/panels/_think.scss */
+/* line 167, assets/sass/panels/_think.scss */
 div.cs-walls {
   background: transparent;
   font-size: 20px;
   max-width: 200px;
 }
 
-/* line 169, assets/sass/panels/_think.scss */
+/* line 174, assets/sass/panels/_think.scss */
 span.magazine {
   width: 200px;
 }
 
 @media screen and (max-width: 30em) {
-  /* line 174, assets/sass/panels/_think.scss */
+  /* line 179, assets/sass/panels/_think.scss */
   div.cs-walls {
     font-size: 1.2em;
   }
 }
-/* line 179, assets/sass/panels/_think.scss */
+/* line 184, assets/sass/panels/_think.scss */
 .cs-walls > span.cs-placeholder {
   padding: 5px 0px 8px 0px;
   border-bottom: 1px solid #000;
@@ -2689,7 +2701,7 @@ span.magazine {
   color: #6c12c7;
 }
 
-/* line 189, assets/sass/panels/_think.scss */
+/* line 194, assets/sass/panels/_think.scss */
 .cs-walls .cs-options {
   background: #fcfcfc;
   opacity: 1;
@@ -2697,14 +2709,14 @@ span.magazine {
   transition: opacity 0.0s 0.0s, visibility 0s 0.0s;
 }
 
-/* line 196, assets/sass/panels/_think.scss */
+/* line 201, assets/sass/panels/_think.scss */
 .cs-walls.cs-active .cs-options {
   opacity: 1;
   -webkit-transition: opacity 0.9s;
   transition: opacity 0.9s;
 }
 
-/* line 202, assets/sass/panels/_think.scss */
+/* line 207, assets/sass/panels/_think.scss */
 .cs-walls ul span {
   position: relative;
   text-transform: none;
@@ -2718,20 +2730,20 @@ span.magazine {
   transition: opacity 0.3s, transform 0.3s;
 }
 
-/* line 215, assets/sass/panels/_think.scss */
+/* line 220, assets/sass/panels/_think.scss */
 .cs-select ul span::after {
   content: '';
   opacity: 0;
 }
 
-/* line 220, assets/sass/panels/_think.scss */
+/* line 225, assets/sass/panels/_think.scss */
 .cs-select .cs-selected span::after {
   opacity: 1;
   -webkit-transition: opacity 0.3s 0.7s;
   transition: opacity 0.3s 0.7s;
 }
 
-/* line 227, assets/sass/panels/_think.scss */
+/* line 232, assets/sass/panels/_think.scss */
 .cs-walls ul span::before {
   content: '';
   position: absolute;
@@ -2746,7 +2758,7 @@ span.magazine {
   transition: transform 0.3s;
 }
 
-/* line 242, assets/sass/panels/_think.scss */
+/* line 247, assets/sass/panels/_think.scss */
 .cs-walls.cs-active ul span,
 .cs-walls.cs-active ul span::before {
   opacity: 1;
@@ -2754,7 +2766,7 @@ span.magazine {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 251, assets/sass/panels/_think.scss */
+/* line 256, assets/sass/panels/_think.scss */
 .cs-walls li:nth-child(5) span,
 .cs-walls li:nth-child(5) span::before,
 .cs-walls.cs-active li:first-child span,
@@ -2763,7 +2775,7 @@ span.magazine {
   transition-delay: 0s;
 }
 
-/* line 259, assets/sass/panels/_think.scss */
+/* line 264, assets/sass/panels/_think.scss */
 .cs-walls li:nth-child(4) span,
 .cs-walls li:nth-child(4) span::before,
 .cs-walls.cs-active li:nth-child(2) span,
@@ -2772,14 +2784,14 @@ span.magazine {
   transition-delay: 0.05s;
 }
 
-/* line 265, assets/sass/panels/_think.scss */
+/* line 270, assets/sass/panels/_think.scss */
 .cs-walls li:nth-child(3) span,
 .cs-walls li:nth-child(3) span::before {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
 
-/* line 273, assets/sass/panels/_think.scss */
+/* line 278, assets/sass/panels/_think.scss */
 .cs-walls li:nth-child(2) span,
 .cs-walls li:nth-child(2) span::before,
 .cs-walls.cs-active li:nth-child(4) span,
@@ -2788,7 +2800,7 @@ span.magazine {
   transition-delay: 0.15s;
 }
 
-/* line 281, assets/sass/panels/_think.scss */
+/* line 286, assets/sass/panels/_think.scss */
 .cs-walls li:first-child span,
 .cs-walls li:first-child span::before,
 .cs-walls.cs-active li:nth-child(5) span,
@@ -2798,7 +2810,7 @@ span.magazine {
 }
 
 /* more items require more delay declarations */
-/* line 288, assets/sass/panels/_think.scss */
+/* line 293, assets/sass/panels/_think.scss */
 .cs-walls .cs-options li span:hover,
 .cs-walls .cs-options li.cs-focus span,
 .cs-walls li.cs-selected span {
@@ -2807,7 +2819,7 @@ span.magazine {
 }
 
 /* ------------------TExt Input Styles */
-/* line 302, assets/sass/panels/_think.scss */
+/* line 307, assets/sass/panels/_think.scss */
 span.input-span {
   display: inline;
   padding: 0 10px 0 0px;
@@ -2816,7 +2828,7 @@ span.input-span {
   margin: 0 0 0 4px;
 }
 
-/* line 307, assets/sass/panels/_think.scss */
+/* line 312, assets/sass/panels/_think.scss */
 .input {
   position: relative;
   z-index: 1;
@@ -2826,7 +2838,7 @@ span.input-span {
   vertical-align: top;
 }
 
-/* line 316, assets/sass/panels/_think.scss */
+/* line 321, assets/sass/panels/_think.scss */
 .input__field {
   position: relative;
   display: inline;
@@ -2841,12 +2853,12 @@ span.input-span {
   /* for box shadows to show on iOS */
 }
 
-/* line 329, assets/sass/panels/_think.scss */
+/* line 334, assets/sass/panels/_think.scss */
 .input__field:focus {
   outline: none;
 }
 
-/* line 333, assets/sass/panels/_think.scss */
+/* line 338, assets/sass/panels/_think.scss */
 .input__label {
   display: inline-block;
   float: right;
@@ -2865,7 +2877,7 @@ span.input-span {
   user-select: none;
 }
 
-/* line 351, assets/sass/panels/_think.scss */
+/* line 356, assets/sass/panels/_think.scss */
 .input__label-content {
   position: relative;
   display: block;
@@ -2873,7 +2885,7 @@ span.input-span {
   width: 40px;
 }
 
-/* line 358, assets/sass/panels/_think.scss */
+/* line 363, assets/sass/panels/_think.scss */
 button {
   padding: 20px 12px 20px 12px;
   font-size: 16px;
@@ -2890,13 +2902,13 @@ button {
   font-weight: bold;
 }
 
-/* line 370, assets/sass/panels/_think.scss */
+/* line 375, assets/sass/panels/_think.scss */
 button:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
 
-/* line 379, assets/sass/panels/_think.scss */
+/* line 384, assets/sass/panels/_think.scss */
 .input__field--walls:focus,
 .input--filled .input__field--walls {
   opacity: 1;
@@ -2904,20 +2916,20 @@ button:hover {
   transition-delay: 0.3s;
 }
 
-/* line 386, assets/sass/panels/_think.scss */
+/* line 391, assets/sass/panels/_think.scss */
 .input__field--walls:focus + .input__label--walls::before,
 .input--filled .input__label--walls::before {
   -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
   transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
 }
 
-/* line 392, assets/sass/panels/_think.scss */
+/* line 397, assets/sass/panels/_think.scss */
 .input__field--walls:focus + .input__label--walls,
 .input--filled .input__label--walls {
   pointer-events: none;
 }
 
-/* line 397, assets/sass/panels/_think.scss */
+/* line 402, assets/sass/panels/_think.scss */
 .input__field--walls:focus + .input__label--walls::after,
 .input--filled .input__label--walls::after {
   -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);

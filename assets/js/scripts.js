@@ -879,6 +879,7 @@ $(document).ready(function() {
 
   $('#job').focus(function() {
       $('button#submit-form').fadeIn('slow');
+      $('.survey-share').delay(1000).fadeIn('slow');
   });
 
 
