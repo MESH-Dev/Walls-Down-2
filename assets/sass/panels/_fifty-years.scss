@@ -41,6 +41,12 @@
 			img{width: 40px; padding: 3px 2px 0 2px; position: relative; top: 4px;}
 			 
 		}
+		@include breakpoint(nomap)  {
+            padding: 10%;
+            width: 90%;
+            max-height: 80%;
+            font-size: 14px; line-height:20px;
+        }
 
     }
     #quality-points .big-picture{ top: 40px;}
@@ -73,6 +79,15 @@
 	   	&:hover{
 	   		@include opacity(0.8);
 	   	}
+	   	@include breakpoint(nomap)  {
+            padding: 10%;
+            width: 90%;
+            max-height: 80%;
+ 
+            display: none;;
+        }
+
+
  
 	}
 
@@ -84,6 +99,14 @@
 	    -webkit-box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
 		-moz-box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
 		box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
+
+		@include breakpoint(nomap)  {
+            padding: 10%;
+            width: 90%;
+            max-height: 80%;
+ 
+            display: none;
+        }
 
 		ul{
 		    list-style-type: disc;
@@ -134,11 +157,25 @@
 	    -webkit-box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
 		-moz-box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
 		box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
+		@include breakpoint(nomap)  {
+            padding: 10%;
+            width: 90%;
+            max-height: 80%;
+ 
+            display: block;
+        }
 	    .story-left{
 	    	display: inline;
 			width: 580px;
 			float: left;
 			padding-right: 40px;
+			@include breakpoint(nomap)  {
+	            padding: 10%;
+	            width: 90%;
+	            max-height: 80%;
+	 
+	            display: block;
+	        }
 
 			.breadcrumbs{
 		    	display: block;
@@ -204,6 +241,15 @@
 			width: 220px;
 			float: left;
 
+
+			@include breakpoint(nomap)  {
+	            padding: 10%;
+	            width: 90%;
+	            max-height: 80%;
+	 
+	            display: none;;
+	        }
+
 			a{
 				font-size: 14px; 
 				font-family: $cabin;
@@ -227,6 +273,9 @@
 					margin: 10px 0 0 0;
 					width: 60%;
 				}
+				@include breakpoint(nomap)  {
+			 		display: none;
+        		}	
 
 			}
 
@@ -261,6 +310,15 @@
 			box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
 
 		}
+		@include breakpoint(nomap)  {
+            padding: 10%;
+            width: 90%;
+            max-height: 80%;
+ 
+            display: block;
+            margin-left:0px;
+ 
+        }
 
 	}
 
@@ -269,14 +327,30 @@
 	    right: 240px;
 	    top: inherit;
 	    bottom: 60px;
-	    width: 300px;		 
+	    width: 300px;	
+	    @include breakpoint(nomap)  {
+			 position: relative;
+			 display: block;
+		    right: 00px;
+		    top: inherit;
+		    bottom: 60px;
+		    width: 300px;	
+        }	 
 	}
 	.left-nav{
 	    position: absolute;
 	    left: 40px;
 	    top: inherit;
 	    bottom: 60px;
-	    width: 300px;		 
+	    width: 300px;	
+	    @include breakpoint(nomap)  {
+			 position: relative;
+			 display: block;
+		    right: 260px;
+		    top: inherit;
+		    bottom: 60px;
+		    width: 300px;	
+        }		 
 	}
 
 

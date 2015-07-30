@@ -831,22 +831,30 @@ $(document).ready(function() {
     disableScroll: false,
     stopPropagation: false,
      transitionEnd: function(index, elem) { //set new hash after transistion
-        var hash = window.location.hash;
+        var hash = window.location.toString().split('#')[1];
         var this_hash = $(elem).attr('id');
+
         if (this_hash.indexOf("#/") >= 0)
         {
           if(hash.length > 20)
           {
- 
-              window.location.hash = hash;
+              location.hash = hash;
+              history.pushState(null, null, '#'+hash);
           }
           else{
-              window.location.hash = this_hash;
+             location.hash = this_hash;
+             history.pushState(null, null, this_hash);
           }
- 
         }
         else{
-          window.location.hash = this_hash;
+          location.hash = this_hash;
+          $.slidebars({
+            scrollLock: false,
+            siteClose: false
+          });
+          $.slidebars.open('left');
+           
+          //history.pushState(null, null, '#'+this_hash);
         }
      }
   }).data('Swipe');
@@ -943,7 +951,8 @@ $(document).ready(function() {
 
 
   window.addEventListener("hashchange", function () {
-      var hash = window.location.hash ? window.location.hash : '#home';
+       
+            var hash = window.location.hash ? window.location.hash : '#home';
       if (hash.indexOf("#coverage") >= 0) hash ="#/title";
       
       $(".main-menu a div").removeClass('menu-active');
@@ -1047,7 +1056,7 @@ $(document).ready(function() {
 
     window.addEventListener("hashchange", function () {
       hash = window.location.hash;
-
+      console.log(hash);
       if (hash == "#/title") {
           map.init();
           map.goto(0);
@@ -1082,6 +1091,22 @@ $(document).ready(function() {
 
 
     }, false);
+  }
+  else{
+    $('.story-link a').click(function(event) {
+        hash = $(this).attr('href');
+        hash = hash.replace('/','');
+        console.log(hash);
+        $('.fifty-years').animate({
+          scrollTop: $(hash).offset().top
+      }, 1000);
+    });
+
+  }
+
+  function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
   }
 
   function gotoTitle(){
