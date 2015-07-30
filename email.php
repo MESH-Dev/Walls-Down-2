@@ -20,10 +20,10 @@ $msg .= ' I work in '.$industry. ' industry as a ' .$job.'.';
 $msg .= ' Lets talk more! Heres my email: '.$emailin.'.';
 
  
-$to = "joshdodd@meshfresh.com";
+$to = "mlinson@essentialhospitals.org";
 $subject = "Walls Down Survey!";
 $headers = "From: survey@wallsdownmag.org" . "\r\n" .
-"CC:  t@meshfresh.com";
+"CC:  slaycox@essentialhospitals.org";
 
 mail($to,$subject,$msg,$headers);
 
