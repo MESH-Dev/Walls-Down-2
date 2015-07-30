@@ -58,7 +58,7 @@
 								<img src="assets/img/house-call-banner.png" alt="">
 						</div>
 
-						<a class="grid__item" id="peter" href="">
+						<a class="grid__item" id="peter" data-featherlight="#peter-story" href="">
 							<h3 class="title title--preview cabin-header black">The Advocate</h2>
 							<div class="loader"></div>
 							<div class="meta meta--preview">
@@ -67,7 +67,7 @@
 							<span class="swatch peter-swatch"><h3 class="cabin-header purple">How he re-envisions health care <span class="fa fa-angle-right"></span></h3> </span>
 						</a>
 
-						<a class="grid__item vcu" id="vcu" href="">
+						<a class="grid__item vcu" id="vcu" data-featherlight="#vcu-story" href="">
 							<h3 class="title title--preview cabin-header black">The Medical Home</h2>
 							<div class="loader"></div>
 							<div class="meta meta--preview">
@@ -76,7 +76,7 @@
 							<span class="swatch vcu-swatch"><h3 class="cabin-header purple">What the truly vulnerable need  <span class="fa fa-angle-right"></span></h3> </span>
 						</a>
 
-						<a class="grid__item" id="sun-seeker" href="">
+						<a class="grid__item" id="sun-seeker" data-featherlight="#javone-story"  href="">
 							<h3 class="title title--preview cabin-header black">The Sun-Seeker</h2>
 							<div class="loader"></div>
 							<div class="meta meta--preview">
@@ -90,9 +90,9 @@
 						
 					</div>
 
-					<section class="content">
+					<section class="content" >
 						<div class="scroll-wrap">
-							<article class="content__item">
+							<article class="content__item" id="peter-story" >
 								
 								<div class="content-left-col">
 									<div class="meta meta--full">
@@ -212,7 +212,7 @@
 								</div>
 						
 							</article>
-							<article class="content__item">
+							<article class="content__item" id="vcu-story">
 								<div class="content-left-col">
 									<div class="meta meta--full">
 										<img class="meta__avatar" src="assets/img/vcu.png" alt="VCU" />
@@ -303,7 +303,7 @@
 								</div>
 							 
 							</article>
-							<article class="content__item">
+							<article class="content__item" id="javone-story">
 								<div class="content-left-col">
 									<div class="meta meta--full">
 										<img class="meta__avatar" src="assets/img/javone.png" alt="author01" />
@@ -451,9 +451,9 @@
 			
 			<div class="panel first-step" id="first-step">
 				<div class="container">
-					<div class="title-img">
+					 
 						<img src="assets/img/first-step.png" alt="The First Step">
-					</div>
+			 
  					<div class="title-text">
  						<p>Salvatore had cardiovascular issues. Neurological problems. Vision loss. Luther had a drug addiction. Mental health issues. Frostbite from living on the streets. These are critical, long-term health issues. Yet, neither one found his way into the health care system until his feet no longer functioned as they should. They stepped into a podiatry unit and stepped out onto a new, longer life path. Essential hospitals, in essence, saved their lives.</p>
 
@@ -1620,7 +1620,7 @@
 			</div>  
 
 			<div class="panel editor-letter" id="editor-letter">
-				<div class="panel-pad letter">
+				<div class=" letter">
 					<div class="letter-container">
 						<h1 class="cabin-header purple">The People and the Payer</h1>
 						<p class="fl">Our goal for the <a href="http://wallsdownmag.org/issue-1/">first issue of <em>Walls Down</em></a> was to introduce a new perspective into our health care conversations. We demonstrated that no separation exists between essential hospitals and our communities, that we are all connected – inside the hospital and out. And we brought this to life by sharing the stories of people who live that connection every day. </p>
@@ -1646,7 +1646,7 @@
 			</div>
 
 			<div class="panel ceo-letter" id="ceo-letter">
-				<div class="panel-pad letter">
+				<div class=" letter">
 					<div class="letter-container">
  
 						<h1 class="cabin-header purple">From the CEO of America's Essential Hospitals</h1>
@@ -1792,6 +1792,7 @@
 <script src="assets/js/classie.js"></script>
 <script src="assets/js/modernizr.js"></script>
 <script src="assets/js/impress.js"></script> 
+<script src="assets/js/featherlight.min.js"></script> 
 <script src="assets/js/scripts.js"></script> 
 
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>

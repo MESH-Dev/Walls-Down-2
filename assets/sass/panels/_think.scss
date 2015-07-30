@@ -2,12 +2,18 @@
  
 	width: 100%;
 	height: 100%;
-	background: url('assets/img/letter-bg.jpg') -140px 0 no-repeat;
+	background: url('assets/img/letter-bg.jpg') -40px 0 no-repeat;
     @include background-size(cover);
 
 	.think-wrap{
 		width: 800px;
 		margin: 100px 0px 0px 200px; 
+
+		 @include breakpoint(small) {
+	    	width: 80%; margin:100px 10% 0 10%;  
+	    }
+	    @media only screen and (min-width: 768px) and (max-width: 1060px){ margin-left: 60px;  width: 60%;}
+
  
 	}
 	p{
@@ -19,15 +25,32 @@
 	    position: absolute;
 	    right: 240px;
 	    top: 850px;
- 
-	    width: 300px;		 
+	    width: 200px;	
+	    @include breakpoint(small) {
+	    	right: 100px;
+	    	padding-top: 100px; 
+	    	height: 90px;
+	    }	 
+	    @media only screen and (min-width: 768px) and (max-width: 1060px) {
+	    	right: 100px;
+	    	padding-top: 100px; 
+	    	height: 90px;
+	    } 
 	}
 	.left-nav{
 	    position: absolute;
 	    left: 20px;
 	    top: 850px;
 	   
-	    width: 300px;		 
+	    width: 200px;	
+	    @include breakpoint(small) {
+	    	height: 90px;
+	    	padding-top: 100px; 
+	    }	
+	    @media only screen and (min-width: 768px) and (max-width: 1060px) {
+	    	height: 90px;
+	    	padding-top: 100px; 
+	    } 
 	}
 
 	.survey-share{
@@ -325,10 +348,11 @@ span.input-span{
 	width: 250px;
 	border: none;
 	border-radius: 0;
-	background: #f0f0f0;
+	background: #dfdfdf;
 	color: $black;
 	font-weight: none;
 	-webkit-appearance: none; /* for box shadows to show on iOS */
+	    margin-bottom: 3px;
 }
 
 .input__field:focus {

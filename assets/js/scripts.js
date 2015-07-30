@@ -14,9 +14,7 @@ $(document).ready(function() {
         {
           if(hash.length > 20)
           {
-              console.log('BIGG');
-              console.log(hash);
-              console.log(hash.length);
+ 
               window.location.hash = hash;
           }
           else{
@@ -59,16 +57,16 @@ $(document).ready(function() {
     $('.panel').css('height',h);
   });
 
-  /*Add in breakpoints to hide/show menu and activate slidebarsloc
+  //Add in breakpoints to hide/show menu and activate slidebarsloc
   $( window ).resize(function() {
     var width = $( window ).width();
-    if(width < 800){
-      $.slidebars({
-        scrollLock: false,
-        siteClose: true
-      });
+    if(width < 768){
+      $.slidebars.close('left');
     }
-  });*/
+    else{
+      $.slidebars.open('left');
+    }
+  });
  
 
 
@@ -150,13 +148,12 @@ $(document).ready(function() {
   
   if(hash == '#peter' ||hash == '#vcu' || hash == '#sun-seeker'){
     Slider.slide(1);
- 
   }
 
  $('a.grid__item').click(function(){
       var this_hash = $(this).attr('id');
       window.location.hash = this_hash;
-
+      window.scrollTo(0, 0);
  });
 
  $('a.story-next').click(function(e) {
@@ -652,6 +649,9 @@ $(document).ready(function() {
  */
 (function() {
 
+var width = $( window ).width();
+if(width > 800){
+ 
 
   var bodyEl = document.body,
     docElem = window.document.documentElement,
@@ -849,7 +849,11 @@ $(document).ready(function() {
 
   init();
 
+ }//end window size check; 
+
 })();
+
+
 
 $(document).ready(function() {
  

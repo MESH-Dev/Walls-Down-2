@@ -1,7 +1,9 @@
 .letter{
 	 
-	background: url('assets/img/letter-bg.jpg') -140px 0 no-repeat;
+	background: url('assets/img/letter-bg.jpg') 0px 0 no-repeat;
     @include background-size(cover);
+    padding: 0 0px 0 0;
+ 
  
 	h1{
 	    width: 100%;
@@ -17,7 +19,7 @@
     	padding: 80px 0 100px 200px;
  
 	    @include breakpoint(small) {
-	    	width: 100%; padding:0 0 100px 0;  
+	    	width: 80%; padding:0 10% 0 10%;  
 	    }
 	    @media only screen and (min-width: 768px) and (max-width: 1060px){ padding-left: 60px;  width: 60%;}
 	}
@@ -25,14 +27,14 @@
 	.left-nav{
 	  	position: relative;  height: 0px;  width: 50%; top: -0px; left: -140px;
 	    @include breakpoint(small) {
-	      left:-10px;
+	      left:-10px; height: 80px
 	    }
 	    @media only screen and (min-width: 768px) and (max-width: 1060px){ left:-10px;}
 	}
 	.right-nav{
 	  	position: relative;  height: 0px;  width: 50%; top: -0px; left: 200px;
 	    @include breakpoint(small) {
-	      left:-10px;
+	      left:-10px; height: 80px
 	    }
 	    @media only screen and (min-width: 768px) and (max-width: 1060px){ left:-10px;}
 	}
