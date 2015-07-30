@@ -809,7 +809,6 @@ body, html {
   overflow: hidden;
   padding-right: 0px;
   width: 160px;
-  z-index: 20;
 }
 /* line 10, assets/sass/_layout.scss */
 #sidebar .wrapper {
@@ -1093,14 +1092,20 @@ body.issues-open #issues {
 .panel .panel-pad {
   padding: 0px 160px 0px 0px;
 }
+@media only screen and (max-width: 800px) {
+  /* line 170, assets/sass/_layout.scss */
+  .panel .panel-pad {
+    padding: 0px;
+  }
+}
 
 /* ------SHARE BUTTONS ---------*/
-/* line 184, assets/sass/_layout.scss */
+/* line 188, assets/sass/_layout.scss */
 .social-share {
   margin-bottom: 20px;
 }
 
-/* line 185, assets/sass/_layout.scss */
+/* line 189, assets/sass/_layout.scss */
 .social-title {
   font: 14px/20px "Cabin", sans-serif;
   text-transform: uppercase;
@@ -1108,12 +1113,12 @@ body.issues-open #issues {
   margin-bottom: 0px;
 }
 
-/* line 188, assets/sass/_layout.scss */
+/* line 192, assets/sass/_layout.scss */
 .addthis_toolbox {
   text-align: center;
 }
 
-/* line 189, assets/sass/_layout.scss */
+/* line 193, assets/sass/_layout.scss */
 .addthis_toolbox > a {
   height: 25px;
   width: 25px;
@@ -1121,12 +1126,12 @@ body.issues-open #issues {
   float: left;
 }
 
-/* line 190, assets/sass/_layout.scss */
+/* line 194, assets/sass/_layout.scss */
 .addthis_toolbox.addthis_32x32_style span {
   width: 26px !important;
 }
 
-/* line 191, assets/sass/_layout.scss */
+/* line 195, assets/sass/_layout.scss */
 .addthis_toolbox > a > span {
   height: 25px !important;
   width: 25px !important;
@@ -1134,195 +1139,195 @@ body.issues-open #issues {
   background: none !important;
 }
 
-/* line 192, assets/sass/_layout.scss */
+/* line 196, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_facebook {
   background: url(assets/img/social_icons-single.png) no-repeat;
   background-position: -25px 0 !important;
 }
 
-/* line 193, assets/sass/_layout.scss */
+/* line 197, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_twitter {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -50px 0 !important;
 }
 
-/* line 194, assets/sass/_layout.scss */
+/* line 198, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_linkedin {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -2px 0 !important;
 }
 
-/* line 195, assets/sass/_layout.scss */
+/* line 199, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_pinterest_share {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -74px 0 !important;
 }
 
-/* line 196, assets/sass/_layout.scss */
+/* line 200, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_google_plusone_share {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -124px 0 !important;
 }
 
-/* line 197, assets/sass/_layout.scss */
+/* line 201, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_email {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -98px 0 !important;
 }
 
-/* line 198, assets/sass/_layout.scss */
+/* line 202, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_digg {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -176px 0 !important;
   width: 28px !important;
 }
 
-/* line 199, assets/sass/_layout.scss */
+/* line 203, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_evernote {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -146px 0 !important;
 }
 
-/* line 200, assets/sass/_layout.scss */
+/* line 204, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_compact {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -204px 0 !important;
 }
 
-/* line 202, assets/sass/_layout.scss */
+/* line 206, assets/sass/_layout.scss */
 .grady-social {
   padding: 20px 0px 0px 200px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 202, assets/sass/_layout.scss */
+  /* line 206, assets/sass/_layout.scss */
   .grady-social {
     padding-left: 10%;
     padding-bottom: 30px;
   }
 }
 
-/* line 209, assets/sass/_layout.scss */
+/* line 213, assets/sass/_layout.scss */
 .grady-social-top {
   padding: 20px 0px 0px 200px;
 }
-/* line 211, assets/sass/_layout.scss */
+/* line 215, assets/sass/_layout.scss */
 .grady-social-top .white-social {
   color: white;
 }
 @media only screen and (max-width: 800px) {
-  /* line 209, assets/sass/_layout.scss */
+  /* line 213, assets/sass/_layout.scss */
   .grady-social-top {
     padding-left: 10%;
     padding-bottom: 0px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1060px) {
-  /* line 209, assets/sass/_layout.scss */
+  /* line 213, assets/sass/_layout.scss */
   .grady-social-top {
     padding-left: 50px;
   }
 }
 
-/* line 218, assets/sass/_layout.scss */
+/* line 222, assets/sass/_layout.scss */
 .timeline-social {
   padding: 20px 0px 200px 0px;
 }
 
-/* line 221, assets/sass/_layout.scss */
+/* line 225, assets/sass/_layout.scss */
 .timeline-social-top {
   padding: 20px 0px 0px 0px;
 }
 
-/* line 225, assets/sass/_layout.scss */
+/* line 229, assets/sass/_layout.scss */
 .nicu-social {
   padding: 40px 0px 20px 0px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 225, assets/sass/_layout.scss */
+  /* line 229, assets/sass/_layout.scss */
   .nicu-social {
     padding-left: 0;
     padding-bottom: 0px;
   }
 }
 
-/* line 230, assets/sass/_layout.scss */
+/* line 234, assets/sass/_layout.scss */
 .nicu-social-top {
   padding: 0px 0px 0px 120px;
 }
-/* line 232, assets/sass/_layout.scss */
+/* line 236, assets/sass/_layout.scss */
 .nicu-social-top .white-social {
   color: #c2c2c2;
 }
 @media only screen and (max-width: 800px) {
-  /* line 230, assets/sass/_layout.scss */
+  /* line 234, assets/sass/_layout.scss */
   .nicu-social-top {
     padding-left: 10%;
   }
 }
 
-/* line 236, assets/sass/_layout.scss */
+/* line 240, assets/sass/_layout.scss */
 .map-social {
   padding: 0px 0px 20px 0px;
 }
-/* line 238, assets/sass/_layout.scss */
+/* line 242, assets/sass/_layout.scss */
 .map-social .social-title {
   color: white;
 }
 
-/* line 241, assets/sass/_layout.scss */
+/* line 245, assets/sass/_layout.scss */
 .nav-social {
   padding: 0px 0px 20px 10px;
 }
 
-/* line 247, assets/sass/_layout.scss */
+/* line 251, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_facebook {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -25px 0 !important;
 }
-/* line 248, assets/sass/_layout.scss */
+/* line 252, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_twitter {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -50px 0 !important;
 }
-/* line 249, assets/sass/_layout.scss */
+/* line 253, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_linkedin {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -2px 0 !important;
 }
-/* line 250, assets/sass/_layout.scss */
+/* line 254, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_pinterest_share {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -74px 0 !important;
 }
-/* line 251, assets/sass/_layout.scss */
+/* line 255, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_google_plusone_share {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -124px 0 !important;
 }
-/* line 252, assets/sass/_layout.scss */
+/* line 256, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_email {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -98px 0 !important;
 }
-/* line 253, assets/sass/_layout.scss */
+/* line 257, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_digg {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -176px 0 !important;
   width: 28px !important;
 }
-/* line 254, assets/sass/_layout.scss */
+/* line 258, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_evernote {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -146px 0 !important;
 }
-/* line 255, assets/sass/_layout.scss */
+/* line 259, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_compact {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -204px 0 !important;
 }
 
 /* ------END OF STORY NAV ---------*/
-/* line 261, assets/sass/_layout.scss */
+/* line 265, assets/sass/_layout.scss */
 .left-nav {
   position: relative;
   height: 0px;
@@ -1330,13 +1335,13 @@ body.issues-open #issues {
   top: -80px;
   float: left;
 }
-/* line 262, assets/sass/_layout.scss */
+/* line 266, assets/sass/_layout.scss */
 .left-nav a {
   position: relative;
   left: 7%;
   font-style: italic;
 }
-/* line 263, assets/sass/_layout.scss */
+/* line 267, assets/sass/_layout.scss */
 .left-nav .fa {
   font-size: 45px;
   position: relative;
@@ -1344,7 +1349,7 @@ body.issues-open #issues {
   right: 5px;
 }
 
-/* line 266, assets/sass/_layout.scss */
+/* line 270, assets/sass/_layout.scss */
 .right-nav {
   position: relative;
   height: 0px;
@@ -1352,14 +1357,14 @@ body.issues-open #issues {
   top: -80px;
   float: right;
 }
-/* line 267, assets/sass/_layout.scss */
+/* line 271, assets/sass/_layout.scss */
 .right-nav a {
   float: right;
   position: relative;
   right: 10%;
   font-style: italic;
 }
-/* line 268, assets/sass/_layout.scss */
+/* line 272, assets/sass/_layout.scss */
 .right-nav .fa {
   font-size: 45px;
   position: relative;
@@ -1367,17 +1372,17 @@ body.issues-open #issues {
   left: 5px;
 }
 
-/* line 272, assets/sass/_layout.scss */
+/* line 276, assets/sass/_layout.scss */
 html.ie8 nav {
   display: none;
 }
 
-/* line 273, assets/sass/_layout.scss */
+/* line 277, assets/sass/_layout.scss */
 html.ie8 .menu {
   display: none;
 }
 
-/* line 274, assets/sass/_layout.scss */
+/* line 278, assets/sass/_layout.scss */
 html.ie8 .panel {
   display: none;
 }
@@ -1742,7 +1747,7 @@ html.ie8 .panel {
     margin-left: 0px;
   }
 }
-/* line 325, assets/sass/panels/_fifty-years.scss */
+/* line 324, assets/sass/panels/_fifty-years.scss */
 .fifty-years .right-nav {
   position: absolute;
   right: 240px;
@@ -1751,7 +1756,7 @@ html.ie8 .panel {
   width: 300px;
 }
 @media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 325, assets/sass/panels/_fifty-years.scss */
+  /* line 324, assets/sass/panels/_fifty-years.scss */
   .fifty-years .right-nav {
     position: relative;
     display: block;
@@ -1844,49 +1849,70 @@ html.ie8 .panel {
   }
 }
 /* line 48, assets/sass/panels/_first-step.scss */
-.first-step .video-container {
-  width: 640px;
+.first-step .embed-container {
   position: relative;
-  top: -175px;
-  margin-left: 220px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 80%;
+}
+/* line 49, assets/sass/panels/_first-step.scss */
+.first-step .embed-container iframe, .first-step .embed-container object, .first-step .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 50, assets/sass/panels/_first-step.scss */
+.first-step .embed-container {
+  position: relative;
+  top: -100px;
+  margin-left: 180px;
+  margin-bottom: 20px;
   border: 3px solid #353535;
-  padding: 0;
 }
 @media only screen and (min-width: 910px) and (max-width: 1200px) {
-  /* line 48, assets/sass/panels/_first-step.scss */
-  .first-step .video-container {
+  /* line 50, assets/sass/panels/_first-step.scss */
+  .first-step .embed-container {
     top: -105px;
-    margin-left: 60px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 909px) {
-  /* line 48, assets/sass/panels/_first-step.scss */
-  .first-step .video-container {
-    top: -105px;
-    width: 80%;
-    margin-left: 40px;
+  /* line 50, assets/sass/panels/_first-step.scss */
+  .first-step .embed-container {
+    top: -60px;
+    margin-left: 0px;
+    max-width: 100%;
   }
 }
 @media only screen and (max-width: 800px) {
-  /* line 48, assets/sass/panels/_first-step.scss */
-  .first-step .video-container {
-    width: 90%;
+  /* line 50, assets/sass/panels/_first-step.scss */
+  .first-step .embed-container {
     top: -20px;
-    padding: 0;
-    margin: 0 0 0 5%;
+    max-width: 100%;
+    margin-left: 0px;
   }
 }
-/* line 71, assets/sass/panels/_first-step.scss */
-.first-step .video-container iframe {
-  width: 100%;
-}
-/* line 75, assets/sass/panels/_first-step.scss */
+/* line 79, assets/sass/panels/_first-step.scss */
 .first-step .right-nav, .first-step .left-nav {
   margin-top: 50px;
 }
-/* line 77, assets/sass/panels/_first-step.scss */
+/* line 81, assets/sass/panels/_first-step.scss */
 .first-step .right-nav a, .first-step .left-nav a {
   color: white;
+}
+@media only screen and (max-width: 480px) {
+  /* line 85, assets/sass/panels/_first-step.scss */
+  .first-step .right-nav {
+    right: -50px;
+    width: 200px;
+    margin-top: 0px;
+  }
+  /* line 90, assets/sass/panels/_first-step.scss */
+  .first-step .right-nav a {
+    line-height: 10px;
+  }
 }
 
 /* line 1, assets/sass/panels/_home.scss */
@@ -1905,11 +1931,18 @@ html.ie8 .panel {
 @media only screen and (max-width: 800px) {
   /* line 6, assets/sass/panels/_home.scss */
   .wallsdown img {
-    padding: 20% 5% 0% 5%;
+    padding: 15% 5% 0% 5%;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 6, assets/sass/panels/_home.scss */
+  .wallsdown img {
+    padding: 15% 5% 0% 5%;
     width: 90%;
   }
 }
-/* line 10, assets/sass/panels/_home.scss */
+/* line 13, assets/sass/panels/_home.scss */
 .wallsdown .instructions {
   position: absolute;
   width: 210px;
@@ -1917,18 +1950,18 @@ html.ie8 .panel {
   left: 60px;
   float: left;
 }
-/* line 12, assets/sass/panels/_home.scss */
+/* line 15, assets/sass/panels/_home.scss */
 .wallsdown .instructions img {
   width: 118px;
   padding: 0;
 }
 @media only screen and (max-width: 800px) {
-  /* line 10, assets/sass/panels/_home.scss */
+  /* line 13, assets/sass/panels/_home.scss */
   .wallsdown .instructions {
     display: none;
   }
 }
-/* line 16, assets/sass/panels/_home.scss */
+/* line 19, assets/sass/panels/_home.scss */
 .wallsdown .right-nav {
   position: absolute;
   width: 100%;
@@ -1937,33 +1970,56 @@ html.ie8 .panel {
   right: 10%;
   float: right;
 }
-/* line 18, assets/sass/panels/_home.scss */
+/* line 21, assets/sass/panels/_home.scss */
 .wallsdown .right-nav .fa {
   font-size: 45px;
   position: relative;
   top: 8px;
   left: 5px;
 }
-/* line 19, assets/sass/panels/_home.scss */
+/* line 22, assets/sass/panels/_home.scss */
 .wallsdown .right-nav a {
   color: #020202;
 }
-/* line 23, assets/sass/panels/_home.scss */
+/* line 26, assets/sass/panels/_home.scss */
 .wallsdown .home-header {
   padding-left: 60px;
   width: 90%;
 }
-/* line 26, assets/sass/panels/_home.scss */
+/* line 29, assets/sass/panels/_home.scss */
 .wallsdown .home-header h1 {
   font-size: 24px;
   line-height: 28px;
   text-transform: none;
 }
-/* line 32, assets/sass/panels/_home.scss */
+@media only screen and (max-width: 800px) {
+  /* line 29, assets/sass/panels/_home.scss */
+  .wallsdown .home-header h1 {
+    font-size: 16px;
+    line-height: 22px;
+    float: right;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 29, assets/sass/panels/_home.scss */
+  .wallsdown .home-header h1 {
+    font-size: 13px;
+    line-height: 16px;
+    float: right;
+  }
+}
+/* line 45, assets/sass/panels/_home.scss */
 .wallsdown .home-header h1 span.cabin-callout {
   font-family: "Cabin", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 800px) {
+  /* line 26, assets/sass/panels/_home.scss */
+  .wallsdown .home-header {
+    padding-left: 90px;
+    width: 75%;
+  }
 }
 
 /* line 1, assets/sass/panels/_house-call.scss */

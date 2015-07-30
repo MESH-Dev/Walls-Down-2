@@ -469,8 +469,8 @@
 						</div>
  					</div>
  					<br class="clear">
- 					<div class="video-container">
- 						<iframe width="640" height="360" src="https://www.youtube.com/embed/tAkg4vrns00" frameborder="0" allowfullscreen></iframe>
+ 					<div class="embed-container">
+ 						<iframe src="https://www.youtube.com/embed/tAkg4vrns00" frameborder="0" allowfullscreen></iframe>
  					</div>
  					
 					<div class="left-nav">
@@ -1495,10 +1495,10 @@
 		  <div class="panel think" id="think">
 		  	<div class="think-wrap ">
 					<h1 class="cabin-header purple">What Do you think?</h1>
-					
+					<form id="thinkform" name="think" action="email.php" method="post">
 					<p>This magazine is
 					<span class="select-span magazine">
-						<select id="magazine" class="cs-select cs-walls">
+						<select id="magazine" name="magazine" class="cs-select cs-walls">
 							<option value="" disabled selected>  </option>
 							<option value="awesome">awesome</option>
 							<option value="ok">just okay</option>
@@ -1511,7 +1511,7 @@
 				<p id="fav" style="display:none;">	My favorite story was 
 
 					<span class="select-span">
-						<select id="story" class="cs-select cs-walls">
+						<select id="story" name="story" class="cs-select cs-walls">
 							<option value="" disabled selected>  </option>
 							<option value="House Call">House Call</option>
 							<option value="First Step">The First Step</option>
@@ -1522,7 +1522,7 @@
 					
 					<p id="share" style="display:none;">I want to share it with 
 					<span class="select-span">
-						<select id="share-one" class="cs-select cs-walls">
+						<select id="shareone" class="cs-select cs-walls">
 							<option value="" disabled selected>  </option>
 							<option value="all my frinds">all my friends</option>
 							<option value="my doctor">my doctor</option>
@@ -1534,7 +1534,7 @@
 					</span>
 					and
 					<span class="select-span">
-						<select id="share-two" class="cs-select cs-walls">
+						<select id="sharetwo" class="cs-select cs-walls">
 							<option value="" disabled selected>  </option>
 							<option value="all my frinds">all my friends</option>
 							<option value="my doctor">my doctor</option>
@@ -1549,7 +1549,7 @@
 					<p id="learn" style="display:none;"><br>
 						Before reading this, I didn’t know 
 						<span class="input input--walls input-span">
-							<input class="input__field input__field--walls" type="text" id="learned" />
+							<input class="input__field input__field--walls" type="text" name="learned" value="" id="learned" />
 							<label class="input__label input__label--walls" for="learned">
 					 
 							</label>
@@ -1560,7 +1560,7 @@
 					<p id="tell" style="display:none;">
 						Now, tell me more about
 						<span class="input input--walls input-span">
-							<input class="input__field input__field--walls" type="text" id="more" />
+							<input class="input__field input__field--walls" type="text"  name="more" id="more" />
 							<label class="input__label input__label--walls" for="more">
 								 
 							</label>
@@ -1583,7 +1583,7 @@
 
 					<p id="ind" style="display:none;">I work in 
 						<span class="input input--walls input-span">
-							<input class="input__field input__field--walls" type="text" id="industry" />
+							<input class="input__field input__field--walls" type="text" name="industry" id="industry" />
 							<label class="input__label input__label--walls" for="industry">
 							 
 							</label>
@@ -1592,15 +1592,50 @@
 						 industry as a 
 
 						 <span class="input input--walls input-span">
-							<input class="input__field input__field--walls" type="text" id="job" />
+							<input class="input__field input__field--walls" type="text" name="job"  id="job" />
 							<label class="input__label input__label--walls" for="job">
 								 
 							</label>
 						</span>
 						.
 					</p>
+
+					<p id="emailinput" style="display:none;">Let's talk more! Here's my email:  
+						<span class="input input--walls input-span">
+							<input class="input__field input__field--walls" type="text" name="emailin" id="emailin" />
+							<label class="input__label input__label--walls" for="emailin">
+							 
+							</label>
+						</span>
+						.
+					</p>
  					
- 					<button id="submit-form" style="display:none;">Send my thoughts to the Walls Down creators!</button>
+ 					<button type="submit" id="submit-form" style="display:none;">Send my thoughts to the Walls Down creators!</button>
+
+ 					</form>
+
+ 					<div id="thanks" style="display:none;">
+ 						<h2>Thanks for sharing! <span class="fa fa-heart"></span></h2>
+ 					</div>
+
+ 					<div id="psst" style="display:none;">
+ 						<h2>psst...</h2>
+ 						<p>Know a story we should tell? We'd love to hear it:</p>
+						<form id="ideaform" action="email2.php" method="post">
+							<span class="input input--walls input-span">
+							<input class="input__field input__field--walls" type="text" name="idea" id="idea" />
+							<label class="input__label input__label--walls" for="emailin">
+							</label>
+						</span>
+							<button type="submit" id="submit-form-two" >Send!</button>
+						</form>
+
+						<h2 id="thanks-again" style="display:none">Thanks again!</h2>
+
+
+ 					</div>
+
+ 
  					<div class="social-share survey-share">
 						<h4 class="social-title">Share this survey:</h4>
 					

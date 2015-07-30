@@ -4,7 +4,10 @@
 	@include background-size(cover);
     
     img{width: 60%; padding: 10% 20% 0 20%;
-    	@include breakpoint(small) {padding: 20% 5% 0% 5%; width:90%;}
+    	@include breakpoint(small) {padding: 15% 5% 0% 5%; width:80%;}
+    	@include breakpoint(mobile) {
+				padding: 15% 5% 0% 5%; width:90%;
+			}
   	}
  
 	.instructions{
@@ -27,6 +30,16 @@
 			font-size: 24px; 
 			line-height:28px; 
 			text-transform:none;
+			@include breakpoint(small) {
+				font-size: 16px; 
+				line-height:22px; 
+				float: right;
+			}
+			@include breakpoint(mobile) {
+				font-size: 13px; 
+				line-height:16px; 
+				float: right;
+			}
 
 
 			span.cabin-callout{
@@ -34,6 +47,10 @@
 				font-weight: bold;
 				text-transform: uppercase;
 			}
+		}
+		@include breakpoint(small) {
+			padding-left:90px;
+			width: 75%;
 		}
 	}
  

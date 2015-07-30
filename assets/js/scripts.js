@@ -16,22 +16,13 @@ $(document).ready(function() {
           if(hash.length > 20)
           {
               location.hash = hash;
-              history.pushState(null, null, '#'+hash);
           }
           else{
              location.hash = this_hash;
-             history.pushState(null, null, this_hash);
           }
         }
         else{
           location.hash = this_hash;
-          $.slidebars({
-            scrollLock: false,
-            siteClose: false
-          });
-          $.slidebars.open('left');
-           
-          //history.pushState(null, null, '#'+this_hash);
         }
      }
   }).data('Swipe');
@@ -311,7 +302,72 @@ $(document).ready(function() {
   }
 
 
+  $("#submit-form").click(function(){
+    var magazine = $("#magazine").val();
+    var story = $("#story").val();
+    var shareone = $("#shareone").val();
+    var sharetwo = $("#sharetwo").val();
+    var learned = $("#learned").val();
+    var more = $("#more").val();
+    var aeh = $("#aeh").val();
+    var industry = $("#industry").val();
+    var job = $("#job").val();
+    var emailin = $("#emailin").val();
+     
 
+     
+     
+    var dataString = 'magazine=' + magazine +
+    '&story=' + story +
+    '&shareone=' + shareone +
+    '&sharetwo=' + sharetwo +
+    '&learned=' + learned +
+    '&more=' + more +
+    '&aeh=' + aeh +
+    '&industry=' + industry +
+    '&emailin=' + emailin +
+    '&job=' + job ;
+     
+    // AJAX Code To Submit Form.
+    $.ajax({
+      type: "POST",
+      url: "email.php",
+      data: dataString,
+      
+      success: function(result){
+         $('#thinkform').fadeOut('slow');
+         $('#thanks').delay(500).fadeIn('slow');
+         $('#psst').delay(1500).fadeIn('slow');
+        }
+      
+
+      });
+     
+      return false;
+  });
+
+  $("#submit-form-two").click(function(){
+    var idea = $("#idea").val();
+ 
+     
+    var dataString = 'idea=' + idea;
+     
+    // AJAX Code To Submit Form.
+    $.ajax({
+      type: "POST",
+      url: "email2.php",
+      data: dataString,
+      
+      success: function(result){
+         $('#ideaform').fadeOut('slow');
+         $('#thanks-again').fadeIn('slow');
+        }
+      
+
+      });
+     
+      return false;
+  });
 
 
 
@@ -907,6 +963,10 @@ $(document).ready(function() {
   });
 
   $('#job').focus(function() {
+      $('#emailinput').fadeIn('slow');
+  });
+
+  $('#emailin').focus(function() {
       $('button#submit-form').fadeIn('slow');
       $('.survey-share').delay(1000).fadeIn('slow');
   });

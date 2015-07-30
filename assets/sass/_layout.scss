@@ -23,7 +23,7 @@ body,html {
   overflow: hidden;
   padding-right: 0px;
   width: 160px;
-  z-index: 20;
+  //z-index: 20;
    
 
     .logo img{margin: 30px 10px 15px 20px; }
@@ -170,6 +170,10 @@ body.issues-open #issues{
   .panel-pad{
    padding: 0px 160px 0px 0px;
    //overflow-y: scroll; 
+   @include breakpoint(small) {
+      padding:0px;
+ 
+    }
   
   }
  
