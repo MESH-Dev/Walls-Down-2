@@ -1011,7 +1011,11 @@ $(document).ready(function() {
      
    });
 
-
+$('a.browser-back').click(function(e){
+      e.preventDefault();
+      parent.history.back();
+      return false;
+  });
 
 /*------------------MAP and IMPRESS-----------------*/
 

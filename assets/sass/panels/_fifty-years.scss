@@ -359,3 +359,293 @@
 
 
 }
+
+
+
+
+
+.ie .fifty-years{
+	width:100%;
+ 
+	background: url('assets/img/map-bg.jpg') top left no-repeat;
+    @include background-size(cover);
+
+    overflow: scroll;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+	
+    .step {
+        position: relative;
+        //width: 900px;
+        padding: 0px;
+        margin: 0px 0px 0px 0px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing:    border-box;
+        -ms-box-sizing:     border-box;
+        -o-box-sizing:      border-box;
+        box-sizing:         border-box;
+       // font-family: 'PT Serif', georgia, serif;
+        //font-size: 48px;
+        //line-height: 1.5;   
+    }
+    .big-picture{
+    	
+    	a{
+			font-size: 14px; 
+			font-family: $cabin;
+			text-transform: uppercase;
+			font-weight: bold; display:block; 
+			margin-bottom: 12px;
+			img{width: 40px; padding: 3px 2px 0 2px; position: relative; top: 4px;}
+			 
+		}
+		@include breakpoint(nomap)  {
+            padding: 10%;
+            width: 90%;
+            max-height: 80%;
+ 
+            display: block;
+        }
+        width: 920px;
+	    //height: 600px;
+	    overflow: auto;
+		padding: 50px 30px 30px 60px;
+		margin: 0 0 0 60px; 
+    
+
+    }
+    #quality-points .big-picture{ top: 40px;}
+    .impress-enabled .step {
+        margin: 0;
+        /*opacity: 0.3;*/
+        opacity: 1;
+		
+        -webkit-transition: opacity 1s;
+        -moz-transition:    opacity 1s;
+        -ms-transition:     opacity 1s;
+        -o-transition:      opacity 1s;
+        transition:         opacity 1s;
+    }
+
+    .impress-enabled .step.active { opacity: 1 }
+
+	p#instruction{
+		 @include opacity(0);
+        
+        font-weight:bold;
+    }
+	.slide-topic {
+		 
+            display: none;;
+ 
+	}
+
+	.slide-point {
+
+            display: none;
+	       
+	}
+
+	.slide-story {
+	    display: block;
+	    
+	    width: 920px;
+	    //height: 600px;
+	    overflow: auto;
+		padding: 50px 30px 30px 60px;
+		margin: 0 0 0 60px; 
+	    background-color: $white;
+	    -webkit-box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
+		-moz-box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
+		box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
+		@include breakpoint(nomap)  {
+            padding: 10%;
+            width: 90%;
+            max-height: 80%;
+ 
+            display: block;
+        }
+	    .story-left{
+	    	display: inline;
+			width: 650px;
+			float: left;
+			padding-right: 40px;
+			@include breakpoint(nomap)  {
+	            padding: 10%;
+	            width: 90%;
+	            max-height: 80%;
+	 
+	            display: block;
+	        }
+
+			.breadcrumbs{
+		    	display: block;
+		    	 
+		    	ul{
+		    		margin: 0 0 30px 0;
+		    		padding: 0;
+		     
+		    		li{	
+		    			display: inline; 
+		    			float: left; 
+		    			padding: 0 10px 0px 0px; 
+		    			font-size: 12px; 
+						font-family: $cabin;
+						text-transform: uppercase;
+						font-weight: bold;  
+						margin-bottom: 15px;
+		    		}
+		    	}
+		    } 
+
+		    .title{
+		    	display: block;
+		    	padding: 0 0 0px 0;
+		    	text-align: left;
+		    	h3{
+		    		font-family: $georgia;
+		    		
+		    		color: black;
+		    		text-transform: none;
+		    		margin-top: 0px;
+		    		
+		    		&.cabin{
+		    			font-family: $cabin;
+		    			text-transform: uppercase;
+		    			font-weight: bold;
+		    			font-size: 20px;
+		    		}
+
+		    	}
+		    }
+
+		    .infographic{
+		    	img{
+		    		width:100%;
+		    	}
+
+		    	.source{
+		    		p{
+		    			color: #808184;
+			    		font-family: georgia;
+			    		font-size: 11px;
+			    		line-height: 14px;
+			    	}
+		    		padding: 20px 0 0 0;
+		    	}
+
+		    }
+
+	    } 	
+	    .story-right{
+	    	display: none;
+			width: 220px;
+			float: left;
+
+
+			@include breakpoint(nomap)  {
+	            padding: 10%;
+	            width: 90%;
+	            max-height: 80%;
+	 
+	            display: none;;
+	        }
+
+			a{
+				font-size: 14px; 
+				font-family: $cabin;
+				text-transform: uppercase;
+				font-weight: bold; display:block; 
+				margin-bottom: 12px;
+				img{width: 40px; padding: 3px 2px 0 2px; position: relative; top: 4px;}
+				&.back-topic{
+					padding-bottom: 10px;
+				}
+				 
+			}
+			.related{
+				font-size: 14px; 
+				font-family: $cabin;
+				text-transform: uppercase;
+				font-weight: bold; display:block; 
+				padding: 30px 0px 0px 0px;
+				a img{
+					display: block;
+					margin: 10px 0 0 0;
+					width: 60%;
+				}
+				@include breakpoint(nomap)  {
+			 		display: none;
+        		}	
+
+			}
+
+			.social-share{
+				padding-top: 20px;
+				h4{
+					font-weight: bold;
+				}
+			}
+	    }
+	    
+
+
+
+	}
+
+	#title{
+		width: 680px;
+	    //height: 600px;
+	    overflow: auto;
+		padding: 50px 30px 30px 60px;
+		margin: 0 0 0 60px; 
+
+		img{
+			margin-left: 0px;
+			margin-bottom: 10px;
+		}
+		h1{
+			display: none;
+		}
+		p{
+			font-style: italic; background-color:$white;
+			-webkit-box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
+			-moz-box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
+			box-shadow: 6px 4px 52px 28px rgba(255,255,255,1);
+
+		}
+	 	@include breakpoint(nomap)  {
+            padding: 10%;
+            width: 80%;
+            max-height: 80%;
+            display: block;
+            margin-left:0px;
+        }
+  
+
+	}
+
+	.right-nav{
+ 
+			 position: relative;
+			 display: block;
+		    right: 00px;
+		    top: inherit;
+		    bottom: 60px;
+		    width: 300px;	
+ 
+        		 
+	}
+	.left-nav{
+ 
+			 position: relative;
+			 display: block;
+		    right: 260px;
+		    top: inherit;
+		    bottom: 60px;
+		    width: 300px;	
+ 
+
+	}
+}

@@ -122,7 +122,9 @@ div.cs-select:focus {
 
 .cs-select > span::after {
 	content: '\25BE';
-	right: 1em;
+	right: 0;
+	font-size:30px;
+ 
 }
 
 .cs-select .cs-selected span::after {
@@ -230,7 +232,7 @@ span.magazine{
 .cs-walls ul span {
 	position: relative;
 	text-transform: none;
-	font-size: 20px;;
+	font-size: 16px;;
 	font-weight: normal;
 	padding: 1.2em 0.8em;
 	opacity: 0;
@@ -239,6 +241,11 @@ span.magazine{
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
 	transition: opacity 0.3s, transform 0.3s;
 }
+
+#share .cs-walls{max-width:250px;} 
+
+ 
+
 
 .cs-select ul span::after {
 	content: '';
@@ -265,6 +272,8 @@ span.magazine{
 	-webkit-transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
 }
+
+#fav .cs-walls{max-width:250px;}
 
 .cs-walls.cs-active ul span,
 .cs-walls.cs-active ul span::before {

@@ -1805,6 +1805,304 @@ html.ie8 .panel {
   }
 }
 
+/* line 367, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years {
+  width: 100%;
+  background: url("assets/img/map-bg.jpg") top left no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: scroll;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+/* line 378, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .step {
+  position: relative;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 392, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .big-picture {
+  width: 920px;
+  overflow: auto;
+  padding: 50px 30px 30px 60px;
+  margin: 0 0 0 60px;
+}
+/* line 394, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .big-picture a {
+  font-size: 14px;
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 12px;
+}
+/* line 400, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .big-picture a img {
+  width: 40px;
+  padding: 3px 2px 0 2px;
+  position: relative;
+  top: 4px;
+}
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 392, assets/sass/panels/_fifty-years.scss */
+  .ie .fifty-years .big-picture {
+    padding: 10%;
+    width: 90%;
+    max-height: 80%;
+    display: block;
+  }
+}
+/* line 418, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years #quality-points .big-picture {
+  top: 40px;
+}
+/* line 419, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .impress-enabled .step {
+  margin: 0;
+  /*opacity: 0.3;*/
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+/* line 431, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .impress-enabled .step.active {
+  opacity: 1;
+}
+/* line 433, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years p#instruction {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  font-weight: bold;
+}
+/* line 438, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-topic {
+  display: none;
+}
+/* line 444, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-point {
+  display: none;
+}
+/* line 450, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story {
+  display: block;
+  width: 920px;
+  overflow: auto;
+  padding: 50px 30px 30px 60px;
+  margin: 0 0 0 60px;
+  background-color: white;
+  -webkit-box-shadow: 6px 4px 52px 28px white;
+  -moz-box-shadow: 6px 4px 52px 28px white;
+  box-shadow: 6px 4px 52px 28px white;
+}
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 450, assets/sass/panels/_fifty-years.scss */
+  .ie .fifty-years .slide-story {
+    padding: 10%;
+    width: 90%;
+    max-height: 80%;
+    display: block;
+  }
+}
+/* line 469, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-left {
+  display: inline;
+  width: 650px;
+  float: left;
+  padding-right: 40px;
+}
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 469, assets/sass/panels/_fifty-years.scss */
+  .ie .fifty-years .slide-story .story-left {
+    padding: 10%;
+    width: 90%;
+    max-height: 80%;
+    display: block;
+  }
+}
+/* line 482, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-left .breadcrumbs {
+  display: block;
+}
+/* line 485, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-left .breadcrumbs ul {
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+/* line 489, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-left .breadcrumbs ul li {
+  display: inline;
+  float: left;
+  padding: 0 10px 0px 0px;
+  font-size: 12px;
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* line 502, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-left .title {
+  display: block;
+  padding: 0 0 0px 0;
+  text-align: left;
+}
+/* line 506, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-left .title h3 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  color: black;
+  text-transform: none;
+  margin-top: 0px;
+}
+/* line 513, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-left .title h3.cabin {
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* line 524, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-left .infographic img {
+  width: 100%;
+}
+/* line 528, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-left .infographic .source {
+  padding: 20px 0 0 0;
+}
+/* line 529, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-left .infographic .source p {
+  color: #808184;
+  font-family: georgia;
+  font-size: 11px;
+  line-height: 14px;
+}
+/* line 541, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-right {
+  display: none;
+  width: 220px;
+  float: left;
+}
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 541, assets/sass/panels/_fifty-years.scss */
+  .ie .fifty-years .slide-story .story-right {
+    padding: 10%;
+    width: 90%;
+    max-height: 80%;
+    display: none;
+  }
+}
+/* line 555, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-right a {
+  font-size: 14px;
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 12px;
+}
+/* line 561, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-right a img {
+  width: 40px;
+  padding: 3px 2px 0 2px;
+  position: relative;
+  top: 4px;
+}
+/* line 562, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-right a.back-topic {
+  padding-bottom: 10px;
+}
+/* line 567, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-right .related {
+  font-size: 14px;
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  padding: 30px 0px 0px 0px;
+}
+/* line 573, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-right .related a img {
+  display: block;
+  margin: 10px 0 0 0;
+  width: 60%;
+}
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 567, assets/sass/panels/_fifty-years.scss */
+  .ie .fifty-years .slide-story .story-right .related {
+    display: none;
+  }
+}
+/* line 584, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-right .social-share {
+  padding-top: 20px;
+}
+/* line 586, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .slide-story .story-right .social-share h4 {
+  font-weight: bold;
+}
+/* line 597, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years #title {
+  width: 680px;
+  overflow: auto;
+  padding: 50px 30px 30px 60px;
+  margin: 0 0 0 60px;
+}
+/* line 604, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years #title img {
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+/* line 608, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years #title h1 {
+  display: none;
+}
+/* line 611, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years #title p {
+  font-style: italic;
+  background-color: white;
+  -webkit-box-shadow: 6px 4px 52px 28px white;
+  -moz-box-shadow: 6px 4px 52px 28px white;
+  box-shadow: 6px 4px 52px 28px white;
+}
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 597, assets/sass/panels/_fifty-years.scss */
+  .ie .fifty-years #title {
+    padding: 10%;
+    width: 80%;
+    max-height: 80%;
+    display: block;
+    margin-left: 0px;
+  }
+}
+/* line 629, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .right-nav {
+  position: relative;
+  display: block;
+  right: 00px;
+  top: inherit;
+  bottom: 60px;
+  width: 300px;
+}
+/* line 640, assets/sass/panels/_fifty-years.scss */
+.ie .fifty-years .left-nav {
+  position: relative;
+  display: block;
+  right: 260px;
+  top: inherit;
+  bottom: 60px;
+  width: 300px;
+}
+
 /* line 1, assets/sass/panels/_first-step.scss */
 .first-step {
   background: url("assets/img/first-bg.jpg") 0px 0 no-repeat;
@@ -3077,28 +3375,29 @@ div.cs-select:focus {
 /* line 123, assets/sass/panels/_think.scss */
 .cs-select > span::after {
   content: '\25BE';
-  right: 1em;
+  right: 0;
+  font-size: 30px;
 }
 
-/* line 128, assets/sass/panels/_think.scss */
+/* line 130, assets/sass/panels/_think.scss */
 .cs-select .cs-selected span::after {
   content: '\2713';
   margin-left: 1em;
 }
 
-/* line 133, assets/sass/panels/_think.scss */
+/* line 135, assets/sass/panels/_think.scss */
 .cs-select.cs-active > span::after {
   -webkit-transform: translateY(-50%) rotate(180deg);
   transform: translateY(-50%) rotate(180deg);
 }
 
-/* line 138, assets/sass/panels/_think.scss */
+/* line 140, assets/sass/panels/_think.scss */
 div.cs-active {
   z-index: 200;
 }
 
 /* Options */
-/* line 143, assets/sass/panels/_think.scss */
+/* line 145, assets/sass/panels/_think.scss */
 .cs-select .cs-options {
   position: absolute;
   overflow: hidden;
@@ -3107,12 +3406,12 @@ div.cs-active {
   visibility: hidden;
 }
 
-/* line 151, assets/sass/panels/_think.scss */
+/* line 153, assets/sass/panels/_think.scss */
 .cs-select.cs-active .cs-options {
   visibility: visible;
 }
 
-/* line 155, assets/sass/panels/_think.scss */
+/* line 157, assets/sass/panels/_think.scss */
 .cs-select ul {
   list-style: none;
   margin: 0;
@@ -3120,46 +3419,46 @@ div.cs-active {
   width: 100%;
 }
 
-/* line 162, assets/sass/panels/_think.scss */
+/* line 164, assets/sass/panels/_think.scss */
 .cs-select ul span {
   padding: 1em;
 }
 
-/* line 166, assets/sass/panels/_think.scss */
+/* line 168, assets/sass/panels/_think.scss */
 .cs-select ul li.cs-focus span {
   background-color: #ddd;
 }
 
 /* Optgroup and optgroup label */
-/* line 171, assets/sass/panels/_think.scss */
+/* line 173, assets/sass/panels/_think.scss */
 .cs-select li.cs-optgroup ul {
   padding-left: 1em;
 }
 
-/* line 175, assets/sass/panels/_think.scss */
+/* line 177, assets/sass/panels/_think.scss */
 .cs-select li.cs-optgroup > span {
   cursor: default;
 }
 
-/* line 190, assets/sass/panels/_think.scss */
+/* line 192, assets/sass/panels/_think.scss */
 div.cs-walls {
   background: transparent;
   font-size: 20px;
   max-width: 200px;
 }
 
-/* line 197, assets/sass/panels/_think.scss */
+/* line 199, assets/sass/panels/_think.scss */
 span.magazine {
   width: 200px;
 }
 
 @media screen and (max-width: 30em) {
-  /* line 202, assets/sass/panels/_think.scss */
+  /* line 204, assets/sass/panels/_think.scss */
   div.cs-walls {
     font-size: 1.2em;
   }
 }
-/* line 207, assets/sass/panels/_think.scss */
+/* line 209, assets/sass/panels/_think.scss */
 .cs-walls > span.cs-placeholder {
   padding: 5px 0px 8px 0px;
   border-bottom: 1px solid #000;
@@ -3167,7 +3466,7 @@ span.magazine {
   color: #6c12c7;
 }
 
-/* line 217, assets/sass/panels/_think.scss */
+/* line 219, assets/sass/panels/_think.scss */
 .cs-walls .cs-options {
   background: #fcfcfc;
   opacity: 1;
@@ -3175,18 +3474,18 @@ span.magazine {
   transition: opacity 0.0s 0.0s, visibility 0s 0.0s;
 }
 
-/* line 224, assets/sass/panels/_think.scss */
+/* line 226, assets/sass/panels/_think.scss */
 .cs-walls.cs-active .cs-options {
   opacity: 1;
   -webkit-transition: opacity 0.9s;
   transition: opacity 0.9s;
 }
 
-/* line 230, assets/sass/panels/_think.scss */
+/* line 232, assets/sass/panels/_think.scss */
 .cs-walls ul span {
   position: relative;
   text-transform: none;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
   padding: 1.2em 0.8em;
   opacity: 0;
@@ -3196,20 +3495,25 @@ span.magazine {
   transition: opacity 0.3s, transform 0.3s;
 }
 
-/* line 243, assets/sass/panels/_think.scss */
+/* line 245, assets/sass/panels/_think.scss */
+#share .cs-walls {
+  max-width: 250px;
+}
+
+/* line 250, assets/sass/panels/_think.scss */
 .cs-select ul span::after {
   content: '';
   opacity: 0;
 }
 
-/* line 248, assets/sass/panels/_think.scss */
+/* line 255, assets/sass/panels/_think.scss */
 .cs-select .cs-selected span::after {
   opacity: 1;
   -webkit-transition: opacity 0.3s 0.7s;
   transition: opacity 0.3s 0.7s;
 }
 
-/* line 255, assets/sass/panels/_think.scss */
+/* line 262, assets/sass/panels/_think.scss */
 .cs-walls ul span::before {
   content: '';
   position: absolute;
@@ -3224,7 +3528,12 @@ span.magazine {
   transition: transform 0.3s;
 }
 
-/* line 270, assets/sass/panels/_think.scss */
+/* line 276, assets/sass/panels/_think.scss */
+#fav .cs-walls {
+  max-width: 250px;
+}
+
+/* line 279, assets/sass/panels/_think.scss */
 .cs-walls.cs-active ul span,
 .cs-walls.cs-active ul span::before {
   opacity: 1;
@@ -3232,7 +3541,7 @@ span.magazine {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 279, assets/sass/panels/_think.scss */
+/* line 288, assets/sass/panels/_think.scss */
 .cs-walls li:nth-child(5) span,
 .cs-walls li:nth-child(5) span::before,
 .cs-walls.cs-active li:first-child span,
@@ -3241,7 +3550,7 @@ span.magazine {
   transition-delay: 0s;
 }
 
-/* line 287, assets/sass/panels/_think.scss */
+/* line 296, assets/sass/panels/_think.scss */
 .cs-walls li:nth-child(4) span,
 .cs-walls li:nth-child(4) span::before,
 .cs-walls.cs-active li:nth-child(2) span,
@@ -3250,14 +3559,14 @@ span.magazine {
   transition-delay: 0.05s;
 }
 
-/* line 293, assets/sass/panels/_think.scss */
+/* line 302, assets/sass/panels/_think.scss */
 .cs-walls li:nth-child(3) span,
 .cs-walls li:nth-child(3) span::before {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
 
-/* line 301, assets/sass/panels/_think.scss */
+/* line 310, assets/sass/panels/_think.scss */
 .cs-walls li:nth-child(2) span,
 .cs-walls li:nth-child(2) span::before,
 .cs-walls.cs-active li:nth-child(4) span,
@@ -3266,7 +3575,7 @@ span.magazine {
   transition-delay: 0.15s;
 }
 
-/* line 309, assets/sass/panels/_think.scss */
+/* line 318, assets/sass/panels/_think.scss */
 .cs-walls li:first-child span,
 .cs-walls li:first-child span::before,
 .cs-walls.cs-active li:nth-child(5) span,
@@ -3276,7 +3585,7 @@ span.magazine {
 }
 
 /* more items require more delay declarations */
-/* line 316, assets/sass/panels/_think.scss */
+/* line 325, assets/sass/panels/_think.scss */
 .cs-walls .cs-options li span:hover,
 .cs-walls .cs-options li.cs-focus span,
 .cs-walls li.cs-selected span {
@@ -3285,7 +3594,7 @@ span.magazine {
 }
 
 /* ------------------TExt Input Styles */
-/* line 330, assets/sass/panels/_think.scss */
+/* line 339, assets/sass/panels/_think.scss */
 span.input-span {
   display: inline;
   padding: 0 10px 0 0px;
@@ -3294,7 +3603,7 @@ span.input-span {
   margin: 0 0 0 4px;
 }
 
-/* line 335, assets/sass/panels/_think.scss */
+/* line 344, assets/sass/panels/_think.scss */
 .input {
   position: relative;
   z-index: 1;
@@ -3304,7 +3613,7 @@ span.input-span {
   vertical-align: top;
 }
 
-/* line 344, assets/sass/panels/_think.scss */
+/* line 353, assets/sass/panels/_think.scss */
 .input__field {
   position: relative;
   display: inline;
@@ -3320,12 +3629,12 @@ span.input-span {
   margin-bottom: 3px;
 }
 
-/* line 358, assets/sass/panels/_think.scss */
+/* line 367, assets/sass/panels/_think.scss */
 .input__field:focus {
   outline: none;
 }
 
-/* line 362, assets/sass/panels/_think.scss */
+/* line 371, assets/sass/panels/_think.scss */
 .input__label {
   display: inline-block;
   float: right;
@@ -3344,7 +3653,7 @@ span.input-span {
   user-select: none;
 }
 
-/* line 380, assets/sass/panels/_think.scss */
+/* line 389, assets/sass/panels/_think.scss */
 .input__label-content {
   position: relative;
   display: block;
@@ -3352,7 +3661,7 @@ span.input-span {
   width: 40px;
 }
 
-/* line 387, assets/sass/panels/_think.scss */
+/* line 396, assets/sass/panels/_think.scss */
 button {
   padding: 20px 12px 20px 12px;
   font-size: 16px;
@@ -3369,13 +3678,13 @@ button {
   font-weight: bold;
 }
 
-/* line 399, assets/sass/panels/_think.scss */
+/* line 408, assets/sass/panels/_think.scss */
 button:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
 
-/* line 408, assets/sass/panels/_think.scss */
+/* line 417, assets/sass/panels/_think.scss */
 .input__field--walls:focus,
 .input--filled .input__field--walls {
   opacity: 1;
@@ -3383,20 +3692,20 @@ button:hover {
   transition-delay: 0.3s;
 }
 
-/* line 415, assets/sass/panels/_think.scss */
+/* line 424, assets/sass/panels/_think.scss */
 .input__field--walls:focus + .input__label--walls::before,
 .input--filled .input__label--walls::before {
   -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
   transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
 }
 
-/* line 421, assets/sass/panels/_think.scss */
+/* line 430, assets/sass/panels/_think.scss */
 .input__field--walls:focus + .input__label--walls,
 .input--filled .input__label--walls {
   pointer-events: none;
 }
 
-/* line 426, assets/sass/panels/_think.scss */
+/* line 435, assets/sass/panels/_think.scss */
 .input__field--walls:focus + .input__label--walls::after,
 .input--filled .input__label--walls::after {
   -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
