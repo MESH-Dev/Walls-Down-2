@@ -904,14 +904,16 @@ $(document).ready(function() {
   $("#credit-link").click(function(e){
     $('body').removeClass("issues-open");
     $('body').addClass("credits-open");
-    $('.credits-menu-left').fadeIn('slow');
+    $('#credits').fadeIn('slow');
+    $('#issues').fadeOut('slow');
     e.preventDefault();
   });
 
   $("#issues-link").click(function(e){
     $('body').addClass("issues-open");
     $('body').removeClass("credits-open");
-    $('.credits-menu-left').fadeIn('slow');
+    $('#credits').fadeOut('slow');
+    $('#issues').fadeIn('slow');
     
     e.preventDefault();
   });

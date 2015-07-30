@@ -109,7 +109,7 @@ body,html {
     left: 0px;
     @include opacity(0);
     display: none;
-    z-index: 1;
+    z-index: 10;
     color: $white;
 
     .credits-wrap,.more-wrap{ 
@@ -122,8 +122,13 @@ body,html {
       overflow: auto;
       @include breakpoint(small) {padding: 80px 15px 15px 15px;}
     } 
-    p{
+    p,li{
       font-size: 11px; line-height: 17px; color: $white; padding-right:10px;
+    }
+
+    ul{
+      padding: 0;
+      margin: 0 0 0 10px;
     }
  
     h4{font:11px/17px $cabin ; color: $white; letter-spacing: 0.1em; text-transform:uppercase;}
@@ -132,6 +137,14 @@ body,html {
        left: -250px;
 
     }
+}
+
+#issues{
+  p{padding-bottom:5px;} 
+  display: none;
+}
+#credits{
+  display: none;
 }
  
 .close-credits-menu{

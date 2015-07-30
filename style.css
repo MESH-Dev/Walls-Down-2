@@ -1004,7 +1004,7 @@ body, html {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   display: none;
-  z-index: 1;
+  z-index: 10;
   color: white;
 }
 /* line 115, assets/sass/_layout.scss */
@@ -1025,20 +1025,25 @@ body, html {
   }
 }
 /* line 125, assets/sass/_layout.scss */
-.credits-menu-left p {
+.credits-menu-left p, .credits-menu-left li {
   font-size: 11px;
   line-height: 17px;
   color: white;
   padding-right: 10px;
 }
 /* line 129, assets/sass/_layout.scss */
+.credits-menu-left ul {
+  padding: 0;
+  margin: 0 0 0 10px;
+}
+/* line 134, assets/sass/_layout.scss */
 .credits-menu-left h4 {
   font: 11px/17px "Cabin", sans-serif;
   color: white;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-/* line 130, assets/sass/_layout.scss */
+/* line 135, assets/sass/_layout.scss */
 .credits-menu-left a {
   color: white;
   text-decoration: underline;
@@ -1050,7 +1055,21 @@ body, html {
   }
 }
 
-/* line 137, assets/sass/_layout.scss */
+/* line 142, assets/sass/_layout.scss */
+#issues {
+  display: none;
+}
+/* line 143, assets/sass/_layout.scss */
+#issues p {
+  padding-bottom: 5px;
+}
+
+/* line 146, assets/sass/_layout.scss */
+#credits {
+  display: none;
+}
+
+/* line 150, assets/sass/_layout.scss */
 .close-credits-menu {
   position: absolute;
   top: 10px;
@@ -1058,27 +1077,27 @@ body, html {
   z-index: 2;
   color: white;
 }
-/* line 142, assets/sass/_layout.scss */
+/* line 155, assets/sass/_layout.scss */
 .close-credits-menu:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
 
-/* line 145, assets/sass/_layout.scss */
+/* line 158, assets/sass/_layout.scss */
 body.credits-open #credits {
   left: 0px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 152, assets/sass/_layout.scss */
+/* line 165, assets/sass/_layout.scss */
 body.issues-open #issues {
   left: 0px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 159, assets/sass/_layout.scss */
+/* line 172, assets/sass/_layout.scss */
 .panel {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -1088,24 +1107,24 @@ body.issues-open #issues {
   position: relative;
   padding-right: 0px;
 }
-/* line 170, assets/sass/_layout.scss */
+/* line 183, assets/sass/_layout.scss */
 .panel .panel-pad {
   padding: 0px 160px 0px 0px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 170, assets/sass/_layout.scss */
+  /* line 183, assets/sass/_layout.scss */
   .panel .panel-pad {
     padding: 0px;
   }
 }
 
 /* ------SHARE BUTTONS ---------*/
-/* line 188, assets/sass/_layout.scss */
+/* line 201, assets/sass/_layout.scss */
 .social-share {
   margin-bottom: 20px;
 }
 
-/* line 189, assets/sass/_layout.scss */
+/* line 202, assets/sass/_layout.scss */
 .social-title {
   font: 14px/20px "Cabin", sans-serif;
   text-transform: uppercase;
@@ -1113,12 +1132,12 @@ body.issues-open #issues {
   margin-bottom: 0px;
 }
 
-/* line 192, assets/sass/_layout.scss */
+/* line 205, assets/sass/_layout.scss */
 .addthis_toolbox {
   text-align: center;
 }
 
-/* line 193, assets/sass/_layout.scss */
+/* line 206, assets/sass/_layout.scss */
 .addthis_toolbox > a {
   height: 25px;
   width: 25px;
@@ -1126,12 +1145,12 @@ body.issues-open #issues {
   float: left;
 }
 
-/* line 194, assets/sass/_layout.scss */
+/* line 207, assets/sass/_layout.scss */
 .addthis_toolbox.addthis_32x32_style span {
   width: 26px !important;
 }
 
-/* line 195, assets/sass/_layout.scss */
+/* line 208, assets/sass/_layout.scss */
 .addthis_toolbox > a > span {
   height: 25px !important;
   width: 25px !important;
@@ -1139,195 +1158,195 @@ body.issues-open #issues {
   background: none !important;
 }
 
-/* line 196, assets/sass/_layout.scss */
+/* line 209, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_facebook {
   background: url(assets/img/social_icons-single.png) no-repeat;
   background-position: -25px 0 !important;
 }
 
-/* line 197, assets/sass/_layout.scss */
+/* line 210, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_twitter {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -50px 0 !important;
 }
 
-/* line 198, assets/sass/_layout.scss */
+/* line 211, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_linkedin {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -2px 0 !important;
 }
 
-/* line 199, assets/sass/_layout.scss */
+/* line 212, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_pinterest_share {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -74px 0 !important;
 }
 
-/* line 200, assets/sass/_layout.scss */
+/* line 213, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_google_plusone_share {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -124px 0 !important;
 }
 
-/* line 201, assets/sass/_layout.scss */
+/* line 214, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_email {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -98px 0 !important;
 }
 
-/* line 202, assets/sass/_layout.scss */
+/* line 215, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_digg {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -176px 0 !important;
   width: 28px !important;
 }
 
-/* line 203, assets/sass/_layout.scss */
+/* line 216, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_evernote {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -146px 0 !important;
 }
 
-/* line 204, assets/sass/_layout.scss */
+/* line 217, assets/sass/_layout.scss */
 .addthis_toolbox .addthis_button_compact {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -204px 0 !important;
 }
 
-/* line 206, assets/sass/_layout.scss */
+/* line 219, assets/sass/_layout.scss */
 .grady-social {
   padding: 20px 0px 0px 200px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 206, assets/sass/_layout.scss */
+  /* line 219, assets/sass/_layout.scss */
   .grady-social {
     padding-left: 10%;
     padding-bottom: 30px;
   }
 }
 
-/* line 213, assets/sass/_layout.scss */
+/* line 226, assets/sass/_layout.scss */
 .grady-social-top {
   padding: 20px 0px 0px 200px;
 }
-/* line 215, assets/sass/_layout.scss */
+/* line 228, assets/sass/_layout.scss */
 .grady-social-top .white-social {
   color: white;
 }
 @media only screen and (max-width: 800px) {
-  /* line 213, assets/sass/_layout.scss */
+  /* line 226, assets/sass/_layout.scss */
   .grady-social-top {
     padding-left: 10%;
     padding-bottom: 0px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1060px) {
-  /* line 213, assets/sass/_layout.scss */
+  /* line 226, assets/sass/_layout.scss */
   .grady-social-top {
     padding-left: 50px;
   }
 }
 
-/* line 222, assets/sass/_layout.scss */
+/* line 235, assets/sass/_layout.scss */
 .timeline-social {
   padding: 20px 0px 200px 0px;
 }
 
-/* line 225, assets/sass/_layout.scss */
+/* line 238, assets/sass/_layout.scss */
 .timeline-social-top {
   padding: 20px 0px 0px 0px;
 }
 
-/* line 229, assets/sass/_layout.scss */
+/* line 242, assets/sass/_layout.scss */
 .nicu-social {
   padding: 40px 0px 20px 0px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 229, assets/sass/_layout.scss */
+  /* line 242, assets/sass/_layout.scss */
   .nicu-social {
     padding-left: 0;
     padding-bottom: 0px;
   }
 }
 
-/* line 234, assets/sass/_layout.scss */
+/* line 247, assets/sass/_layout.scss */
 .nicu-social-top {
   padding: 0px 0px 0px 120px;
 }
-/* line 236, assets/sass/_layout.scss */
+/* line 249, assets/sass/_layout.scss */
 .nicu-social-top .white-social {
   color: #c2c2c2;
 }
 @media only screen and (max-width: 800px) {
-  /* line 234, assets/sass/_layout.scss */
+  /* line 247, assets/sass/_layout.scss */
   .nicu-social-top {
     padding-left: 10%;
   }
 }
 
-/* line 240, assets/sass/_layout.scss */
+/* line 253, assets/sass/_layout.scss */
 .map-social {
   padding: 0px 0px 20px 0px;
 }
-/* line 242, assets/sass/_layout.scss */
+/* line 255, assets/sass/_layout.scss */
 .map-social .social-title {
   color: white;
 }
 
-/* line 245, assets/sass/_layout.scss */
+/* line 258, assets/sass/_layout.scss */
 .nav-social {
   padding: 0px 0px 20px 10px;
 }
 
-/* line 251, assets/sass/_layout.scss */
+/* line 264, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_facebook {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -25px 0 !important;
 }
-/* line 252, assets/sass/_layout.scss */
+/* line 265, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_twitter {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -50px 0 !important;
 }
-/* line 253, assets/sass/_layout.scss */
+/* line 266, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_linkedin {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -2px 0 !important;
 }
-/* line 254, assets/sass/_layout.scss */
+/* line 267, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_pinterest_share {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -74px 0 !important;
 }
-/* line 255, assets/sass/_layout.scss */
+/* line 268, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_google_plusone_share {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -124px 0 !important;
 }
-/* line 256, assets/sass/_layout.scss */
+/* line 269, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_email {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -98px 0 !important;
 }
-/* line 257, assets/sass/_layout.scss */
+/* line 270, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_digg {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -176px 0 !important;
   width: 28px !important;
 }
-/* line 258, assets/sass/_layout.scss */
+/* line 271, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_evernote {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -146px 0 !important;
 }
-/* line 259, assets/sass/_layout.scss */
+/* line 272, assets/sass/_layout.scss */
 .white-social .addthis_toolbox .addthis_button_compact {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -204px 0 !important;
 }
 
 /* ------END OF STORY NAV ---------*/
-/* line 265, assets/sass/_layout.scss */
+/* line 278, assets/sass/_layout.scss */
 .left-nav {
   position: relative;
   height: 0px;
@@ -1335,13 +1354,13 @@ body.issues-open #issues {
   top: -80px;
   float: left;
 }
-/* line 266, assets/sass/_layout.scss */
+/* line 279, assets/sass/_layout.scss */
 .left-nav a {
   position: relative;
   left: 7%;
   font-style: italic;
 }
-/* line 267, assets/sass/_layout.scss */
+/* line 280, assets/sass/_layout.scss */
 .left-nav .fa {
   font-size: 45px;
   position: relative;
@@ -1349,7 +1368,7 @@ body.issues-open #issues {
   right: 5px;
 }
 
-/* line 270, assets/sass/_layout.scss */
+/* line 283, assets/sass/_layout.scss */
 .right-nav {
   position: relative;
   height: 0px;
@@ -1357,14 +1376,14 @@ body.issues-open #issues {
   top: -80px;
   float: right;
 }
-/* line 271, assets/sass/_layout.scss */
+/* line 284, assets/sass/_layout.scss */
 .right-nav a {
   float: right;
   position: relative;
   right: 10%;
   font-style: italic;
 }
-/* line 272, assets/sass/_layout.scss */
+/* line 285, assets/sass/_layout.scss */
 .right-nav .fa {
   font-size: 45px;
   position: relative;
@@ -1372,17 +1391,17 @@ body.issues-open #issues {
   left: 5px;
 }
 
-/* line 276, assets/sass/_layout.scss */
+/* line 289, assets/sass/_layout.scss */
 html.ie8 nav {
   display: none;
 }
 
-/* line 277, assets/sass/_layout.scss */
+/* line 290, assets/sass/_layout.scss */
 html.ie8 .menu {
   display: none;
 }
 
-/* line 278, assets/sass/_layout.scss */
+/* line 291, assets/sass/_layout.scss */
 html.ie8 .panel {
   display: none;
 }
@@ -3523,7 +3542,7 @@ html, body {
   top: 10px;
   left: 10px;
   z-index: 999999;
-  display: block;
+  display: none;
 }
 @media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 32, assets/sass/libs/_swipe.scss */
