@@ -29,7 +29,7 @@ html,body {
 }
  
 
-.sb-toggle-left{position: absolute; top: 10px; left: 10px; z-index: 999999; display:none; 
+.sb-toggle-left{position: absolute; top: 10px; left: 10px; z-index: 999999; display:block; 
 
   @include breakpoint(nomap)  {
         display: block

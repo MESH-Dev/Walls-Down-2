@@ -22,10 +22,14 @@ $(document).ready(function() {
           }
         }
         else{
-          location.hash = this_hash;
+         updateHash(this_hash);
         }
      }
   }).data('Swipe');
+
+  function updateHash(hash){
+    location.hash = hash;
+  }
 
   $('.next').on('click', Slider.next);
   $('.prev').on('click', Slider.prev);
